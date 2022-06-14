@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+<!doctype html>
+<html amp lang="es">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Index AMP</title>
+    <link rel="canonical" href="https://www.dataintelligence-group.com/marketing/index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org",
+          "@@type": "NewsArticle",
+          "headline": "Article headline",
+          "datePublished": "2021-11-20T12:02:41Z",
+               "image": [
+            "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+              ],
+            "author": {
+                "@@type": "Organization",
+                "name": "Data Intelligence",
+                "url": "https://www.dataintelligence-group.com/Data/Index"
+            },
+        "publisher": {
+            "@@type": "Organization",
+            "name": "DI",
+            "logo": {
+            "@@type": "ImageObject",
+            "url": "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+            }
+        }
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+
+
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+
+    @*ESTILOS*@
+    <style amp-custom>
+        p{
+            text-align:center;
+
+        }
+        .estiloImg{
+            padding:0 20px;
+        }
+    </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+</head>
+
+<body>
+    <img class="img-fluid mt-3" src="~/Content/landing main webinar/pagina_webinarsRealizados_titulo_!.png" />
+    <p>
+        Si se perdió el ciclo de Webinars puede acceder a la grabación de la transmisión, en estos link
+        encontrará información sobre la charla y podrá interactuar con información destacada.
+    </p>
+
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarEducacionAmp" target="_blank"><amp-img src="~/Content/landing main webinar/pagina_webinarsPasados_educacion1.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarMunicipioAMP" target="_blank"><amp-img src="~/Content/landing main webinar/Municipio/pagina_webinarsPasados_MUNICIPIO.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarAgricultura" target="_blank"><amp-img src="~/Content/landing main webinar/pagina_webinarsPasados_agricultura.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarIncendio" target="_blank"><amp-img src="~/Content/landing main webinar/pagina_webinarsPasados_incendios.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarGenero" target="_blank"><amp-img src="~/Content/imagennes reemplazar webinar master/pagina_webinarsPasados_violenciamujer.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarAgenciaDIAMP" target="_blank"><amp-img src="~/Content/landing main webinar/pagina_webinarsPasados_agenciaDI.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+    <div class="col-12 estiloImg">
+        <a href="~/marketing/webinarGlaciares" target="_blank"><amp-img src="~/Content/landing main webinar/pagina_webinarsPasados_glaciares.png" width="600" height="600" layout="responsive"></amp-img></a>
+    </div>
+
+
+</body>
+</html>

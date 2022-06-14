@@ -1,0 +1,522 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salud Pandemia</title>
+    <style>
+        .cardcoleccion {
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Colección Salud Pandemia" />
+            </div>
+            @*<div class="col-4 col-sm-3 col-md-2 d-block d-md-none mt-3 ">
+                    <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Colección Salud Pandemia" />
+                </div>*@
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+
+                @*<h5 class="h2 coleccion mt-5 mt-md-0 pt-sm-5 pt-md-0 d-none d-md-block">COVID-19</h5>*@
+                <h4 class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">COVID-19</h4>
+                <p class="pcoleccion d-none d-md-block">
+                    Tener acceso a los datos diarios del curso de la pandemia es tan importante como
+                    la enfermedad en sí. Data Intelligence, a través de la Colección Data Salud-Pandemias, monitorea su
+                    evolución diaria de casos activos, hospitalizados, recuperados y fallecimientos;
+                    disponibilidad de camas y ventiladores; y vacunación y su relación con el plan
+                    Paso a Paso. Incluye datos a nivel regional y comunal extraídos de los reportes
+                    epidemiológicos del Ministerio de Salud.
+
+                </p>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    Tener acceso a los datos diarios del curso de la pandemia es tan importante como
+                    la enfermedad en sí. Data Intelligence, a través de la Colección Data Salud-Pandemias, monitorea su
+                    evolución diaria de casos activos, hospitalizados, recuperados y fallecimientos;
+                    disponibilidad de camas y ventiladores; y vacunación y su relación con el plan
+                    Paso a Paso. Incluye datos a nivel regional y comunal extraídos de los reportes
+                    epidemiológicos del Ministerio de Salud.
+                </p>
+            </div>
+            <div class="col-md-12 text-center d-none d-md-block mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p>La suscripción a la colección de Salud-Pandemia contiene</p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none mt-3" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b>La suscripción a la colección de Salud-Pandemia contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <div class=" d-block d-md-none mt-3 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide p-sm-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_asistencia.png" alt="Asistencia" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Asistencia</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#SP1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_diagnostico.png" alt="Diagnóstico" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Diagnóstico</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#SP2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucionCovid19.png" alt="Evolución COVID-19" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Evolución Covid-19</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#SP3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_vacunacion.png" alt="Evolución Vanunación" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Evolución Vacunación</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#SP4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Data Salud Pandemia images/imagenes_recuadrosweb_pasoapaso.png" alt="Paso a Paso" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Paso A Paso</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#SP5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_asistencia.png" alt="Asistencia" />
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Asistencia</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#SP1" style="text-decoration:underline; color:blue;">
+                                <p data-toggle="tooltip" data-placement="right" title="Click para mas información">ver</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_diagnostico.png" alt="Diagnóstico" />
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Diagnóstico</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#SP2" style="text-decoration:underline; color:blue;">
+                                <p data-toggle="tooltip" data-placement="right" title="Click para mas información">ver</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucionCovid19.png" alt="Evolución COVID-19" />
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <h6 class="card-title text-center mt-1">Evolución Covid-19</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#SP3" style="text-decoration:underline; color:blue;">
+                                <p data-toggle="tooltip" data-placement="right" title="Click para mas información">ver</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 just">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_vacunacion.png" alt="Evolución Vacunación" />
+                    <div class="row justify-content-center">
+                        <div class="col-10 text-center">
+                            <h6 class="card-title mt-1">Evolución Vacunación</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#SP4" style="text-decoration:underline; color:blue;">
+                                <p data-toggle="tooltip" data-placement="right" title="Click para mas información">ver</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Data Salud Pandemia images/imagenes_recuadrosweb_pasoapaso.png" alt="Paso a Paso" />
+                    <div class="row justify-content-center">
+                        <div class="col-10 text-center">
+                            <h6 class="card-title mt-1">Paso a Paso</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#SP5" style="text-decoration:underline; color:blue;">
+                                <p data-toggle="tooltip" data-placement="right" title="Click para mas información">ver</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video de coleccion-->
+    @*<section class="container video">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h4>Tutorial de uso de la colección</h4>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/x5amXI4W9S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>*@
+    <!-- Modal SP1-5 -->
+    <div class="modal fade" id="SP1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Salud Pandemia" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_asistencia.png" alt="Asistencia" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Asistencia</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;">16</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Regiones</strong><br>Visualización comparativa temporal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-arrow-down-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Cupos y usuarios de Residencias
+                                </strong><br>Evolución Según ultimas cifras publicadas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SP2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Salud Pandemia" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_diagnostico.png" alt="Diagnóstico" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Diagnóstico</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;">M</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Millones de PCR realizados</strong><br>Cifra actualizada diariamente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-arrow-down-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Positividad  vs 2° dosis vacuna
+                                </strong><br>Evolución según ultimas cifras publicadas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-geo-alt"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Representación geográfica</strong><br>Positividad por Región en el ultimo mes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SP3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Salud Pandemia" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucionCovid19.png" alt="Evolución COVID-19" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Evolución COVID - 19</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Análisis de Evolución </strong><br>Casos activos, Casos confirmados diarios y Fallecidos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-geo-alt"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Representación geográfica</strong><br>De número de fallecidos a nivel. regional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;">25</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Comunas</strong><br>Con más casos confirmados y activos a la fecha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SP4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Salud Pandemia" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATASALUD_PANDEMIAS/recuadrosweb_DATAsaludPandemias_evolucion_vacunacion.png" alt="Evolución Vacunación" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Evolución de Vacunación
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;">1ª/2ª</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Dosis</strong><br>Cifras de la evolución del proceso de vacunación
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-arrow-down-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Casos activos vs 2° dosis vacuna
+                                </strong><br>Según ultimas cifras publicadas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SP5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Salud Pandemia" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Data Salud Pandemia images/imagenes_recuadrosweb_pasoapaso.png" alt="Paso a Paso" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Paso a Paso
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-arrow-down-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Paso a Paso  vs 2° dosis vacuna
+                                </strong><br>Evolución según ultimas cifras publicadas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><i class="bi bi-geo-alt"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Etapas plan Paso a Paso
+                                </strong><br>Representación geográfica
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

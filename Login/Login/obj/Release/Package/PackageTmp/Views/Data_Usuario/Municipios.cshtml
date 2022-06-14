@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Municipios";
+    Layout = "~/Views/Shared/_LayoutUsuario.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "Mapa";
+    Layout = "~/Views/Shared/_LayoutUsuario.cshtml";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+    function mostrador(seccion1) {
+        var arreglo = [
+            '#vista1',
+            '#vista2',
+            '#vista3',
+            '#ganancia1',
+            '#ganancia2',
+            '#ganancia3',
+            '#ganancia4',
+            '#ganancia1Q2',
+            '#ganancia2Q2',
+            '#ganancia3Q2',
+            '#perdida1',
+            '#perdida2',
+            '#perdida3',
+            '#perdida4',
+            '#perdida1Q2',
+            '#perdida2Q2',
+            '#nsc1',
+            '#nsc2',
+            '#nsc3',
+            '#nsc4',
+            '#nsc1Q2',
+            '#nsc2Q2',
+            '#nsc3Q3',
+            '#max1',
+            '#max1Q2',
+            '#min1',
+            '#min1Q2',
+            '#pdf5',
+            '#pdf6',
+            '#detalle',
+            '#vistaMaxMin',
+            '#vistaq1_1718',
+            '#vistaq2_1718',
+            '#vistaq1_1819',
+            '#vistaq2_1819',
+            '#vistaq1_1920',
+            '#vistaq2_1920',
+            '#vistaq1_2021',
+            '#vistaq2_2021',
+            '#zohoDinamica'
+        ];
+        //arreglo.forEach
+        jQuery.each(arreglo, function (i, val) {
+            $(val).hide();
+        });
+        $(seccion1).show();
+
+    }
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12" style="background-color:#c6ccdc;">
+            <div class="row">
+                <div class="col-12 col-md-1 p-1 " style="text-align:right">
+                    <p style="color: #1774b9"><strong>Comuna</strong></p>
+                </div>
+                <div class="col-12 col-md-4 p-1 ">
+                    <p style="color: #1774b9">Maipu</p>
+                </div>
+                <div class="col-12 col-md-7 p-1" style="text-align:left">
+                    <div class="row">
+                        <div class="col-12 col-md-1 p-1">
+                            <p style="color: #1774b9"><strong>Variable:</strong></p>
+                        </div>
+                        <div class="col-12 col-md-11  p-1 text-left">
+                            <p style="color: #1774b9">Personas por género desagregado por zona/localidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div id="vista1">
+        <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                src="https://analytics.zoho.com/open-view/2395394000009054229"> </iframe>
+    </div>
+</div>
+

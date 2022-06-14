@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Visualizador";
+    Layout = "~/Views/Shared/_LayoutEducacion.cshtml";
+}
+<script>
+    function ActivarMenuSuperior3(opcionMenu) {
+        $('.active5').removeClass('active5');
+        $(opcionMenu).addClass("active5");
+    }
+</script>
+<style>
+
+    .active5 {
+        background-color: #f6f6f6 !important;
+    }
+</style>
+
+<div class="container-fluid  d-block d-md-none" style="background-color:#343A40">
+    <div class="row justify-content-center">
+        <div class="col-12 embed-responsive embed-responsive-16by9 mt-3 mb-3 text" style="overflow:hidden !important;">
+            <!-- 16:9 aspect ratio -->
+            <iframe id="IframeTest2" class="embed-responsive-item" src="@ViewBag.url" style="overflow:hidden !important;"></iframe>
+
+        </div>
+    </div>
+</div>
+<style>
+    .modal {
+        width: 100%;
+        height: 150vh;
+        background-color: rgb(0,0,0,0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        animation: modal 2s 3s forwards; /*2s duracion de la animacion ,3s retraso desde que se carge la pagina para ver la animacion y el forward para quede en la pantalla*/
+        /*animation-fill-mode:forwards;*/
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .contenido {
+        margin-top: 20px !important;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    #cerrar {
+        display: none;
+    }
+
+        #cerrar + label {
+            top: 20px;
+            position: fixed;
+            color: #fff;
+            font-size: 25px;
+            z-index: 9999;
+            background-color: darkred;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            padding-left: 14px;
+            right: 20px;
+            cursor: pointer;
+            animation: modal 2s 3s forwards;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        #cerrar:checked + label, #cerrar:checked ~ .modal {
+            display: none;
+        }
+
+    @@keyframes modal {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+</style>
+
+
+<div class="container-fluid d-none d-md-block">
+    <div class="row justify-content-center">
+        <div class="col-md-11 col-12 embed-responsive embed-responsive-16by9 text-center mt-md-5 mb-md-5" id="iframeTest1">
+            <!-- 16:9 aspect ratio -->
+            @*<div class="embed-responsive embed-responsive-16by9" id="IframeTest">*@
+            <iframe id="IframeTest" class="embed-responsive-item" src="@ViewBag.url"></iframe>
+            @*</div>*@
+        </div>
+    </div>
+
+</div>
+@Styles.Render("~/Content/Contenido/Iframe.css")
+
+
+
+<script>
+    ActivarMenuSuperior("#EDUCACIONCOMUNAL_Index")
+</script>

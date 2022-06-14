@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "TablaEjemplo";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<table class="table mt-5" style="width:100%">
+    @foreach (var item in ViewBag.Resultado)
+    {
+    <tr>
+        <th>@item.coleccion</th>
+        <th>@item.tema</th>
+        <th>@item.titulo</th>
+        <th>@item.escala</th>
+        <th>@item.territorio</th>
+        <th>@item.id</th>
+    </tr>
+    }
+
+</table>

@@ -1,0 +1,988 @@
+﻿
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Violencia Contra la Mujer</title>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+
+                <!--titulo movil-->
+                <h4 class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">Violencia Contra la Mujer</h4>
+                <!--Contenido desktop-->
+                <p class="pcoleccion d-none d-md-block">
+                    La Violencia contra la mujer es un hecho aún latente en la sociedad.
+                    La Colección Violencia contra la Mujer contiene información y estadísticas
+                    de femicidios, sentencias por abuso sexual y otros delitos vinculados a la mujer.
+                    Por otro lado los resultados de encuestas realizadas en temáticas de acoso callejero
+                    e información relacionada con los centro de apoyo a la mujer y atención de salud de
+                    casos de violencia de género.
+                    Los datos se muestran como Gráficos, Gráficos Animados, Mapas de calor y Gráficos
+                    de evolución. Estas visualizaciones interactivas facilitarán la identificación de
+                    variables claves permitiendo conclusiones precisas y relevantes sobre el tema de interés.
+
+                </p>
+            </div>
+            <!--Texto para pantalla movil-->
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    La Violencia contra la mujer es un hecho aún latente en la sociedad.
+                    La Colección Violencia contra la Mujer contiene información y estadísticas
+                    de femicidios, sentencias por abuso sexual y otros delitos vinculados a la mujer.
+                    Por otro lado los resultados de encuestas realizadas en temáticas de acoso callejero
+                    e información relacionada con los centro de apoyo a la mujer y atención de salud de
+                    casos de violencia de género.
+                    Los datos se muestran como Gráficos, Gráficos Animados, Mapas de calor y Gráficos
+                    de evolución. Estas visualizaciones interactivas facilitarán la identificación de
+                    variables claves permitiendo conclusiones precisas y relevantes sobre el tema de interés.
+                </p>
+            </div>
+
+            <!--video de coleccion-->
+            <section class="container video mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                            Conoce más acerca de esta colección
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/x5amXI4W9S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- contenido desktop-->
+            <div class="col-md-12 text-center d-none d-md-block mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><strong>La suscripción a la colección de Violencia Contra la Mujer contiene:</strong> </p>
+            </div>
+            <!--Titulo de carrucel en movil-->
+            <div class="col-12 text-center d-block d-md-none mt-3" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><strong>La suscripción a la colección de Violencia Contra la Mujer contiene</strong> </p>
+            </div>
+        </div>
+    </div>
+    <!--Carrucel pantalla movil-->
+    <div class=" d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide p-sm-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_femicidios2.png" alt="Femicidios" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">
+                                            Femicidios
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violaciones.png" alt="Violaciones" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">
+                                            Violaciones
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_abusosexual.png" alt="Abuso Sexual" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">
+                                            Abuso Sexual
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violenciaintrafamiliar.png" alt="Violencia Intrafamiliar" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">
+                                            Violencia Intrafamiliar
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_sentenciaspordelitosvinculadosalamujer.png" alt="Sentencias" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">
+                                            Sentencias por Delitos vinculados a la Mujer
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violenciaeconomica.png" alt="Violencia Económica" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Violencia Económica
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_centrosdeapoyoalamujer.png" alt="Centros de Apoyo" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Centros  de Apoyo
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_acosocallejeero.png" alt="Acoso Callejero" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Acoso Callejero
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm8" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_atencionsaludviolenciagenero.png" alt="Atención de Salud Genero" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Atenciones de Salud
+                                            por Violencia de Genero
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#vm9" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_femicidios2.png" alt="Femicidios" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">
+                                Femicidios
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violaciones.png" alt="Violaciones" />
+                    <div class="row ">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">
+                                Violaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_abusosexual.png" alt="Abuso Sexual" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title text-center mt-1">
+                                Abuso Sexual
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violenciaintrafamiliar.png" alt="Violencia Intrafamiliar" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">
+                                Violencia Intrafamiliar
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm4" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_sentenciaspordelitosvinculadosalamujer.png" alt="Sentencias por Delitos" />
+                    <div class="row ">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">
+                                Sentencias por Delitos vinculados a la Mujer
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violenciaeconomica.png" alt="Violencia Económica" />
+                    <div class="row ">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Violencia Económica
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_centrosdeapoyoalamujer.png" alt="Centros de Apoyo" />
+                    <div class="row ">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Centros  de Apoyo
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_acosocallejeero.png" alt="Acoso Callejero" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Acoso Callejero
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm8" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_atencionsaludviolenciagenero.png" alt="Atenciones de Salud" />
+                    <div class="row ">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Atenciones de Salud
+                                por Violencia de Genero
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#vm9" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video de coleccion-->
+    <!--<section class="container video mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                    Conoce más acerca de esta colección
+                </p>
+            </div>
+            <div class="col-md-12 ">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/x5amXI4W9S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+
+    <!--video de coleccion-->
+    <!--seccion de  Modal -->
+    <div class="modal fade" id="vm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_femicidios2.png" alt="Femicidios" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Femicidios
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">12</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de registro
+                                </strong><br>Datos que se actualizan según ocurrencia de casos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">16</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones
+                                </strong><br>En diferentes comunas presentan algún caso en el periodo de análisis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;"><img class="img-fluid" src="~/Content/imagenes_Violencia/modal femincidio.png" /></p>
+                        </div>
+
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Por Relación y por Edad
+                                </strong><br>Frecuencia de casos considerando la relación víctima-femicida y
+                                frecuencia según edad de la víctima.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violaciones.png" alt="Violaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Violaciones
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">4</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Delitos
+                                </strong><br>Delitos cometidos por empleados y funcionarios públicos,
+                                Delitos sexuales y Delitos violentos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Delitos contra la mujer
+                                </strong><br>Detalle de las sentencia por juzgado de Garantía y región.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Delitos contra la mujer
+                                </strong><br>Detalle de las sentencia por juzgado de Garantía y región.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_abusosexual.png" alt="Abuso Sexual" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Abuso Sexual
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">82</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Juzgados de Garantía
+                                </strong><br>Distribuidos en todo Chile.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Delitos
+                                </strong><br>Vinculados al Abuso Sexual, acumulan cientos de miles de sentencias
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violenciaintrafamiliar.png" alt="Violencia Intrafamiliar" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Violencia Intrafamiliar
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">17</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años
+                                </strong><br>De registros de casos de Violencia Intrafamiliar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">4</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Categorías
+                                </strong><br>Frecuencia de Denuncias, Aprehensiones, Detenciones y Casos Policiales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><img class="img-fluid" src="~/Content/imagenes_Violencia/modal femincidio.png" /></p>
+                        </div>
+                        <div class="col-10">
+
+                            <p>
+                                <strong>
+                                    Casos registrados
+                                </strong><br>Proporción por genero, mayoría de edad y fiscalía.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_sentenciaspordelitosvinculadosalamujer.png" alt="Sentencias por Delitos" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Sentencias por Delitos vinculados a la Mujer
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">82</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Juzgados de Garantía
+                                </strong><br>Distribuidos en todo Chile.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipo de Delitos
+                                </strong><br>Contra el Estado Civil y la Familia; Contra la Vida,
+                                Integridad o Dignidad Personal y  delitos Violentos.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Delitos
+                                </strong><br>Entre tipos de aborto, femicidios, secuestros,
+                                torturas y maltratos, acumulan cientos de miles de sentencias.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_violenciaeconomica.png" alt="Violencia Económica" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Violencia Económica
+
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><img class="img-fluid" style="width:50%;" src="~/Content/Imagenes agencia_Informacion/graphFlechaUP.png" /></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución de casos
+                                </strong><br>Mujeres que declaran sufrir violencia económica años 2012, 2017 y 2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;"><img class="img-fluid" style="width:50%;" src="~/Content/imagenes_Violencia/modal femincidio.png" /></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rangos Etarios
+                                </strong><br>Proporción de mujeres que declaran sufrir violencia económica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_centrosdeapoyoalamujer.png" alt="Centros de Apoyo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Centros  de Apoyo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">16</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones
+                                </strong><br>Cuentan con Centros de la Mujer, que atienden de manera remota y/o presencial.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones presentan CVS
+                                </strong><br>Biobío, Valparaíso y región Metropolitana
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">2</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Procedimientos
+                                </strong><br>Ingreso y Egresos de Centros de Reeducación de hombres.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_acosocallejeero.png" alt="Acoso Callejero" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Acoso Callejero
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">7</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Preguntas
+                                </strong><br>Conforman la encuesta relativa al acoso Callejero en Chile, realizada a hombres y mujeres.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Opciones de respuestas
+                                </strong><br>De Acuerdo, En Desacuerdo, Ni de Acuerdo ni en Desacuerdo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vm9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Colección Violencia Mujer" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes_Violencia/recuadrosweb_ViolenciaContraLaMujer_atencionsaludviolenciagenero.png" alt="Atenciones de Salud" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Atenciones de Salud
+                                por Violencia de Genero
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">7</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Conceptos de Atención
+                                </strong><br>Consideradas como Violencia de Género, entre las que están abuso sexual, estupro y violación.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7030A0; border-radius: 5px;">
+                                N°
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Atenciones
+                                </strong><br>Por Servicio de Salud
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #6472C3; border-radius: 5px;">
+                                29
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Servicios de Salud
+                                </strong><br>Registran atenciones por violencia de Género.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+

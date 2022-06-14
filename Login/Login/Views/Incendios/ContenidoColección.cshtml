@@ -1,0 +1,247 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutIncendios.cshtml";
+}
+
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">*@
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    @*<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>*@
+    @*<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="~/Scripts/Usuario/Coleccion.js?v=2"></script>
+    <script>
+        function ActivarMenuSuperior3(opcionMenu) {
+            $('.active5').removeClass('active5');
+            $(opcionMenu).addClass("active5");
+        }
+    </script>
+    <style>
+        .active5 {
+            background-color: #f6f6f6 !important;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3  pb-sm-0 pb-3 d-none d-md-block" style="padding-left:0px !important;">
+                <div class="border ulcolecciones mb-md-5">
+                    <h6 class="h6colecciones">Contenido de la colección</h6>
+                    <ul style="list-style:none; padding-left:0px !important; ">
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Daño');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones active5">
+
+                                <span class=" lispancolecciones">
+                                    Daño
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Daño - Otros Usos');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Daño en Otros Usos de Suelo
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="CargarContenido('Daño - Plantaciones'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+                                <span class="lispancolecciones">
+                                    Daño en Plantaciones
+                                </span>
+                            </a>
+
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Daño - Vegetación Natural');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Daño en Vegetación Natural
+                                </span>
+                            </a>
+                        </li>
+                        <!--Ocurrencias-->
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Ocurrencia');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Ocurrencia
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Ocurrencia - Otros Usos');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Ocurrencia en Otros Usos de Suelo
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Ocurrencia - Plantaciones');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Ocurrencia en Plantaciones
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Ocurrencia - Vegetación Natural');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Ocurrencia en Vegetación Natural
+                                </span>
+                            </a>
+                        </li>
+                        <!--Superficie-->
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Superficie por Incendio'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones ">
+                                    Superficie por Incendio
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Superficie por Incendio - Otros Usos');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Superficie por Incendio en Otros Usos de Suelo
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Superficie por Incendio - Plantaciones');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Superficie por Incendio en Plantaciones
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Superficie por Incendio - Vegetación Natural');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones">
+                                    Superficie por Incendio en Vegetación Natural
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col overflow-auto mb-md-5">
+                @*Dropdaown MENU PARA MOVIL*@
+                <div class="conteiner-fluid d-block d-md-none">
+                    <div class="row">
+                        <div class="col-12 ddcolecciones">
+                            <div class="dropdown ">
+                                <a class="btn dropdown-toggle ddcolecciones" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contenido de la colección
+                                </a>
+                                <ul class="dropdown-menu ddcolecciones" aria-labelledby="dropdownMenuLink">
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Daño');" class="dropdown-item btn btn-light ddhcolecciones active5">Daño</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Daño - Otros Usos');" class="dropdown-item btn btn-light ddhcolecciones">Daño en Otros Usos de Suelo </a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Daño - Plantaciones');" class="dropdown-item btn btn-light ddhcolecciones">Daño en Plantaciones</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Daño - Vegetación Natural');" class="dropdown-item btn btn-light ddhcolecciones">Daño en Vegetación Natural</a></li>
+                                    <!--Ocurrencias-->
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Ocurrencia');" class="dropdown-item btn btn-light ddhcolecciones">Ocurrencia</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Ocurrencia - Otros Usos');" class="dropdown-item btn btn-light ddhcolecciones">Ocurrencia en Otros Usos de Suelo</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Ocurrencia - Plantaciones');" class="dropdown-item btn btn-light ddhcolecciones">Ocurrencia en Plantaciones</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Ocurrencia - Vegetación Natural');" class="dropdown-item btn btn-light ddhcolecciones">Ocurrencia en Vegetación Natural</a></li>
+                                    <!--Superficie-->
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Superficie por Incendio');" class="dropdown-item btn btn-light ddhcolecciones">Superficie por Incendio</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Superficie por Incendio - Otros Usos');" class="dropdown-item btn btn-light ddhcolecciones">Superficie por Incendio en Otros Usos de Suelo</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Superficie por Incendio - Plantaciones');" class="dropdown-item btn btn-light ddhcolecciones">Superficie por Incendio en Plantaciones </a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Superficie por Incendio - Vegetación Natural');" class="dropdown-item btn btn-light ddhcolecciones">Superficie por Incendio en Vegetación Natural</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*FIN MENU PARA MOVIL*@
+                <div>
+
+                    <div id="bodyContenido" class="mb-5">
+                        @*@{ Html.RenderAction("Tematica", "Data_Usuario");}*@
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top: 3%; padding-bottom: 1%; background-color: #C6CCDC; height: auto">
+            <div class="col-12 col-md-3 text-center mt-3 mt-md-0">
+                <!--Buscador -->
+                <form action="~/Incendios/PaginaBusqueda" method="get" class="mt-3 mt-md-0">
+                    <input type="text" id="id" name="id" placeholder="Busqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                    <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-10 col-md-3 text-center mt-2 mt-md-0">
+                <h4 style="color:black; font-size:1.2rem;"><b>¡Explora, busca y encuentra!</b></h4>
+                <p>en todo nuestro universo de datos</p>
+            </div>
+            <div class="col-12 col-md-3  text-center">
+                <img class="img-fluid" src="~/Content/img/negro-rojo-trans - copia.png" alt="" />
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function CargarContenido(id) {
+            $('#bodyContenido').html('<h2>Cargando Información...espere un momento por favor</h2>')
+            $.ajax(
+                {
+                    type: 'POST',
+                    data: "{'id':" + "'" + id + "'}", //datos o parametros enviados al servidor
+                    dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                    url: '/Incendios/parcialColeccion?contenido=' + id,
+                    //URL del action result que cargara la vista parcial
+                    success: function (result) {
+                        // si la funcion se ejecuta lanzara un alert
+                        //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                        //que recibio del servidor
+                        $("#bodyContenido").html(result);
+                    },
+                    error: function (error) {
+                        // si hay un error lanzara el mensaje de error
+                        $("#bodyContenido").html('<h2>No hemos encontrado gráficos relacionados</h2>');
+                    }
+                });
+        }
+        CargarContenido("Daño")
+        ActivarMenuSuperior("#Incendios_ContenidoColeccion");
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

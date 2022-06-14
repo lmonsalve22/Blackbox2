@@ -1,0 +1,1226 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agicultura</title>
+    <link href="~/Content/Home.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                <h4 class="coleccion mt-4 mt-md-0 mt-md-0 pt-md-0" style=" font-weight: bold;">Agricultura</h4>
+
+                <p class="pcoleccion d-none d-md-block">
+                    Las actividades agrícolas son un pilar fundamental para el desarrollo económico de Chile.
+                    La Colección Agricultura contiene estadísticas relacionadas al rendimiento y superficie
+                    ocupadas por tipo de cultivo, por precios mayoristas, por empresas y empleos generados,
+                    entre otra información de distintos niveles territoriales y temporales.
+                    Los datos se muestran como Gráficos, Mapas de calor y Gráficos de evolución.
+                </p>
+                <h4 class="coleccion mt-3 d-none d-md-block" style="font-weight:bold;">
+                    ¡Gratis por una semana!
+                </h4>
+                <p class="pcoleccion d-none d-md-block">
+                    En Data Intelligence transformamos millones de datos públicos en información representada
+                    en gráficos y mapas interactivos.  Hicimos una selección de colecciones para que las conozcas.
+                    ¡Regístrate y accede a una prueba gratis de 7 días!
+
+                </p>
+                <a href="~/Account/Register"><img class="img-fluid w-50 d-none d-md-block" src="~/Images/boton_pruebagratis.jpg" /></a>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    Las actividades agrícolas son un pilar fundamental para el desarrollo económico de Chile.
+                    La Colección Agricultura contiene estadísticas relacionadas al rendimiento y superficie
+                    ocupadas por tipo de cultivo, por precios mayoristas, por empresas y empleos generados,
+                    entre otra información de distintos niveles territoriales y temporales.
+                    Los datos se muestran como Gráficos, Mapas de calor y Gráficos de evolución.
+                </p>
+                <h4 class="coleccion mt-3" style="font-weight:bold;">
+                    ¡Gratis por una semana!
+                </h4>
+                <p class="pcoleccion">
+                    En Data Intelligence transformamos millones de datos públicos en información representada
+                    en gráficos y mapas interactivos.  Hicimos una selección de colecciones para que las conozcas.
+                    ¡Regístrate y accede a una prueba gratis de 7 días!
+
+                </p>
+                <a href="~/Account/Register"><img class="img-fluid w-100" src="~/Images/boton_pruebagratis.jpg" /></a>
+            </div>
+            <!--video de coleccion-->
+            <section class="container video mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                            Conoce más acerca de esta colección
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/jAHEFI22WBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-12 text-center d-none d-md-block  mt-md-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p>La suscripción a la colección de Agricultura contiene</p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b>La suscripción a la colección de Agricultura contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <div class=" d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_exportaciones.png" alt="Exportaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Exportaciones</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_importaciones.png" alt="Importaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Importaciones</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_precios.png" alt="Precioss" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Precios</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_empresas.png" alt="Empresa" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Empresas</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_cosecha.png" alt="Cosecha" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Cosecha
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_empleados.png" alt="Empleados" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Empleo
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_plantaciones.png" alt="Plantaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Plantaciones
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*<div class="carousel-item">
+                                <div class="card cardcoleccion">
+                                    <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_produccion.png" alt="Producción" />
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h6 class="card-title">
+                                                Producción
+                                            </h6>
+                                        </div>
+                                        <div class="col-3" style="z-index:100">
+                                            <a data-bs-toggle="modal" data-bs-target="#exampleModal7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                                ver
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_rendimiento.png" alt="Rendimiento" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Rendimiento
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal8" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Data_Usuario agricultura imagenes/imagene_recuadrosweb_Coleccion_agricultura_ventas.png" alt="Rendimiento" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Ventas Estimadas
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModal9" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <!-- Exportaciones-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_exportaciones.png" alt="Exportaciones" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Exportaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Importaciones-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_importaciones.png" alt="Importaciones" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Importaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Precios-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_precios.png" alt="Precios" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title text-center">
+                                Precios
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--Empresas-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_empresas.png" alt="Empresa" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Empresas
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Cosecha-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_cosecha.png" alt="Cosecha" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Cosecha
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal4" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Empleo-->
+            <div class="col-4 text-center">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_empleados.png" alt="Empleados" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Empleo
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--Plantaciones-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_plantaciones.png" alt="Plantaciones" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Plantaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--En el nuevo diseño se eleimino las seccion de produccion 02-12-2021-->
+            @*<div class="col-4 text-center ">
+                    <div class="card cardcoleccion">
+                        <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_produccion.png" alt="Producción" />
+                        <div class="row">
+                            <div class="col-10">
+                                <h6 class="card-title">
+                                    Producción
+                                </h6>
+                            </div>
+                            <div class="col-2">
+                                <a data-bs-toggle="modal" data-bs-target="#exampleModal7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                    ver
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+            <!--Rendimiento-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_rendimiento.png" alt="Rendimiento" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Rendimiento
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal8" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Ventas Estimadas-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Data_Usuario agricultura imagenes/imagene_recuadrosweb_Coleccion_agricultura_ventas.png" alt="Ventas Agrigultura" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Ventas Estimadas
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal9" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--video de coleccion-->
+    <!--<section class="container video mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                    Conoce más acerca de esta colección
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/jAHEFI22WBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- Modal -->
+    <!--EXPORTACIONES-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_exportaciones.png" alt="Exportaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">EXPORTACIONES</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">16</p>
+                        </div>
+                        <div class="col-10">
+                            <p><strong>Regiones de Origen</strong><br>Desde distintos rincones de Chile se exportan frutas a todo el mundo</p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">37</p>
+                        </div>
+                        <div class="col-10">
+                            <p><strong>Frutas</strong><br>En distintos formatos se exportan hacia distinto destinos</p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">86</p>
+                        </div>
+                        <div class="col-10">
+                            <p><strong>Países de Destino</strong><br>De todas las regiones geográficas del mundo</p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">7</p>
+                        </div>
+                        <div class="col-10">
+                            <p><strong>Tipos de Procesamiento</strong><br>Aceites, congelados, conservas, deshidratados, entre otros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--IMPORTACIONES-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_importaciones.png" alt="Importaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">IMPORTACIONES</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                83
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Cultivos y más
+                                </strong><br>Entre hortalizas, tubérculos, cereales, legumbres, granos, especias, frutas entre otros, se importan al país
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Imagenes agencia_Informacion/graphFlechaUP.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Orgánicos y No orgánicos
+                                </strong><br>Evolución de importaciones de cultivos orgánicos y no orgánicos desde el 2015-2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/70pais.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Más de 70 Países
+                                </strong><br>De todas las regiones geográficas del mundo se importan diferentes tipos de cultivos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                06
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Procesamiento
+
+                                </strong><br>Aceites, congelados, conservas, deshidratados, frescas, jugos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PRECIOS-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_precios.png" alt="Precios" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">PRECIOS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">35</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Frutas
+                                </strong><br>Y sus variedades se comercian en mercados mayoristas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/Imagen1.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Mercados Mayoristas
+                                </strong><br> 12 mercados en distintas regiones del país.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">40</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Hortalizas
+                                </strong><br>Se comercian en mercados mayoristas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--EMPRESA-->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_empresas.png" alt="Empresas" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Empresas
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/map.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    En 13 Regiones de Chile
+                                </strong><br>Existen empresas del rubro agrícola.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">150</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Empresas
+                                </strong><br>En distintos rincones de Chile  procesan distintos cultivos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Procesamiento
+                                </strong><br>Aceites, congelados, conservas, deshidratados, jugos, mermeladas, entre otros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/uva.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Cultivos
+                                </strong><br>86 cultivos  del tipo berries, hortalizas, frutos de pepita, tubérculos, entre otros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--COSECHA-->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_cosecha.png" alt="Cosecha" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Cosecha
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                304
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Comunas
+                                </strong><br>De las 16 regiones del país cosechan y producen distintos tipos de cultivos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                7
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Categorías de Cultivos
+                                </strong><br>Hortalizas, tubérculos, cereales, legumbres, frutas, cultivos agrícolas y cultivos industriales
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                25
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Procesamiento
+                                </strong><br>Conservas, deshidratados, cidra, mermelada, aceites, pulpas, entre otros
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                8
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de envase
+                                </strong><br>Plástico, vidrio, madera entre otros, son los envases utilizados para los productos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Empleados-->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_empleados.png" alt="Empleados" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Empleo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">14</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones de Chile
+                                </strong><br>Desarrollan la actividad frutícola que da empleo a miles de personas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/empleo.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Empleo
+                                </strong><br>Detallado por número de hombres y mujeres.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">2</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de contratos
+                                </strong><br>Permanentes o temporales, definidos para los empleados de la industria frutícola.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/cultivo.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Empleados por Tipos de Cultivos
+                                </strong><br>Berries, cítricos, frutos de pepita, hueso y carozo, oleaginosos, secos, otros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Plantaciones-->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_plantaciones.png" alt="Plantaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Plantaciones
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                29
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Hortalizas
+                                </strong><br>En 10 regiones de Chile existen plantaciones de hortalizas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/cultivo.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Frutas
+                                </strong><br>Berries, cítricos, frutos de pepita, hueso y carozo, oleaginosos, secos, tropicales, otros tipos y sus variedades
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Sistemas de Plantación
+                                </strong><br>Rectangular, cuadrado, en hilera, tresbolillos, entre otros
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/Data_Usuario agricultura imagenes/riego.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Métodos de Riego
+                                </strong><br>Goteo, microaspersión, tazas, entre otros
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Producción-->
+    @*<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color:black; color:white;">
+                    <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                        <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header" style="border-bottom:none !important">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                            </div>
+                            <div class="col-8" style="border-left: solid 2px #272727;">
+                                <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_produccion.png" alt="Producción" />
+                            </div>
+                            <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                                <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                    Producción
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                            <div class="col-2 text-center">
+                                <p style="background-color: #7AAE76; border-radius: 5px;">157</p>
+                            </div>
+                            <div class="col-10">
+                                <p>
+                                    <strong>
+                                        Comunas
+                                    </strong><br>De 13 regiones del país producen distintos tipos de cultivos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                            <div class="col-2 text-center">
+                                <p style="background-color: #3F6E2C; border-radius: 5px;">14</p>
+                            </div>
+                            <div class="col-10">
+                                <p>
+                                    <strong>
+                                        Categorías de Cultivos
+                                    </strong><br>Hortalizas, tubérculos, cereales, legumbres, cultivos industriales, frutos de pepita, cítricos, berries, entre otros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                            <div class="col-2 text-center">
+                                <p style="background-color: #7AAE76; border-radius: 5px;">25</p>
+                            </div>
+                            <div class="col-10">
+                                <p>
+                                    <strong>
+                                        Tipos de producto
+                                    </strong><br>La fruta se procesa para obtener conservas, deshidratados, cidra, mermelada, entre otros.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                            <div class="col-2 text-center">
+                                <p style="background-color: #3F6E2C; border-radius: 5px;">8</p>
+                            </div>
+                            <div class="col-10">
+                                <p>
+                                    <strong>
+                                        Tipos de envase
+                                    </strong><br>Plástico, vidrio, madera entre otros, son los envases utilizados para los productos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    <!--Rendimiento-->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_rendimiento.png" alt="Rendimiento" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Rendimiento
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">10</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones de Chile
+                                </strong><br>Diferentes rendimientos por cultivo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                07
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Categorías de Cultivos
+                                </strong><br>Hortalizas, tubérculos, cereales, legumbres, frutas, cultivos agrícolas y cultivos industriales
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">40</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años
+                                </strong><br>Desde 1979 al 2021, datos de la evolución del rendimiento
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Ventas Estimadas-->
+    <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Data_Usuario agricultura imagenes/imagene_recuadrosweb_Coleccion_agricultura_ventas.png" alt="Rendimiento" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ventas Estimadas
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+                                16
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones
+                                </strong><br>Presentan ventas en el sector industrial agrícola
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch"><img class="img-fluid" src="~/Content/Imagenes agencia_Informacion/graphFlechaUP.png" /></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución de Ventas
+                                </strong><br>Por diferentes tipos de cultivo y cultivos específicos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch">
+                                13
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipo de Cultivos
+                                </strong><br>Hortalizas, tubérculos, cereales, legumbres, cítricos, forraje, semillas, especias, entre otros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tamaño de Empresas
+                                </strong><br>Evolución de ventas por tamaño de empresa según tipo de cultivo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

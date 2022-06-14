@@ -1,0 +1,611 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en" amp>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <title>Medios</title>
+
+
+</head>
+
+<body style="background-color: #F2F2F2">
+    <style>
+        .filter-cat {
+            /* margin: 1em 0;*/
+        }
+
+        .f-cat {
+            color: #fff;
+            /*padding: 1em;
+            border: 5px solid #fff;*/
+            /* background-color: gray !important;*/
+        }
+
+        .filter-cat-results .f-cat {
+            opacity: 0;
+            display: none;
+        }
+
+            .filter-cat-results .f-cat.active {
+                opacity: 1;
+                display: block;
+                -webkit-animation: fadeIn 0.65s ease forwards;
+                animation: fadeIn 0.65s ease forwards;
+            }
+
+        @@-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @@keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .card, card-header, card-footer, card-body {
+            border: none !important;
+        }
+
+            .card:hover {
+                border: 2px solid #000 !important;
+            }
+
+        .card-body {
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+    </style>
+
+    <div class="container filtering">
+
+        <header>
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center mt-md-5 mb-md-5">
+                    <h1>Data Intelligence</h1>
+                </div>
+            </div>
+        </header>
+        <div class="row justify-content-center" style="background-color: #524094; color: white;">
+
+            <div class="col-12 col-md-4 mt-3 mb-1">
+                <div class="row">
+                    <div class="col-12 col-md-4 ">
+                        <p style="font-size:0.9rem" class="pt-1">SELECCIONAR: </p>
+                    </div>
+                    <div class="col-12 col-md-8 ">
+                        <select style="border: none; width:98%; font-size: 1.1rem;padding:2px 0px  " @*class="form-control"*@>
+                            <option value="cat-all">Todos</option>
+                            <option value="pera">Pera</option>
+                            <option value="kiwi">Kiwi</option>
+                            <option value="mora">Mora</option>
+                            <option value="limon"> Límon</option>
+                            <option value="mandarina"> Mandarina</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-3">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <p style="font-size:0.9rem" class="pt-1">PERIODO:</p>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <select style="border: none; width: 100%; font-size: 1.1rem; padding: 2px 0px " @*class="form-control"*@>
+                            <option value="cat-all">Todos</option>
+                            <option value="yellow-brand">Diario</option>
+                            <option value="white-brand">Mensual</option>
+                            <option value="black-brand">Semestral</option>
+
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <!--script y estilos de buscador-->
+            <div class="col-12 col-md-4 mt-3 ">
+                <script>
+                    const removeAccents = (str) => {
+                        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                    }
+                    function FiltroBuscar() {
+                        var input, filter, contenedor, titulo, card, i, txtValue;
+                        input = document.getElementById("buscador");
+                        filter = removeAccents(input.value.toLowerCase());
+                        contenedor = document.getElementById("myCards");
+                        titulo = contenedor.getElementsByTagName("h6");
+                        cartas = contenedor.getElementsByClassName("f-cat");
+                        for (i = 0; i < titulo.length; i++) {
+                            card = titulo[i].getElementsByTagName("a")[0];
+                            txtValue = card.textContent || card.innerText;
+                            if (removeAccents(txtValue.toLowerCase()).indexOf(filter) > -1) {
+
+                                cartas[i].style.display = "";
+                            } else {
+                                cartas[i].style.display = "none";
+
+                            }
+                        }
+                    }
+                </script>
+
+                <!--script de buscador-->
+                <input style="width:80%; margin-left:5%;" type="text" id="buscador" onkeyup="FiltroBuscar()" placeholder="Buscar.." title="Ingrese un texta">
+
+
+            </div>
+
+        </div>
+        <div class="row justify-content-center mt-5 ">
+
+            <div id="myCards" class="cards row filter-cat-results justify-content-center">
+                <style>
+                    .card:hover {
+                        border: 2px solid #000 !important;
+                    }
+                </style>
+                <div class="col-12 col-md-4 f-cat" data-cat="pera">
+                    <div class="card mb-3" style="margin: auto; max-width: 28rem; background-color: #ffffff;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6>
+                                <a href="#" style="color:black;text-decoration:none;cursor:default;">
+                                    Pera
+                                    <i data-bs-toggle="modal" data-bs-target="#myModal" style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Pantalla Completa" class="fas fa-expand-alt"></i>
+
+                                </a>
+                            </h6>
+                            @*<i style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Panatalla Completa" class="fas fa-expand-alt" onClick="this.style.height = '200px'; this.style.width = '200px';"></i>*@
+                            @*<i style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Panatalla Completa" class="fas fa-expand-alt" onclick="var el = document.getElementById('test12'); el.requestFullscreen()"></i>*@
+                        </div>
+                        <div class="card-body" style="margin:0px !important;padding:0px !important;">
+                            <div class="ratio ratio-4x3">
+                                <img class="img-fluid" src="~/Images/wordcloud.png" />
+                                @*<iframe id="test12" src="https://dataintelligence-chile.shinyapps.io/wordcloud_01/?parrafo=1&limite=100&size_l=.2" title="Higo" allowfullscreen></iframe>*@
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 f-cat" data-cat="kiwi">
+                    <div class="card border-success mb-3" style="margin: auto; max-width: 28rem; background-color: #ffffff;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6>
+                                <a href="#" style="color:black;text-decoration:none;cursor:default;">
+                                    Kiwi
+                                    <i data-bs-toggle="modal" data-bs-target="#myModal1" style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Pantalla Completa" class="fas fa-expand-alt"></i>
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="card-body text-success">
+
+                            <div class="ratio ratio-4x3">
+                                <iframe id="test12" src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100101007" title="Limón" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="mora">
+                    <div class="card border-success mb-3" style="margin: auto; max-width: 28rem; background-color: #ffffff;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6>
+                                <a href="#" style="color:black;text-decoration:none;cursor:default;">
+                                    Palta
+                                    <i data-bs-toggle="modal" data-bs-target="#myModal2" style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Pantalla Completa" class="fas fa-expand-alt"></i>
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="card-body text-success">
+
+                            <div class="ratio ratio-4x3">
+                                <iframe id="test12" src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100106002" title="Mora" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="limon">
+                    <div class="card border-success mb-3" style="margin: auto; max-width: 28rem; background-color: #ffffff;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6>
+                                <a href="#" style="color:black;text-decoration:none;cursor:default;">
+                                    Límon
+                                    <i data-bs-toggle="modal" data-bs-target="#myModal3" style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Pantalla Completa" class="fas fa-expand-alt"></i>
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="card-body text-success">
+
+                            <div class="ratio ratio-4x3">
+                                <iframe id="test12" src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100102003" title="Límon" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 f-cat" data-cat="mandarina">
+                    <div class="card border-success mb-3" style="margin: auto; max-width: 28rem; background-color: #ffffff;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6>
+                                <a href="#" style="color:black;text-decoration:none;cursor:default;">
+                                    Mandarina
+                                    <i data-bs-toggle="modal" data-bs-target="#myModal4" style="font-size:1.2rem; color:gray; cursor:pointer; float:right;" title="Pantalla Completa" class="fas fa-expand-alt"></i>
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="card-body text-success">
+
+                            <div class="ratio ratio-4x3">
+                                <iframe id="test12" src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100102003" title="Límon" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!--PERIODO-->
+                <div class="col-12 col-md-4 f-cat" data-cat="yellow-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Diario1</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="Diario" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="white-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Mensual</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="black-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Semestral</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="yellow-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Diario</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="white-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Semestral</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="black-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Trimestral</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="yellow-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Diario</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="white-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Mensual</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="black-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Semestral</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="yellow-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Diario</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="white-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Mensual</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 f-cat" data-cat="black-brand">
+                    <div class="card border-success mb-3" style="margin:auto; max-width: 28rem;">
+                        <div class="card-header bg-transparent " style="border-bottom:none">
+                            <h6><a href="#" style="color:black;text-decoration:none;cursor:default;">Semestral</a></h6>
+                        </div>
+                        <div class="card-body text-success">
+                            <div class="ratio ratio-4x3">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100107002" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--PERIODICIDAD-->
+            </div>
+            <!--SECCIóN DE MODAL DE GRAFICOS -->
+            <section>
+
+                <!-- Modal Higo -->
+                <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                @*<h4 class="modal-title" id="myModalLabel">Modal title</h4>*@
+                            </div>
+                            <div class="modal-body">
+
+                                <embed type="video/webm"src="https://dataintelligence-chile.shinyapps.io/wordcloud_tw/?tweets_text=data_int&tweets_n=10&limite=50&size_l=.4&rota=1" width="100%" height="500" frameborder="0" allowtransparency="true">
+                                <p>
+                                    Esta alza es el resultado de la variación del precio promedio de venta del mes de
+                                    agosto en comparación con el precio promedio del mes anterior,
+                                    realizados en el mercado Agrícola del Norte S.A. de Arica.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Kiwi -->
+                <div class="modal fade " id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <embed type="video/webm" src="https://analytics.zoho.com/open-view/2395394000010977153?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100102003" width="100%" height="400">
+                                @*<iframe src="https://analytics.zoho.com/open-view/2395394000010977153?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100102003" width="100%" height="500" frameborder="0" allowtransparency="true"></iframe>*@
+                                <p>
+                                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal mora -->
+                <div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977153?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D2%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100106002" width="100%" height="500" frameborder="0" allowtransparency="true"></iframe>
+                                <p>
+                                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Límon -->
+                <div class="modal fade " id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977153?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100102003" width="100%" height="500" frameborder="0" allowtransparency="true"></iframe>
+                                <p>
+                                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Mandarina -->
+                <div class="modal fade " id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://analytics.zoho.com/open-view/2395394000010977241?ZOHO_CRITERIA=%22Fruta%20Consolidado%22.%22Mercado%20ID%22%3D1%20and%20%22Fruta%20Consolidado%22.%22Categor%C3%ADa%20ID%22%3D100102004" width="100%" height="500" frameborder="0" allowtransparency="true"></iframe>
+                                <p>
+                                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+    @*script funcional de filtro de dropdown*@
+    <script>
+        var filterActive;
+
+        function filterCategory(category) {
+            if (filterActive != category) {
+
+                // reset results list
+                $('.filter-cat-results .f-cat').removeClass('active');
+
+                // elements to be filtered
+                $('.filter-cat-results .f-cat')
+                    .filter('[data-cat="' + category + '"]')
+                    .addClass('active');
+
+                // reset active filter
+                filterActive = category;
+            }
+        }
+
+        $('.f-cat').addClass('active');
+
+        $('.filtering select').change(function () {
+            if ($(this).val() == 'cat-all') {
+                $('.filter-cat-results .f-cat').addClass('active');
+                filterActive = 'cat-all';
+            } else {
+                filterCategory($(this).val());
+            }
+        });
+
+    </script>
+    @*Filtro funcional de filtro de dropdown*@
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    </head>
+<body>
+    <div class="mt-3 mt-md-0">
+        <div class="row mt-md-5 d-flex">
+            <div class="col-md-2">
+                <img class="img-fluid" src="@ViewBag.Coleccion.imagen" />
+            </div>
+            <div class="col-md-8 mt-3 mt-md-0" style="align-self: flex-end !important;">
+                <h5><b>@ViewBag.Coleccion.nombre.Replace("_", " ")</b></h5>
+                <p>
+                    @ViewBag.Coleccion.descripcion
+                </p>
+            </div>
+
+        </div>
+        @*<div class="row justify-content-center">
+            <div class="col-md-8">
+                <p>
+                    @ViewBag.Coleccion.descripcion
+                </p>
+            </div>
+        </div>*@
+        <div class="row justify-content-center">
+            <div class="col-md-8 mt-md-3">
+                <h5><b>Temas</b> </h5>
+                <div class="col">
+                    <style>
+                        @@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+
+                        .mb-0 > a {
+                            display: block;
+                            position: relative;
+                        }
+
+                            .mb-0 > a:after {
+                                content: "\f078"; /* fa-chevron-down */
+                                font-family: 'FontAwesome';
+                                position: absolute;
+                                right: 0;
+                            }
+
+                            .mb-0 > a[aria-expanded="true"]:after {
+                                content: "\f077"; /* fa-chevron-up */
+                            }
+                    </style>
+                    <!--               Automatizacion                 -->
+                    <div id="a-contenido" style="font-size:0.9rem !important;">
+                        <h4>Lo sentimos mucho, aun estamos trabajando para conseguir información asociada.</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <style>
+        .enlaceFinal {
+            color: black !important;
+        }
+    </style>
+
+</body>
+</html>
+

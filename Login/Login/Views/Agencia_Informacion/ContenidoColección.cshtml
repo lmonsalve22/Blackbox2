@@ -1,0 +1,487 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayouAgencia_Informacion.cshtml";
+}
+
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">*@
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    @*<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>*@
+    @*<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="~/Scripts/Usuario/Coleccion.js"></script>
+    <script>
+        function ActivarMenuSuperior3(opcionMenu) {
+            $('.active5').removeClass('active5');
+            $(opcionMenu).addClass("active5");
+        }
+    </script>
+    <style>
+        .active5 {
+            background-color: #f6f6f6 !important;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <!--Estilos scroll menu lateral-->
+            <style>
+                #style-4::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    background-color: #F5F5F5;
+                }
+
+                #style-4::-webkit-scrollbar {
+                    width: 10px;
+                    background-color: #F5F5F5;
+                }
+
+                #style-4::-webkit-scrollbar-thumb {
+                    background-color: #1774B9;
+                    border-radius: 10px;
+                }
+            </style>
+            <div class="col-sm-3  pb-sm-0 pb-3 d-none d-md-block " style="padding-left:0px !important; ">
+                <div class="border ulcolecciones " id="style-4" style="height: 600px; overflow: auto;">
+                    <h6 class="h6 colecciones">Contenido de la coleción</h6>
+                    <ul style="list-style:none; padding-left:0px !important; ">
+                        <li>
+                            <a onclick="CargarContenido('COVID-19'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones active5">
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Avance COVID-19
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Agricultura'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones " style="font-size:small !important;">
+                                    Agricultura
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Violencia Contra la Mujer');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones ">
+
+                                <span class=" lispancolecciones" style="font-size:small !important;">
+                                    Violencia contra la Mujer
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Mujer Salud');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Mujer Salud
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Ingresos Históricos');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Ingresos Históricos
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Cultura');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Cultura
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Empresas');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Empresas
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Métricas de la Educación');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Métricas de la educación
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Inventario de Gases de Efecto Invernadero (GEI)');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Inventario de Gases de Efecto Invernadero
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Vulnerabilidad');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Vulnerabilidad al Cambio Climático (CC)
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Gestión Municipal Territorial');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Gestión Municipal Territorial
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Territorio');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Territorio
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Tránsito');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Tránsito
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Energía');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Energía
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Elecciones');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Elecciones
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Evaluación de Programas');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Evaluación de Programas
+
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Programas de Salud');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Programas de Salud
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Delincuencia');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Delincuencia
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Demografía');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Demografía
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Forestal');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Forestal
+
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Pueblos indígenas');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Pueblos indígenas
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Trabajo');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Trabajo
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Vivienda y Construcción');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Vivienda y construcción
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Comercio Exterior');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Comercio Exterior
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Gestión Municipal de Educación');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Gestión Municipal de la Educación
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Establecimientos de Salud');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Establecimientos de Salud
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Estado de la Salud');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Estado de la Salud
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Internet');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Internet
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Minería');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Minería
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Pobreza');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Pobreza
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Protección de Menores');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Protección de Menores
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Transporte');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Transporte
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Turismo');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Turismo
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Economía');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Economía
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Pesca y Acuicultura');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Pesca y Acuicultura
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Telecomunicaciones');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Telecomunicaciones
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Glaciares');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Dinámica de Cambio de Glaciares
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Protección Adultos Mayores');ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones" style="font-size:small !important;">
+                                    Protección Adultos Mayores
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col  mb-md-5">
+                @*Dropdaown MENU PARA MOVIL*@
+                <div class="conteiner-fluid d-block d-md-none">
+                    <div class="row">
+                        <div class="col-12 ddcolecciones">
+                            <div class="dropdown ">
+                                <a class="btn dropdown-toggle ddcolecciones" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contenido de la coleción
+                                </a>
+                                <ul class="dropdown-menu ddcolecciones" aria-labelledby="dropdownMenuLink">
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('COVID-19');" class="dropdown-item btn btn-light ddhcolecciones">COVID-19</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Agricultura');" class="dropdown-item btn btn-light ddhcolecciones">Agricultura</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Violencia Contra la Mujer');" class="dropdown-item btn btn-light ddhcolecciones">Violencia contra la Mujer</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Mujer Salud');" class="dropdown-item btn btn-light ddhcolecciones">Mujer Salud</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Ingresos Históricos');" class="dropdown-item btn btn-light ddhcolecciones">Ingresos Históricos</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Cultura');" class="dropdown-item btn btn-light ddhcolecciones">Cultura</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Empresas');" class="dropdown-item btn btn-light ddhcolecciones">Empresas</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Métricas de la Educación');" class="dropdown-item btn btn-light ddhcolecciones">Métricas de la educación</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Inventario de Gases de Efecto Invernadero (GEI)');" class="dropdown-item btn btn-light ddhcolecciones">Inventario de Gases de Efecto Invernadero</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Vulnerabilidad');" class="dropdown-item btn btn-light ddhcolecciones">Vulnerabilidad al Cambio Climático (CC)</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Gestión Municipal Territorial');" class="dropdown-item btn btn-light ddhcolecciones"> Gestión Municipal Territorial</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Territorio');" class="dropdown-item btn btn-light ddhcolecciones">Territorio</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Tránsito');" class="dropdown-item btn btn-light ddhcolecciones">Tránsito</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Energía');" class="dropdown-item btn btn-light ddhcolecciones">Energía</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Elecciones');" class="dropdown-item btn btn-light ddhcolecciones">Elecciones</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Evaluación de Programas');" class="dropdown-item btn btn-light ddhcolecciones">Evaluación de Programas</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Programas de Salud');" class="dropdown-item btn btn-light ddhcolecciones">Programas de Salud</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Delincuencia');" class="dropdown-item btn btn-light ddhcolecciones">Delincuencia</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Demografía');" class="dropdown-item btn btn-light ddhcolecciones">Demografía</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Forestal');" class="dropdown-item btn btn-light ddhcolecciones">Forestal</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Pueblos indígenas');" class="dropdown-item btn btn-light ddhcolecciones">Pueblos indígenas</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Trabajo');" class="dropdown-item btn btn-light ddhcolecciones">Trabajo</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Vivienda y Construcción');" class="dropdown-item btn btn-light ddhcolecciones">Vivienda y construcción</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Comercio Exterior');" class="dropdown-item btn btn-light ddhcolecciones">Comercio Exterior</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Gestión Municipal de Educación');" class="dropdown-item btn btn-light ddhcolecciones">Gestión Municipal de la Educación</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Establecimientos de Salud');" class="dropdown-item btn btn-light ddhcolecciones">Establecimientos de Salud</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Estado de la Salud');" class="dropdown-item btn btn-light ddhcolecciones">Estado de la Salud</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Internet');" class="dropdown-item btn btn-light ddhcolecciones">Internet</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Minería');" class="dropdown-item btn btn-light ddhcolecciones">Minería</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Pobreza');" class="dropdown-item btn btn-light ddhcolecciones">Pobreza</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Protección de Menores');" class="dropdown-item btn btn-light ddhcolecciones">Protección de Menores</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Transporte');" class="dropdown-item btn btn-light ddhcolecciones">Transporte</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Turismo');" class="dropdown-item btn btn-light ddhcolecciones">Turismo</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Economía');" class="dropdown-item btn btn-light ddhcolecciones">Economía</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Pesca y Acuicultura');" class="dropdown-item btn btn-light ddhcolecciones">Pesca y Acuicultura</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Telecomunicaciones');" class="dropdown-item btn btn-light ddhcolecciones">Telecomunicaciones</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Glaciares');" class="dropdown-item btn btn-light ddhcolecciones">Dinámica de Cambio de Glaciares</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Protección Adultos Mayores');" class="dropdown-item btn btn-light ddhcolecciones">Protección Adultos Mayores</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*FIN MENU PARA MOVIL*@
+                <div>
+                    <div id="bodyContenido" class="mb-5 col-12 mt-3 mt-md-0">
+                        @*@{ Html.RenderAction("Tematica", "Data_Usuario");}*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="row justify-content-center mt-3 " style="padding-top: 3%; padding-bottom: 1%; background-color: #C6CCDC; height: auto">
+                <div class="col-12  col-md-3 mt-3 text-center">
+                    <!--Buscador -->
+                    <form action="~/Agencia_Informacion/PaginaBusqueda" method="get" class="mt-3 mt-md-0">
+                        <input type="text" id="id" name="id" placeholder="Búsqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                        <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-3 mt-2 mt-md-0 text-center">
+                    <h4 style="color:black; font-size:1.2rem;"><b>¡Explora, busca y encuentra!</b></h4>
+                    <p>en todo nuestro universo de datos</p>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <img class="img-fluid" src="~/Content/img/negro-rojo-trans - copia.png" alt="" />
+                </div>
+            </div>
+        
+    </main>
+    <script>
+        function CargarContenido(id) {
+            $('#bodyContenido').html('<h2>Cargando Información...espere un momento por favor</h2>')
+            $.ajax(
+                {
+                    type: 'POST',
+                    data: "{'id':" + "'" + id + "'}", //datos o parametros enviados al servidor
+                    dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                    url: '/Agencia_Informacion/parcialColeccion?contenido=' + id,
+                    //URL del action result que cargara la vista parcial
+                    success: function (result) {
+                        // si la funcion se ejecuta lanzara un alert
+                        //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                        //que recibio del servidor
+                        $("#bodyContenido").html(result);
+                    },
+                    error: function (error) {
+                        // si hay un error lanzara el mensaje de error
+                        $("#bodyContenido").html('<h2>No hemos encontrado gráficos relacionados</h2>');
+                    }
+                });
+        }
+        CargarContenido("COVID-19")
+        ActivarMenuSuperior("#Enfermedades_ContenidoColeccion");
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

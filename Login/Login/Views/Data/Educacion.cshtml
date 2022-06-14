@@ -1,0 +1,1172 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agicultura</title>
+    <link href="~/Content/Home.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <style>
+        :root {
+            --bg-color: #991636;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Educación" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                <h4 class="coleccion mt-4 mt-md-0 mt-md-0 pt-md-0" style=" font-weight: bold;">Educación</h4>
+
+                <p class="pcoleccion d-none d-md-block">
+                    Dashboard que reúne información representadas en gráficos y mapas interactivos de diferentes variables
+                    que visibilizan la calidad de la educación en nuestro país a nivel comunal y de colegio individualmente.
+                </p>
+                <h4 class="coleccion mt-3 d-none d-md-block" style="font-weight:bold;">
+                    ¡Gratis por una semana!
+                </h4>
+                <p class="pcoleccion d-none d-md-block">
+                    En Data Intelligence transformamos millones de datos públicos en información representada
+                    en gráficos y mapas interactivos.  Hicimos una selección de colecciones para que las conozcas.
+                    ¡Regístrate y accede a una prueba gratis de 7 días!
+
+                </p>
+                <a href="~/Account/Register"><img class="img-fluid w-50 d-none d-md-block" src="~/Images/boton_pruebagratis.jpg" /></a>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    Dashboard que reúne información representadas en gráficos y mapas interactivos de diferentes variables
+                    que visibilizan la calidad de la educación en nuestro país a nivel comunal y de colegio individualmente.
+                </p>
+                <h4 class="coleccion mt-3" style="font-weight:bold;">
+                    ¡Gratis por una semana!
+                </h4>
+                <p class="pcoleccion">
+                    En Data Intelligence transformamos millones de datos públicos en información representada
+                    en gráficos y mapas interactivos.  Hicimos una selección de colecciones para que las conozcas.
+                    ¡Regístrate y accede a una prueba gratis de 7 días!
+
+                </p>
+                <a href="~/Account/Register"><img class="img-fluid w-100" src="~/Images/boton_pruebagratis.jpg" /></a>
+            </div>
+
+            <div class="col-md-12 text-center d-none d-md-block  mt-md-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p>La suscripción a la colección de Educación contiene</p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b>La suscripción a la colección de Educación contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <div class=" d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_DesempenoEstablecimientos.png" alt="Exportaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+
+                                        <h6 class="card-title">Desempeño de Establecimientos</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_EvolucionPuntajeSIMCEComprensionLectura.png" alt="Evolución puntaje SIMCE" />
+                                <div class="row">
+                                    <div class="col-9">
+
+                                        <h6 class="card-title">Evolución puntaje SIMCE</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_IndicadoresDesarrolloPersonalSocial.png" alt="Precioss" />
+                                <div class="row ">
+
+                                    <div class="col-9">
+                                        <h6 class="card-title">Indicadores de Desarrollo Personal y Social</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_MapasComparativosEducacion.png" alt="Empresa" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Mapas Temáticos de la Educación</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_EvolucionPuntajeSIMCEmatematica.png" alt="Cosecha" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Matrículas y docentes en Aula
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_NiveldeAperndizajeAdecuado.png" alt="Empleados" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Niveles de Aprendizaje
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_CaracterizacionEducacionComunalLocalizacionColegios.png" alt="Plantaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Panorama Comunal
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_RankingDeEstablecimientos.png" alt="Producción" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Ranking de Establecimientos
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed8" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_ResultadosPruebasPSUptu.png" alt="Rendimiento" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Resultados pruebas PSU - PTU
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed9" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_ResumenporColegio.png" alt="Rendimiento" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Resumen por Colegio
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#ed10" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_DesempenoEstablecimientos.png" alt="Desempeño de Establecimientos" />
+                    <div class="row">
+
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Desempeño de Establecimientos
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_EvolucionPuntajeSIMCEComprensionLectura.png" alt="Evolución puntaje SIMCE" />
+                    <div class="row">
+
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Evolución puntaje SIMCE
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_IndicadoresDesarrolloPersonalSocial.png" alt="Indicadores de Desarrollo Personal y Social" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title text-center">
+                                Indicadores de Desarrollo Personal y Social
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_MapasComparativosEducacion.png" alt="Empresa" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Mapas Temáticos de la Educación
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed4" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_EvolucionPuntajeSIMCEmatematica.png" alt="Matrículas y docentes en Aula" />
+                    <div class="row">
+                        <div class="col-10">
+
+                            <h6 class="card-title">
+                                Matrículas y docentes en Aula
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_NiveldeAperndizajeAdecuado.png" alt="Niveles de Aprendizaje" />
+                    <div class="row">
+
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Niveles de Aprendizaje
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_CaracterizacionEducacionComunalLocalizacionColegios.png" alt="Panorama Comunal " />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+
+                                Panorama Comunal
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_RankingDeEstablecimientos.png" alt="Ranking de Establecimientos" />
+                    <div class="row">
+                        <div class="col-10">
+
+                            <h6 class="card-title">
+
+                                Ranking de Establecimientos
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed8" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_ResultadosPruebasPSUptu.png" alt="Resultados pruebas PSU - PTU" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+
+                                Resultados pruebas PSU - PTU
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed9" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_ResumenporColegio.png" alt="Ventas Agrigultura" />
+                    <div class="row">
+                        <div class="col-10">
+
+                            <h6 class="card-title">
+                                Resumen por Colegio
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#ed10" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--video de coleccion-->
+    <!--<section class="container video">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h4>Tutorial de uso de la colección</h4>
+            </div>
+            <div class="col-md-12 ">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Qr0R0vq5vp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- Modal -->
+    <!--EXPORTACIONES-->
+    <div class="modal fade" id="ed1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Educación" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_DesempenoEstablecimientos.png" alt="Desempeño de Establecimientos" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Desempeño de Establecimientos</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">4</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Categorías de Desempeño</strong><br>Alto, Medio, Medio Bajo e Insuficiente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/grafico.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Niveles de aprendizaje</strong><br>Según prueba SIMCE, Nivel educacional y GSE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Desempeño de Establecimientos-->
+    <div class="modal fade" id="ed2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_EvolucionPuntajeSIMCEComprensionLectura.png" alt="Importaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Evolución puntaje SIMCE</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen2.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    SIMCE Comprensión de Lectura
+                                </strong><br>Evolución puntaje Pruebas SIMCE realizadas a 4.º 6.º, 8.º básico y 2.º medio
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen3.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    SIMCE Matemática
+                                </strong><br>Evolución puntaje Pruebas SIMCE realizadas a 4.º, 6.º, 8.º básico y 2.º medio
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen4.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Nivel de Aprendizaje
+                                </strong><br>Según prueba SIMCE y grupo socio económico del establecimiento (GSE)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Indicadores de Desarrollo Personal y Social-->
+    <div class="modal fade" id="ed3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_IndicadoresDesarrolloPersonalSocial.png" alt="Indicadores de Desarrollo Personal y Social" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Indicadores de Desarrollo Personal y Social
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                4
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Indicadores
+                                </strong><br>Autoestima académica, Clima de convivencia escolar, Participación y formación ciudadana y Hábitos de vida saludable
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen6.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución indicador
+                                </strong><br> Para cada indicador se muestra su evolución entre los años 2014 y 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Mapas Temáticos de la Educación-->
+    <div class="modal fade" id="ed4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_MapasComparativosEducacion.png" alt=" Mapas Temáticos de la Educación" />
+                        </div>
+
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Mapas Temáticos de la Educación
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+
+                                4
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Indicadores de Desarrollo Personal y Social
+                                </strong><br>Autoestima académica y motivación escolar; Clima de convivencia escolar; Participación y formación ciudadana; y Hábitos de vida saludable
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen7.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución indicador
+                                </strong><br>En participación y formación; en clima de convivencia; en puntaje SIMCE de matemáticas y lectura
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen8.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Mapa distribución
+                                </strong><br>De indicadores de autoestima académica y motivación escolar y de puntaje promedio máximo SIMCE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Matrículas y docentes en Aula-->
+    <div class="modal fade" id="ed5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_EvolucionPuntajeSIMCEmatematica.png" alt="Matrículas y docentes en Aula" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Matrículas y docentes en Aula
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                N°
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    De Matrículas
+                                </strong><br>Y de docentes en aula, por tipo de dependencia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen9.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Información por Colegio
+                                </strong><br>Información detallada por colegio, según dependencia y orientación para cada comuna
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Niveles de Aprendizaje-->
+    <div class="modal fade" id="ed6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_NiveldeAperndizajeAdecuado.png" alt="Niveles de Aprendizaje" />
+                        </div>
+
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Niveles de Aprendizaje
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años
+                                </strong><br>Evolución en base a los resultados de las pruebas SIMCE de los años 2016, 2017 y 2018
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen10.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Lenguaje y Matemática
+
+                                </strong><br>Pruebas SIMCE realizadas a 4.º, 6.º, 8.º básico y 2.º medio
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Niveles de Aprendizaje
+
+                                </strong><br>Insuficiente, Elemental y Adecuado
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Panorama Comunal -->
+    <div class="modal fade" id="ed7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Educación" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_CaracterizacionEducacionComunalLocalizacionColegios.png" alt="Panorama Comunal " />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Panorama Comunal
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Dependencias de establecimientos
+
+                                </strong><br>Municipal, Subvencionado, Particular Pagado, Corporación de Administración Delegada y Servicio Local de Educación
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                N°
+
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    De Matrículas
+
+                                </strong><br>Y de docentes en aula, por tipo de dependencia
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" style="width:80%;" src="~/Content/imagenes coleccin educacin/Imagen8.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Mapa distribución
+
+                                </strong><br>De establecimientos educacionales por dependencia
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ranking de Establecimientos-->
+    <div class="modal fade" id="ed8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_RankingDeEstablecimientos.png" alt="Ranking de Establecimientos" />
+                        </div>
+
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ranking de Establecimientos
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">4</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Según Indicadores
+
+                                </strong><br>Autoestima académica, Clima de convivencia escolar, Participación y formación ciudadana y Hábitos de vida saludable
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen11.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Según docentes en aula
+
+                                </strong><br>Cifras promedio y máximas
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen12.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Según N° de Alumnos
+
+                                </strong><br>Matriculas año 2020 diferenciadas por Sexo
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Según Niveles de Aprendizaje
+
+                                </strong><br>Adecuado, Elemental, Insuficiente
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen10.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Según puntaje PSU-PTU
+
+
+                                </strong><br>Prueba Comprensión de Lectura y Matemáticas, años 2018,2019, 2020
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Resultados pruebas PSU - PTU-->
+    <div class="modal fade" id="ed9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_ResultadosPruebasPSUptu.png" alt="Resultados pruebas PSU - PTU" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Resultados pruebas PSU - PTU
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años
+                                </strong><br>De resultados obtenidos en PSU y PTU
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen7.svg" />
+
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución de puntaje obtenido
+                                </strong><br>Puntaje PSU y PTU matemática y lenguaje
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen10.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Comprensión Lectora y Matemática
+                                </strong><br>Pruebas de las que se grafica sus resultados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resumen por Colegio-->
+    <div class="modal fade" id="ed10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/imagenes coleccin educacin/imagen_recuadrosweb_educacion_ResumenporColegio.png" alt="Resumen por Colegio" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Resumen por Colegio
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                4
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Categorías de Desempeño
+                                </strong><br>Alto, Medio, Medio Bajo e Insuficiente
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen11.svg" />
+                            </p>
+
+                        </div>
+
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Cantidad
+                                </strong><br>De matrículas total y por sexo, y cantidad de docentes por aula
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen10.svg" />
+
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Lenguaje y Matemática
+                                </strong><br>Pruebas SIMCE realizadas a 4.º, 6.º, 8.º básico y 2.º medio
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: var(--bg-color); border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Content/imagenes coleccin educacin/Imagen7.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución indicador
+                                </strong><br>De Autoestima académica y motivación escolar y Clima de convivencia escolar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1224 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agicultura</title>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                <h4 class="coleccion mt-4 mt-md-0 mt-md-0 pt-md-0" style=" font-weight: bold;">Incendios</h4>
+
+                <p class="pcoleccion d-none d-md-block">
+                    Año a año, los incendios forestales se han transformado en nuestra realidad cotidiana.
+                    Conocer las causas y la superficie afectada es básico para crear las estrategias de
+                    prevención y así lograr mitigar sus efectos. Data Intelligence, en su Colección Incendios,
+                    presenta información fundamental extraída de datos recopilados durante un periodo de 11 años.
+                    Se muestran, mediante mapas y gráficos interactivos, las causas que originaron el incendio;
+                    la cantidad; la superficie afectada; la ubicación y la temporalidad de ocurrencia.
+                </p>
+                <h4 class="coleccion mt-3 d-none d-md-block" style="font-weight:bold;">
+                    ¡Gratis por una semana!
+                </h4>
+                <p class="pcoleccion d-none d-md-block">
+                    En Data Intelligence transformamos millones de datos públicos en información representada
+                    en gráficos y mapas interactivos.  Hicimos una selección de colecciones para que las conozcas.
+                    ¡Regístrate y accede a una prueba gratis de 7 días!
+
+                </p>
+                <a href="~/Account/Register"><img class="img-fluid w-50 d-none d-md-block" src="~/Images/boton_pruebagratis.jpg" /></a>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    Año a año, los incendios forestales se han transformado en nuestra realidad cotidiana.
+                    Conocer las causas y la superficie afectada es básico para crear las estrategias de
+                    prevención y así lograr mitigar sus efectos. Data Intelligence, en su Colección Incendios,
+                    presenta información fundamental extraída de datos recopilados durante un periodo de 11 años.
+                    Se muestran, mediante mapas y gráficos interactivos, las causas que originaron el incendio;
+                    la cantidad; la superficie afectada; la ubicación y la temporalidad de ocurrencia.
+                </p>
+                <h4 class="coleccion mt-3" style="font-weight:bold;">
+                    ¡Gratis por una semana!
+                </h4>
+                <p class="pcoleccion">
+                    En Data Intelligence transformamos millones de datos públicos en información representada
+                    en gráficos y mapas interactivos.  Hicimos una selección de colecciones para que las conozcas.
+                    ¡Regístrate y accede a una prueba gratis de 7 días!
+
+                </p>
+                <a href="~/Account/Register"><img class="img-fluid w-100" src="~/Images/boton_pruebagratis.jpg" /></a>
+            </div>
+            <!--video de coleccion-->
+            <section class="container video mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                            Conoce más acerca de esta colección
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/Qr0R0vq5vp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-12 text-center d-none d-md-block  mt-md-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p>La suscripción a la colección de Incendios contiene</p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b>La suscripción a la colección de Incendios contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <div class=" d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide p-sm-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_Dano.png" alt="Daño" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Daño</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_DanoEnPlantaciones.png" alt="Daño en Plantaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Daño en Plantaciones</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_DanoEnVegetacionNatural.png" alt="Daño en Vegetación Natural" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Daño en Vegetación Natural</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_DanoEnOtrosUsosDeSuelo.png" alt="Daño en Otros Usos de Suelo" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title">Daño en Otros Usos de Suelo</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_Ocurrencia.png" alt="Ocurrencia" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Ocurrencia
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnPlantaciones.png" alt="Ocurrencia en Plantaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Ocurrencia en Plantaciones
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnVegetacionNatural.png" alt="Ocurrencia en Vegetación Natural" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Ocurrencia en Vegetación Natural
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnOtrosUsosDeSuelo.png" alt="Ocurrencia en Otros Usos de Suelo" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Ocurrencia en Otros Usos de Suelo
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendio.png" alt="Superficie por Incendio" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Superficie por Incendio
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc8" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnPlantaciones.png" alt="Superficie por Incendio en Plantaciones" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Superficie por Incendio en Plantaciones
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc9" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnVegetacionNatural.png" alt="Superficie por Incendio en Vegetación Natural" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Superficie por Incendio en Vegetación Natural
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc10" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnOtrosusosDeSuelo.png" alt=" Superficie por Incendio en Otros Usos de Suelo" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title">
+                                            Superficie por Incendio en Otros Usos de Suelo
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#exampleModalIc11" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_Dano.png" alt="Daño" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Daño
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_DanoEnPlantaciones.png" alt="Daño en Plantaciones" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Daño en Plantaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_DanoEnVegetacionNatural.png" alt="Daño en Vegetación Natural" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title text-center">
+                                Daño en Vegetación Natural
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_DanoEnOtrosUsosDeSuelo.png" alt="Daño en Otros Usos de Suelo" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Daño en Otros Usos de Suelo
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_Ocurrencia.png" alt="Ocurrencia" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Ocurrencia
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc4" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnPlantaciones.png" alt="Ocurrencia en Plantaciones" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Ocurrencia en Plantaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnVegetacionNatural.png" alt="Ocurrencia en Vegetación Natural" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Ocurrencia en Vegetación Natural
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnOtrosUsosDeSuelo.png " alt="Ocurrencia en Otros Usos de Suelo" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Ocurrencia en Otros Usos de Suelo
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendio.png" alt="Superficie por Incendio" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Superficie por Incendio
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc8" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnPlantaciones.png" alt="Superficie por Incendio en Plantaciones" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Superficie por Incendio en Plantaciones
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc9" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnVegetacionNatural.png" alt="Superficie por Incendio en Vegetación Natural" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Superficie por Incendio en Vegetación Natural
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc10" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnOtrosusosDeSuelo.png" alt="Superficie por Incendio en Otros Usos de Suelo" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Superficie por Incendio en Otros Usos de Suelo
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModalIc11" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--video de coleccion-->
+    <!--<section class="container video mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                    Conoce más acerca de esta colección
+                </p>
+            </div>
+            <div class="col-md-12 ">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Qr0R0vq5vp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+
+
+    <!-- Modal -->
+    <!--DAÑO-->
+    <div class="modal fade" id="exampleModalIc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_Dano.png" alt="Daño" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Daño</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px;width:4ch;">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Estadísticas de superficie incendiada</strong><br>Evolución y variación por temporada de la superficie afectada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">90</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Causas Específicas</strong><br>Información detallada de incendios según causas generales y específicas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;"><img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/dano.png" /></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Temporalidad</strong><br>Detalle de la estacionalidad, hora de inicio, día y duración de cada incendio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Daño en Plantaciones-->
+    <div class="modal fade" id="exampleModalIc1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_DanoEnPlantaciones.png" alt="Daño en Plantaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Daño en Plantaciones</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de superficie incendiada
+                                </strong><br>Evolución y variación por temporada de superficie de Plantaciones Forestales afectadas por incendios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Daño en Vegetación Natural-->
+    <div class="modal fade" id="exampleModalIc2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagen_recuadrosweb_incendios_DanoEnVegetacionNatural.png" alt="Daño en Vegetación Natural" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Daño en Vegetación Natural</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de superficie incendiada
+                                </strong><br>Evolución y variación por temporada de superficie de Vegetación Natural afectada por incendios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Daño en Otros Usos de Suelo-->
+    <div class="modal fade" id="exampleModalIc3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_DanoEnOtrosUsosDeSuelo.png" alt="Daño en Otros Usos de Suelo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Daño en Otros Usos de Suelo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de superficie incendiada
+                                </strong><br>Evolución y variación por temporada de superficie de Otro Usos de Suelo afectada por incendios
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ocurrencia-->
+    <div class="modal fade" id="exampleModalIc4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_Ocurrencia.png" alt="Ocurrencia" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ocurrencia
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen2.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Distribución geográficas
+                                </strong><br>Representación geográfica de la cantidad de incendios y su distribución por temporada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                N°
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    De Incendios
+                                </strong><br>Evolución y variación por temporada de del número de Incendios ocurridos por tipo de causa general
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">90</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Causas Específicas
+                                </strong><br>Información detallada de incendios según causas generales y específicas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/dano.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Temporalidad
+                                </strong><br>Detalle de la estacionalidad, hora de inicio, día y duración de cada incendio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ocurrencia en Plantaciones-->
+    <div class="modal fade" id="exampleModalIc5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnPlantaciones.png" alt="Ocurrencia en Plantaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ocurrencia en Plantaciones
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">
+                                N°
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    De Incendios
+                                </strong><br>Evolución y variación por temporada del número de incendios en Plantaciones Forestales
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ocurrencia en Vegetación Natural-->
+    <div class="modal fade" id="exampleModalIc6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnVegetacionNatural.png" alt="Ocurrencia en Vegetación Natural" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ocurrencia en Vegetación Natural
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                N°
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    De Incendios
+                                </strong><br>Evolución y variación por temporada del número de incendios en Vegetación natural
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ocurrencia en Otros Usos de Suelo-->
+    <div class="modal fade" id="exampleModalIc7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_OcurrenciaEnOtrosUsosDeSuelo.png" alt="Ocurrencia en Otros Usos de Suelo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ocurrencia en Otros Usos de Suelo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                N°
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    De Incendios
+                                </strong><br>Evolución y variación por temporada del número de incendios en Otros Usos De Suelo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Superficie por Incendio-->
+    <div class="modal fade" id="exampleModalIc8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendio.png " alt="Superficie por Incendio" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Superficie por Incendio
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de la superficie por incendio
+                                </strong><br>Evolución y variación de la superficie promedio afectada por incendio por temporada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">90</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Causas Específicas
+                                </strong><br>Información detallada de incendios según causas generales y específicas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/dano.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Temporalidad
+                                </strong><br>Detalle de la estacionalidad, hora de inicio, día y duración de cada incendio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Superficie por Incendio en Plantaciones-->
+    <div class="modal fade" id="exampleModalIc9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnPlantaciones.png" alt="Superficie por Incendio en Plantaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Superficie por Incendio en Plantaciones
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de superficie por incendio
+                                </strong><br>Evolución y variación de la superficie promedio de Plantaciones Forestales afectadas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Superficie por Incendio en Vegetación Natural-->
+    <div class="modal fade" id="exampleModalIc10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnVegetacionNatural.png" alt="Superficie por Incendio en Vegetación Natural" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Superficie por Incendio en Vegetación Natural
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de superficie por incendio
+                                </strong><br>Evolución y variación de la superficie promedio de Vegetación Natural afectada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Superficie por Incendio en Otros Usos de Suelo-->
+    <div class="modal fade" id="exampleModalIc11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulgrande.png" alt="Incendios" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Content/Suscripcion Incendios imagenes/imagenes_recuadrosweb_incendios_SuperficiePorIncendioEnOtrosusosDeSuelo.png" alt="Superficie por Incendio en Otros Usos de Suelo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Superficie por Incendio en Otros Usos de Suelo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #7AAE76; border-radius: 5px; width: 4ch;">
+
+                                <img class="img-fluid" src="~/Content/Suscripcion Incendios imagenes/Imagen4.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Estadísticas de superficie por incendio
+                                </strong><br>Evolución y variación de la superficie promedio de otros Usos de Suelo afectadas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #3F6E2C; border-radius: 5px; width: 4ch;">11</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Años de incendios
+                                </strong><br>Temporadas de incendio entre los años 2010 y 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

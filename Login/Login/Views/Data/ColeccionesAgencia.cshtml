@@ -1,0 +1,445 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <title>Colecciones</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script>
+        function mostrador(seccion1) {
+            var arreglo = [
+                '#glaciares',
+                '#ganaderia',
+                '#salud_e',
+                '#violencia',
+                '#municipio',
+                '#agricultura',
+                '#educacion',
+                '#ciudades',
+                '#salud_p',
+                '#Incendios',
+                '#agencia_DI',
+                '#ingresoscasen',
+                '#economia',
+                '#educación_Básica_Media',
+                '#Educacion_Superior',
+                '#Gobiernos_Regionales'
+            ];
+            //arreglo.forEach
+            jQuery.each(arreglo, function (i, val) {
+                $(val).hide();
+            });
+            $(seccion1).show();
+        }
+    </script>
+
+    <script>
+        function ActivarMenuSuperior(opcionMenu) {
+            $('.active3').removeClass('active3');
+            $(opcionMenu).addClass("active3");
+        }
+    </script>
+    <style>
+
+        .active3 {
+            background-color: #f6f6f6 !important;
+        }
+    </style>
+    <!-- Hotjar Tracking Code for https://www.dataintelligence-group.com/data/colecciones -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2580998, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+<body>
+    <div class="container-fluid content1">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 mt-3 mt-md-5 mb-2 mb-md-5" style="color:white;">
+                <h5 class="mb-1 mb-md-3" style="font-weight:600">Colecciones Data Intelligence</h5>
+                <p>
+                    Revisa y explora un tema en profundidad. A partir de millones de datos hemos creado un conjunto de
+                    gráficos y mapas interactivos con la información más destacada.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    @*menu*@
+    <main class="container-fluid pb-3  overflow-auto">
+        <div class="row ">
+            <div class="col-sm-3 pb-sm-0 pb-3 d-none d-md-block" style="padding-left:0px !important;">
+                <div class="border p-1 ulcolecciones">
+                    <h6 class="h6colecciones">COLECCIONES</h6>
+                    <ul class="nav nav-pills flex-sm-column flex-row mb-auto justify-content-between text-truncate">
+
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesSalud" class="nav-link px-2 text-truncate liacolecciones ">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Botón Pandemía" />
+                                <span class="lispancolecciones">COVID-19</span>
+                            </a>
+                        </li>
+
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesIngresoH" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Botón Ingreso" />
+                                <span class="lispancolecciones">Ingresos Históricos</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesEconomia" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Botón Economía" />
+                                <span class="lispancolecciones">Economía</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesAgencia" class="nav-link px-2 text-truncate liacolecciones active3">
+                                <img class="img-fluid icolecciones" src="~/Content/Imagenes agencia_Informacion/simbolo_coleccion_agenciaDI2.png" alt="Botón Agencia DI" />
+                                <span class="lispancolecciones">Agencia DI</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesAgricultura" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Botón Agricultura" />
+                                <span class="lispancolecciones">Agricultura</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesViolenciaMujer" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Botón Violencia" />
+                                <span class="lispancolecciones">Violencia Contra la Mujer </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesGlaciares_R10" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_glaciares.png" alt="Botón Glaciares" />
+                                <span class="lispancolecciones">Glaciares Región de Los Lagos</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesIncendios" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulchico.png" alt="Botón Incendios" />
+                                <span class="lispancolecciones">Incendios</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesMunicipio" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/iconoscolecciones_municipio_azul_paraboton.png" alt="Botón Incendios" />
+                                <span class="lispancolecciones">Municipio</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesEducacion" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Botón Incendios" />
+                                <span class="lispancolecciones">Educación</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a href="~/Data/ColeccionesCiudades" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/icono_coleccion_ciudades_redondo_azul.png" alt="Botón Incendios" />
+                                <span class="lispancolecciones">Ciudades</span>
+                            </a>
+                        </li>
+                        @*<li class="licolecciones">
+                                <a href="~/Data/ColeccionesEducación_Básica_Media" class="nav-link px-2 text-truncate liacolecciones">
+                                    <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Botón Educación" />
+                                    <span class="lispancolecciones">Educación Básica y Media</span>
+                                </a>
+                            </li>*@
+                        <li class="licolecciones">
+                            <a href="~/Data/EducacionSuperior" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/material grafico elijo facil/iconoColeccion_ElijoFacil_azul_chico.png" alt="Botón Educación" />
+                                <span class="lispancolecciones">Elijo fácil: Educacion Superior</span>
+                            </a>
+                        </li>
+                         <li class="licolecciones">
+                            <a href="~/Data/ColeccionGobiernos_Regionales" class="nav-link px-2 text-truncate liacolecciones">
+                                <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/iconocoleccion_GobiernosRegionales_azulchico.png" alt="Gobiernos Regionales" />
+                                <span class="lispancolecciones">Gobiernos Regionales</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col overflow-auto">
+                @*Dropdaown MENU PARA MOVIL*@
+                <div class="conteiner-fluid d-block d-md-none">
+                    <div class="row">
+                        <div class="col-12 ddcolecciones">
+                            <div class="dropdown ">
+                                <a class="btn dropdown-toggle ddcolecciones" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    COLECCIONES
+                                </a>
+                                <ul class="dropdown-menu ddcolecciones" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a href="~/Data/ColeccionesSalud" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_salud_pandemias.png" alt="Botón Pandemia" />
+                                            COVID-19
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="~/Data/ColeccionesIngresoH" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Botón Ingreso" />
+                                            Ingresos Históricos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="~/Data/ColeccionesEconomia" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Botón Economía" />
+                                            Economía
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="~/Data/ColeccionesAgencia" class="dropdown-item btn btn-light ddhcolecciones active3">
+                                            <img class="img-fluid icolecciones" src="~/Content/Imagenes agencia_Informacion/simbolo_coleccion_agenciaDI2.png" alt="Botón Agencia DI" />
+                                            Agencia DI
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="~/Data/ColeccionesAgricultura" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_agricultura.png" alt="Botón Agricultura" />
+                                            Agricultura
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionesViolenciaMujer" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_violenciacontralamujer.png" alt="Botón Violencia" />
+                                            Violencia Contra la Mujer
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionesGlaciares_R10" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/simbolo_coleccion_glaciares.png" alt="Botón Glaciares" />
+                                            Glaciares Región de Los Lagos
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionesIncendios" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Content/Suscripcion Incendios imagenes/iconoColeccion_Incendios_azulchico.png" alt="Botón Incendios" />
+                                            Incendios
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionesMunicipio" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/iconoscolecciones_municipio_azul_paraboton.png" alt="Botón Incendios" />
+                                            Municipio
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionesEducacion" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Botón Incendios" />
+                                            Educación
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionesCiudades" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/icono_coleccion_ciudades_redondo_azul.png" alt="Botón Incendios" />
+                                            Ciudades
+                                        </a>
+                                    </li>
+                                    @*<li style="border-bottom:1px solid #d1d3de">
+                                <a href="~/Data/ColeccionesEducación_Básica_Media" class="dropdown-item btn btn-light ddhcolecciones">
+                                    <img class="img-fluid icolecciones" src="~/Images/simbolossolos_botones/circuloazul_coleccionEducacion.png" alt="Botón Incendios" />
+                                    Educación Básica y Media
+                                </a>
+                            </li>*@
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/EducacionSuperior" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="~/Images/material grafico elijo facil/iconoColeccion_ElijoFacil_azul_chico.png" alt="Botón Incendios" />
+                                            Elijo fácil: Educacion Superior
+                                        </a>
+                                    </li>
+                                    <li style="border-bottom:1px solid #d1d3de">
+                                        <a href="~/Data/ColeccionGobiernos_Regionales" class="dropdown-item btn btn-light ddhcolecciones">
+                                            <img class="img-fluid icolecciones" src="/Images/simbolossolos_botones/iconocoleccion_GobiernosRegionales_azulchico.png" alt="Gobiernos Regionales" />
+                                            Gobiernos Regionales
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*FIN MENU PARA MOVIL*@
+
+                <div id="agricultura" style="display:none">
+                    @{ Html.RenderAction("Agricultura", "Data");}
+                </div>
+                <div id="glaciares" style="display:none">
+                    @{ Html.RenderAction("Glaciares", "Data");}
+                </div>
+                <div id="ganaderia" style="display:none">
+                    @{ Html.RenderAction("Ganaderia", "Data");}
+                </div>
+                <div id="salud_e" style="display:none">
+                    @{ Html.RenderAction("Salud_Enfermedades", "Data");}
+                </div>
+                <div id="violencia" style="display:none">
+                    @{ Html.RenderAction("Violencia", "Data");}
+                </div>
+                <div id="municipio" style="display:none">
+                    @{ Html.RenderAction("Municipio", "Data");}
+                </div>
+                <div id="Gobiernos_Regionales" style="display:none">
+                    @{ Html.RenderAction("Gobiernos_Regionales", "Data");}
+                </div>
+                <div id="educacion" style="display:none">
+                    @{ Html.RenderAction("Educacion", "Data");}
+                </div>
+                <div id="ciudades" style="display:none">
+                    @{ Html.RenderAction("Ciudades", "Data");}
+                </div>
+                @*<div id="elecciones" style="display:none">
+            @{ Html.RenderAction("Elecciones", "Data");}
+        </div>*@
+                <div id="Incendios" style="display:none">
+                    @{ Html.RenderAction("Incendios", "Data");}
+                </div>
+                <div id="agencia_DI" class="mt-2 mt-md-5">
+                    @{ Html.RenderAction("agencia_DI", "Data");}
+                </div>
+                <div id="ingresoscasen" style="display:none">
+                    @{ Html.RenderAction("IngresosCasen", "Data");}
+                </div>
+                <div id="economia" style="display:none">
+                    @{ Html.RenderAction("Economia", "Data");}
+                </div>
+                <div id="educación_Básica_Media" style="display:none">
+                    @{ Html.RenderAction("Educación_Básica_Media", "Data");}
+                </div>
+                <div id="Educacion_Superior" style="display:none">
+                    @{ Html.RenderAction("Educacion_Superior", "Data");}
+                </div>
+                <!--SECCION DE SUSCRIPCIóN-->
+                <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 ">
+                            <p style="color: #1074BC; font-size:1.1rem; font-weight:700; text-align:center;">
+                                ¿Te quieres suscribir a esta Colección?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-12 content1" style="border-radius:15px; justify-content:center;">
+                            <div class="row justify-content-around " style="box-sizing:border-box !important;">
+                                <div class="col-12 col-md-3 mt-md-5 mt-3">
+                                    <img class="img-fluid mx-0" src="~/Content/empresas de noticias/logosus.png" />
+                                    <p class="mt-md-3" style="font-size: 0.8rem;color:white; margin-bottom:0px !important;">Contamos con 3 opciones:</p>
+                                    <ul class="fa-ul" style="text-align:left; color:white;font-size:0.8rem;">
+                                        <li><span class="fa-li"><i class="bi bi-check2-square"></i></span>Regional,</li>
+                                        <li><span class="fa-li"><i class="bi bi-check2-square"></i></span>Región Metropolitana o</li>
+                                        <li><span class="fa-li"><i class="bi bi-check2-square"></i></span>Nacional</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-md-5 mt-3">
+                                    <div class="card" style="background-color:transparent; border:1px solid #fff; border-radius:15px;">
+                                        <div class="card-body" style="color:white;">
+                                            <h5 class="card-title mt-2">Paso 1</h5>
+                                            <ul style="padding-left: inherit;">
+                                                <li class="card-text mt-3" style="font-size: 0.8rem;color:white; margin-bottom:0px !important; text-align:left;">
+                                                    Ingresas a la plataforma de pago en el botón Adquirir Suscripción.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 mt-md-5 mt-3">
+                                    <div class="card" style="background-color:transparent; border:1px solid #fff; border-radius:15px;">
+                                        <div class="card-body" style="color:white;">
+                                            <h5 class="card-title mt-2">Paso 2</h5>
+                                            <ul style="padding-left: inherit;">
+                                                <li class="card-text mt-3" style="font-size: 0.8rem;color:white; margin-bottom:0px !important; text-align:left;">
+                                                    Luego de completar tu proceso de pago recibirás un link de acceso.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 mt-md-5 mt-3">
+                                    <div class="card" style="background-color:transparent; border:1px solid #fff; border-radius:15px;">
+                                        <div class="card-body" style="color:white;">
+                                            <h5 class="card-title mt-2">Paso 3</h5>
+                                            <ul style="padding-left: inherit;">
+                                                <li class="card-text mt-3" style="font-size: 0.8rem;color:white; margin-bottom:0px !important; text-align:left;">
+                                                    Crearás tu perfil de registro y listo. Podrás comenzar a utilizar tu colección.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 mb-md-4 mb-3 mt-4 text-center">
+
+                                    <a class="btn  btn-danger" style="border-radius: 20px; font-size: 0.8rem;" href="https://dataintelligence.store/products/suscripcion-agencia-de-informacion" target="_blank">ADQUIRIR SUSCRIPCIÓN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @*Boton para ir arriba*@
+    <style>
+        .ir-arriba {
+            display: none;
+            padding: 10px;
+            background: #024959;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+    <i class="ir-arriba  bi bi-arrow-up-square"></i>
+    @*<span class="ir-arriba icon-arrow-up2"></span>*@
+    <script>
+        $(document).ready(function () {
+
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
+        });
+    </script>
+    @*Boton para ir arriba*@
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link href="~/Content/carrusel14/fonts/icomoon/style.css" rel="stylesheet" />
+    <link href="~/Content/carrusel14/css/owl.carousel.min.css" rel="stylesheet" />
+
+    <script src="~/Content/carrusel14/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/carrusel14/js/popper.min.js"></script>
+    <script src="~/Content/carrusel14/js/bootstrap.min.js"></script>
+    <script src="~/Content/carrusel14/js/owl.carousel.min.js"></script>
+    <script src="~/Content/carrusel14/js/main.js"></script>
+
+    <script>
+        ActivarMenuSuperior4("#public_Colecciones")
+    </script>
+    <script src="~/Scripts/Ventas/BotonShopify.js"></script>
+</body>
+</html>

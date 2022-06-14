@@ -1,0 +1,574 @@
+﻿@{
+    ViewBag.Title = "PaginaBusqueda";
+    Layout = "~/Views/Shared/_LayoutEconomia.cshtml";
+}
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*fontawesome*@
+    @*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">*@
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2f08016506.js" crossorigin="anonymous"></script>
+    @*estilos*@
+    <link href="~/Content/EstilosPopUp.css" rel="stylesheet" />
+    <link href="~/Content/StylePagBusqueda.css" rel="stylesheet" />
+    @*Titulo de la pagina*@
+    <title>Resultados de Busqueda</title>
+    @*script para guardar o imprimir grafico*@
+
+    <link href="~/Content/Estilos/PaginaBusqueda.css" rel="stylesheet" />
+
+    <script>
+        function mostrador(seccion) {
+            var arreglo = [
+                '#EMuno',
+                '#EMdos'
+            ];
+            //arreglo.forEach
+            jQuery.each(arreglo, function (i, val) {
+                $(val).hide();
+            });
+            $(seccion).show();
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--COMIENZO DE LA SECCION DEL MENU MOVIL-->
+    <!--offcanvas es el contenedor del menu movil,
+        offcanvas-start para que se ajuste arriba en el comienzo de la pantalla del dispositivo
+        w-75 lo que abarca de lo ancho de la panatalla
+    -->
+    <div class="offcanvas offcanvas-start w-75 d-md-none" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="true" style="overflow:scroll;">
+        <a href="#" class="cancel" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" data-bs-backdrop="false">×</a>
+        <div class="col-sm-3 pb-sm-0 pb-3">
+            <!--scripts para que funcionen los chechbox filtros-->
+            <div class=" col-md-6 col-sm-12 ml-5" style="margin-left:10px; width:fit-content;">
+                @*Este script es para hacer el filtro de la tabla*@
+               
+            </div>
+            <!--final scripts para que funcionen los checKbox filtros-->
+            <div class=" border rounded-3 p-1  d-block d-sm-block d-md-none" style="background-color: #DBDDE9;">
+                <nav id="sidebar">
+                    <div style="border:none !important;">
+                        <!--checkbox filtros-->
+                        <h4 style="color:#000;" class="text-left">FILTROS</h4>
+                        <ul class="list-unstyled mb-5 ">
+
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration:none; padding-left:20px " href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle  flex-shrink-1 ">COLECCIÓN</a>
+
+                                <ul class="collapse list-unstyled pageSubmenu1" id="pageSubmenu1">
+                                </ul>
+                            </li>
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SECTOR</a>
+                                <ul class="collapse list-unstyled pageSubmenu2" id="pageSubmenu2">
+                                </ul>
+                            </li>
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CONTENIDO</a>
+                                <ul class="collapse list-unstyled pageSubmenu4" id="pageSubmenu4">
+                                </ul>
+                            </li>
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TEMA</a>
+                                <ul class="collapse list-unstyled pageSubmenu3" id="pageSubmenu3">
+                                </ul>
+                            </li>
+
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px "
+                                   href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    ESCALA
+                                </a>
+                                <ul class="collapse list-unstyled pageSubmenu6" id="pageSubmenu6">
+                                </ul>
+                            </li>
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TERRITORIO</a>
+                                <ul class="collapse list-unstyled pageSubmenu7" id="pageSubmenu7">
+                                </ul>
+                            </li>
+                            <li class="mb-md-3 mt-2">
+                                <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MUESTRA</a>
+                                <ul class="collapse list-unstyled pageSubmenu8" id="pageSubmenu8">
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--Botones limpiar y aplicar filtros para menu movil -->
+        <button class="btn btn-success" onClick="ActivarCasilla(this), LimpiarTodo();">Limpiar Filtros</button>
+        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" data-bs-backdrop="false">Aplicar Filtros</button>
+        <!--Botones limpiar y aplicar filtros para menu movil -->
+    </div>
+    <!--FINAL COMIENZO DE LA SECCION DEL MENU MOVIL-->
+    @*seccion donde se visualiza los graficos de los resultados de busqueda*@
+    <div id="EMdos" style="display:none;">
+    </div>
+    @*seccion donde se visualiza los graficos de los resultados de busqueda*@
+    <!--main menu lateral y resultado de busqueda-->
+    <div id="EMuno">
+        <!--Secion franja gris logo y buscador-->
+        <div class="container-fluid" style="background-color: #C6CCDC; height:auto">
+            <div class="row justify-content-center" style="padding-top:3%; padding-bottom:1%;">
+                <div class="col-12 col-md-3 text-center">
+                    <!--Buscador -->
+                    <form action="~/ECONOMIA/PaginaBusqueda" method="get" class="mt-3 mt-md-0">
+                        <input type="text" id="id" name="id" placeholder="Búsqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                        <button id="search-button" type="submit" value="Submit" class="btn btn-primary" style="width:40px !important;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h4 style="color:black; font-size:1.2rem;"><b>¡Explora, busca y encuentra!</b></h4>
+                    <p>en todo nuestro universo de datos</p>
+                </div>
+                <div class="col-12 mb-3 col-md-2 ">
+                    <img class="img-fluid" src="~/Content/img/negro-rojo-trans - copia.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Final Secion franja gris logo y buscador-->
+        <!--Boton para hacer visible el menu movil-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!--boton de menu lateral en movil-->
+                    <button class="button btn btn-primary float-end d-sm-flex d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                        <i class="fas fa-filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">Filtros</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--final Boton para hacer visible el menu movil-->
+        <!--filtros, resultados de busqueda y modal-->
+        <main class="container-fluid pb-3 overflow-auto">
+            <div class="row">
+                <div class="col-sm-3 pb-sm-0 pb-3" style="padding-left:0px !important;">
+                    <div class=" border rounded-3 p-1  d-none d-sm-none d-md-block" style="background-color: #DBDDE9;">
+                        <nav id="sidebar">
+                            
+                            <div class="p-4" style="border:none !important;">
+                                <h4 style="color:#000;" class="text-left">FILTROS</h4>
+                                @*Boton para borrar los filtros*@
+                                <label class="btn btn-sm btn-primary text-center" style=" font-size: 14px; margin: 0px; cursor: pointer; margin-bottom:5%;">
+                                    <input style="display:none;" type="checkbox" onClick="ActivarCasilla(this), LimpiarTodo();" /> Borrar filtros
+                                </label>
+                                <a class="btn btn-sm btn-primary text-center text-white" style=" font-size: 14px; margin: 0px; cursor: pointer; margin-bottom: 5%; text-decoration: none;" href="~/ECONOMIA/vertodo">Ver Todo</a>
+                                <!--Filtros de desktop-->
+                                <ul class="list-unstyled mb-5 ">
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle  flex-shrink-1 ">
+                                            COLECCIÓN
+                                        </a>
+                                        <ul class="collapse list-unstyled pageSubmenu1" id="pageSubmenu1" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SECTOR</a>
+                                        <ul class="collapse list-unstyled pageSubmenu2" id="pageSubmenu2" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CONTENIDO</a>
+                                        <ul class="collapse list-unstyled pageSubmenu4" id="pageSubmenu4" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TEMA</a>
+                                        <ul class="collapse list-unstyled pageSubmenu3" id="pageSubmenu3" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ESCALA</a>
+                                        <ul class="collapse list-unstyled pageSubmenu6" id="pageSubmenu6" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                            TERRITORIO
+                                        </a>
+                                        <ul class="collapse list-unstyled pageSubmenu7" id="pageSubmenu7" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+                                    <li class="mb-md-3">
+                                        <a style="background-color: #B4B4B5; text-decoration: none; padding-left: 20px " href="#pageSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MUESTRA</a>
+                                        <ul class="collapse list-unstyled pageSubmenu8" id="pageSubmenu8" data-bs-toggle="tooltip" data-bs-placement="top" title="Seleccione una opción a la vez">
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!--final Filtros de desktop-->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 overflow-auto mt-md-5" style="margin:auto;">
+                    <h3 class="text-center"><b>Resultados de búsqueda</b> </h3>
+                    <hr />
+                    <div>
+
+                        @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>*@
+                        <script>
+                            // Write on keyup event of keyword input element
+                            $(document).ready(function () {
+                                $("#search").keyup(function () {
+                                    _this = this;
+                                    // Show only matching TR, hide rest of them
+                                    $.each($("#mytable tbody tr"), function () {
+                                        if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                                            $(this).hide();
+                                        else
+                                            $(this).show();
+                                    });
+                                });
+                            });
+                        </script>
+                        <script>
+                            $(document).ready(function () {
+                                var nrows = 0; var nres = 0;
+                                $("table tr").each(function () {
+                                    nrows++;
+                                })
+                                $("#nrows").html(nrows);
+                                $(".isres").each(function () {
+                                    nres++;
+                                })
+                                $("#nres").html(nres);
+                            });
+                        </script>
+
+                        <!-- COMIENZO TABLA RESULTADOS -->
+
+                        <h5 id="contar" class="ml-3 mt-4" style="color:black">
+
+                            @*@ViewBag.Resultado.Count resultados*@
+                        </h5>
+                     
+                        <div class="table-responsive" style=" height: 1000px; overflow-x: hidden !important; border-radius: 20px !important; ">
+
+                            <table id="mytable" class="table" style=" border:none !important;">
+
+                                <thead id="stud_body" style="border:none;">
+                                    <tr style="border:none;">
+                                        <th style="border:none;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable" class="tablaDatos" style="border: none !important;">
+                                    @{ int i = 0; }
+
+                                    @foreach (var item in ViewBag.Resultado)
+                                    {
+                                        {
+                                            i++;
+                                        }
+                                        <tr>
+                                            <td style="border:none !important;">
+                                                <div class="row d-flex justify-content-center">
+                                                    <div class="col-md-2 col-6 mb-3 mb-md-0">
+
+                                                        <img class="img-fluid" style="width:140px;" src="~/Content/img/iconos_TipoProducto/icono_grafico_suscripcion.png" />
+                                                    </div>
+                                                    <div id="test1" class="col-md-8 col-12" style="align-self:center;">
+
+                                                        <a href="#" onclick="mostrador('#EMdos'); PBGrafico('@item.id');" style="cursor: pointer; text-decoration: blink; color: black;">
+                                                            @item.titulo <br />
+                                         
+                                                            <p style="display:none;">@item.temporalidad.Replace("-", "")</p>
+                                                            <p style="display:none;">@item.territorio.Replace("-", "") - @item.escala.Replace("-", "")</p>
+                                                            <p style="display:none;">@item.sector.Replace("-", "") - @item.coleccion.Replace("-", "")</p>
+                                                            <p style="display:none;">@item.unidad_medida.Replace("-", "")</p>
+                                                            <p style="display:none;">@item.coleccion.Replace("-", "") </p>
+                                                            <p style="display:none;">@item.tema.Replace("-", "") - @item.contenido.Replace("-", "")</p>
+                                                            <p style="display:none;">@item.contenido.Replace("-", "") - @item.sector.Replace("-", "")</p>
+                                                            <p style="display:none;">@item.escala.Replace("-", "") </p>
+                                                            <p style="display:none;">@item.muestra_temporalidad.Replace("-", "") </p>
+                                                        </a>
+
+
+                                                    </div>
+
+                                                    <div class="col-md-2 col-6 mt-3 mt-md-0 mb-3 mb-md-0" style="align-self:center;">
+                                                        <a onclick="mostrador('#EMdos'); PBGrafico('@item.id');" class=" btn btn-primary btn-sm" href="#" style="border-radius: 25px; font-size: 14px; margin: 0px; width: 100%; cursor: pointer;">
+                                                            Ver Gráfico
+                                                        </a>
+
+                                                    </div>
+                                                    <hr style="margin-top:20px;" />
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <style>
+                                .name {
+                                    margin-right: 5px;
+                                }
+                            </style>
+
+                    
+                            <!--script1 para la paginacion-->
+                            <script type="text/javascript">
+                                Paginador = function (divPaginador, tabla, tamPagina) {
+                                    this.miDiv = divPaginador; //un DIV donde irán controles de paginación
+                                    this.tabla = tabla;           //la tabla a paginar
+                                    this.tamPagina = tamPagina; //el tamaño de la página (filas por página)
+                                    this.pagActual = 1;         //asumiendo que se parte en página 1
+                                    this.paginas = Math.floor((this.tabla.rows.length - 1) / this.tamPagina); //¿?
+
+                                    this.SetPagina = function (num) {
+                                        if (num < 0 || num > this.paginas)
+                                            return;
+
+                                        this.pagActual = num;
+                                        var min = 1 + (this.pagActual - 1) * this.tamPagina;
+                                        var max = min + this.tamPagina - 1;
+
+                                        for (var i = 1; i < this.tabla.rows.length; i++) {
+                                            if (i < min || i > max)
+                                                this.tabla.rows[i].style.display = 'none';
+                                            else
+                                                this.tabla.rows[i].style.display = '';
+                                        }
+                                        this.miDiv.firstChild.rows[0].cells[1].innerHTML = this.pagActual;
+                                    }
+
+                                    this.Mostrar = function () {
+                                        //Crear la tabla
+                                        var tblPaginador = document.createElement('table');
+
+                                        //Agregar una fila a la tabla
+                                        var fil = tblPaginador.insertRow(tblPaginador.rows.length);
+
+
+                                        //Como ya tengo mi tabla, puedo agregarla al DIV de los controles
+                                        this.miDiv.appendChild(tblPaginador);
+
+                                        //¿y esto por qué?
+                                        if (this.tabla.rows.length - 1 > this.paginas * this.tamPagina)
+                                            this.paginas = this.paginas + 1;
+
+                                        this.SetPagina(this.pagActual);
+                                    }
+                                }
+                            </script>
+
+
+                        </div>
+                        <!--FINAL COMIENZO TABLA RESULTADOS -->
+                        <!--boton ver mas resultados en el resultado de busqueda-->
+                        <div class="col-md-2 text-center offset-5" style="margin-top:20px;">
+                            <button class="btn-primary btn-sm" onclick="Paginacion('@ViewBag.palabra');" style=" font-size: 12px; cursor: pointer;">
+                                Mostrar más
+                            </button>
+                        </div>
+                        <!--final boton ver mas resultados en el resultado de busqueda-->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--final filtros y resultados de busqueda-->
+    </div>
+    <!--final main menu lateral y resultado de busqueda-->
+    <script>
+
+    </script>
+    @* preloader imagen precargado  *@
+
+    <div class="jm-loadingpage"></div>
+    <script>
+        $(document).ready(function () {
+            $(".jm-loadingpage").fadeOut("slow");;
+        });
+    </script>
+    @*fin preloader imagen precargado *@
+
+
+    <div class="container-fluid mb-3">
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col p-4">
+                    <!--Boton para ocultar menu-->
+
+                    <div class="row justify-content-center borrar">
+
+                        <!-- Comienzo de rsultados de Busqueda -->
+                        <div class="col-md-12" id="EMuno">
+
+                            <div class="grid search">
+                                <div class="grid-body">
+                                    <!-- Comienzo de Fila que contiene botón borrar filtro y buscador -->
+                                    <div class="row mt-md-3 justify-content-start">
+
+                                        <div class="col-md-2 text-center offset-1 mb-md-2">
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINAL RESULTADOS DE BUSQUEDA -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @*script3 para la paginacion y selector de filas*@
+<script>
+    var index = 1;
+    function Paginacion(palabra) {
+        var id = "parametros de la funcion";
+        $.ajax(
+            {
+                type: 'POST',
+                //data: "{'id':" + "'" + Grafico + "'}", //datos o parametros enviados al servidor
+                dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                url: '/ECONOMIA/Paginacion?id=' + palabra + '&id2=' + index,
+                //URL del action result que cargara la vista parcial
+                success: function (result) {
+                    // si la funcion se ejecuta lanzara un alert
+                    /*alert('Success');*/
+                    //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                    //que recibio del servidor
+                    $(".tablaDatos").append(result);
+                    $("#contar").text($("#myTable tr").length + " Resultados")
+                },
+
+                error: function (error) {
+                    // si hay un error lanzara el mensaje de error
+                    alert('Fail');
+                }
+            });
+        index++;
+    }
+</script>
+    @*Jquery, Popper bootstrap.min.js*@
+    <script src="~/Scripts/Usuario/PaginaBusqueda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    @*<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script>
+        function PBGrafico(Grafico) {
+            var id = "parametros de la funcion";
+            $('#EMdos').html('<h2 style="margin-top:15%; margin-bottom:15%;">Cargando Información...espere un momento por favor</h2>')
+
+            $.ajax(
+                {
+                    type: 'POST',
+                    data: "{'id':" + "'" + Grafico + "'}", //datos o parametros enviados al servidor
+                    dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                    url: '/ECONOMIA/VisualizarGraficos?id=' + Grafico,
+                    //URL del action result que cargara la vista parcial
+                    success: function (result) {
+                        // si la funcion se ejecuta lanzara un alert
+                        /*alert('Success');*/
+                        //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                        //que recibio del servidor
+                        $("#EMdos").html(result);
+                    },
+
+                    error: function (error) {
+                        // si hay un error lanzara el mensaje de error
+                        $("#EMdos").html(`<a class="btn btn-primary btn-sm " id="test1" onclick = "mostrador('#EMuno')" style="font-size: 14px; margin: 0px; width: 100px; cursor: pointer" href="#"> Volver Atrás</a>`);
+                        $("#EMdos").append('<h2 style="margin-top:15%; margin-bottom:15%;">No pudimos encontrar tu Gráfico, pero a la brevedad estara disponible.</h2>');
+
+                    }
+
+                });
+
+        }
+
+        function PBGrafico2(id) {
+
+            $('#PBcuatro').html('<h2 style="margin-top:15%; margin-bottom:15%;">Cargando Información...espere un momento por favor</h2>')
+
+            $.ajax(
+                {
+                    type: 'POST',
+                    data: "{'id':" + "'" + id + "'}", //datos o parametros enviados al servidor
+                    dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                    url: '/ECONOMIA/ContenidoGrafico?id=' + id,
+                    //URL del action result que cargara la vista parcial
+                    success: function (result) {
+                        // si la funcion se ejecuta lanzara un alert
+                        /*alert('Success');*/
+                        //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                        //que recibio del servidor
+                        $("#PBcuatro").html(result);
+                    },
+
+                    error: function (error) {
+                        // si hay un error lanzara el mensaje de error
+                        //alert('Fail PBGrafico2 ContenidoGrafico');
+                        $("#PBcuatro").html('<h2 style="margin-top:15%; margin-bottom:15%;">Aun estamos trabajando en mostrar más información sobre este tema.</h2>');
+                    }
+                });
+
+        }
+        function PBGrafico3(id) {
+
+            $('#PBcinco').html('<h2 style="margin-top:15%; margin-bottom:15%;">Cargando Información...espere un momento por favor</h2>')
+
+            $.ajax(
+                {
+                    type: 'POST',
+                    data: "{'id':" + "'" + id + "'}", //datos o parametros enviados al servidor
+                    dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                    url: '/ECONOMIA/CarrucelBusqueda?id=' + id,
+                    //URL del action result que cargara la vista parcial
+                    success: function (result) {
+                        // si la funcion se ejecuta lanzara un alert
+                        /*alert('Success');*/
+                        //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                        //que recibio del servidor
+                        $("#PBcinco").html(result);
+                    },
+
+                    error: function (error) {
+                        // si hay un error lanzara el mensaje de error
+                        //alert('Fail PBGrafico3  CarrucelBusqueda');
+                        $("#PBcinco").html('<h2 style="margin-top:15%; margin-bottom:15%;">No hemos encontrado gráficos relacionados</h2>');
+                    }
+                });
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    @*este script va con la funcion de cargar el gif en la seccion siete*@
+    <script>
+        $("#contar").text("@i  resultados ");
+    </script>
+    <script type="text/javascript">
+
+
+       var raw =  @Html.Raw(Json.Encode(ViewBag.Resultado));
+        MostrarFiltros2(raw);
+    </script>
+    
+</body>
+</html>

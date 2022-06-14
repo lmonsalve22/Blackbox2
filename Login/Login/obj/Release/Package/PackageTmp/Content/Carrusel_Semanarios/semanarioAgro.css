@@ -1,0 +1,139 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*CARRUSEL HOME SEMANARIO*/
+.wrapper {
+    width: 100%;
+}
+
+.carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+    .carousel .card {
+        width: 80%;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 250px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        background-color: transparent;
+    }
+/*CARRUSEL SEMANARIO AGRO*/
+
+.carrusel .card {
+    width: 100%;
+}
+
+/*.carousel .card-1 {
+        background: #ed1c24;
+    }
+
+    .carousel .card-2 {
+        background: #0072bc;
+    }
+
+    .carousel .card-3 {
+        background: #39b54a;
+    }
+
+    .carousel .card-4 {
+        background: #f26522;
+    }
+
+    .carousel .card-5 {
+        background: #630460;
+    }*/
+
+/*.owl-dots {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}*/
+
+/*.owl-dot {
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #0072bc !important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+    .owl-dot.active,
+    .owl-dot:hover {
+        background: #0072bc !important;
+    }*/
+
+/*Estilos principal semanaarios*/
+.img-principal {
+    background-image: url('../../Images/SEMANARIO/Semanario_AGROFRUTA_escritorio_imagen1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*  background-size: 100% 100%;*/
+    min-height: 100%
+}
+
+.img-principal {
+    padding: 80px 20px;
+}
+
+.texto-principal {
+    justify-content: flex-end;
+}
+
+    .texto-principal p {
+        color: white;
+    }
+/*estilos semanario agro*/
+.img-contenido {
+    align-self: self-end;
+}
+
+.slider-frutas {
+    margin-bottom: 0 !important;
+    background-color: #BC2E80;
+}
+
+    .slider-frutas p {
+        color: white;
+    }
+
+.mask1 {
+    cursor: default;
+    filter: contrast(0.4) brightness(0.9);
+}
+/*MASK2 ES DE EL CARRUSEL DE SEMANARIOHOME*/
+.mask2 {
+    cursor: default;
+    filter: contrast(0.7) brightness(0.9);
+    /*    filter: contrast(0.7);*/
+}
+
+/*INFOBOX*/
+.slider-INFOBOX {
+    background-color: #A0ACAC;
+}
+
+.texto-principal-infobox {
+    background-color: black;
+}
+
+.infobox-content {
+    margin: auto;
+    padding: 40px;
+}
+
+/*INFOBOX*/

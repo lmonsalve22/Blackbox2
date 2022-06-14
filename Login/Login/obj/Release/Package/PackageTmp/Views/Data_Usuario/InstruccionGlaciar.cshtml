@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "InstruccionGlaciar";
+    Layout = "~/Views/Shared/_LayoutUsuario.cshtml";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-center mt-2 mt-md-5">
+            <h2>Instruccion Glaciar</h2>
+            <p>
+                La colección Glaciares está dirigida a todos quienes requieran datos sistematizados,
+                actualizados y georreferenciados de la Dinámica experimentada por los distintos Glaciares.
+                DataAmbiental - Glaciares, utilizando tecnología de teledetección, brinda información  de
+                la dinámica de los cambios y el monitoreo constante de los glaciares, en distintas temporadas,
+                generando un recurso esencial para estudiar el clima, la gestión de los recursos hídricos y
+                también para predecir y mitigar los peligros relacionados con los glaciares.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 text-center mt-2 mt-md-5">
+            <h2>¿Que incluye la colección?</h2>
+            <p>Accede al botón correspondiente para ver instrucciones esquematizadas</p>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-bottom:150px;" >
+        <div class="col-12 col-md-2 text-center mt-2 mt-md-5" >
+            <div class="dropdown">
+                <button class="btn  btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dinámica de cambio
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item btn btn-primary active" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Mapas Web por Periodo</a></li>
+                    <li><a class="dropdown-item btn btn-primary" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Estadísticas</a></li>
+                    <li><a class="dropdown-item btn btn-primary" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Mapas PDF</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-2 text-center mt-2 mt-md-5">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Superficie Máx - Min
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Mapas Web</a></li>
+                    <li><a class="dropdown-item" href="#">Estadísticas</a></li>
+                    <li><a class="dropdown-item" href="#">Mapas PDF</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-2 text-center mt-2 mt-md-5">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Caracterización
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-2 text-center mt-2 mt-md-5">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Instrucciones
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content justify-content-center">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mapas Web por Periodo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="~/Content/ModalGlaciar/Los_Glaciares_National_Park_Argentina_large.jpg"><img>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content justify-content-center">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Estadísticas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="~/Content/ModalGlaciar/ZSX3HDIF3BFJJKTLJO6FWXKXKQ.jpg"><img>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                @*<button type="button" class="btn btn-primary">Save changes</button>*@
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content justify-content-center">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mapas PDF</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="~/Content/ModalGlaciar/que_son_los_glaciares_2087_orig.jpg"><img>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                @*<button type="button" class="btn btn-primary">Save changes</button>*@
+            </div>
+        </div>
+    </div>
+</div>

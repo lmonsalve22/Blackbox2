@@ -1,0 +1,336 @@
+﻿
+@{
+    ViewBag.Title = "semanario_AgroAMP";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+
+<!doctype html>
+<html amp lang="es">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Index AMP</title>
+    <link rel="canonical" href="https://www.dataintelligence-group.com/marketing/index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org",
+          "@@type": "NewsArticle",
+          "headline": "Article headline",
+          "datePublished": "2021-11-20T12:02:41Z",
+               "image": [
+            "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+              ],
+            "author": {
+                "@@type": "Organization",
+                "name": "Data Intelligence",
+                "url": "https://www.dataintelligence-group.com/Data/Index"
+            },
+        "publisher": {
+            "@@type": "Organization",
+            "name": "DI",
+            "logo": {
+            "@@type": "ImageObject",
+            "url": "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+            }
+        }
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+
+    <style amp-custom>
+        :root {
+            --bg-color: Black;
+            --text-color: white;
+        }
+
+
+        .seccion2 {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .scroll {
+            max-height: 50vh;
+            overflow: hidden;
+        }
+
+            .scroll:hover {
+                overflow-y: scroll;
+            }
+
+            .scroll::-webkit-scrollbar {
+                width: 12px; /* ancho scrollbar */
+            }
+
+            .scroll::-webkit-scrollbar-track {
+                background: #878787; /*color area fondo scroll*/
+            }
+
+            .scroll::-webkit-scrollbar-thumb {
+                background-color: white; /* color scroll */
+                border-radius: 20px; /* bordes del scroll */
+                /*border: 3px solid orange;*/ /*color del border scroll  */
+            }
+
+        @@media (min-width: 768px) {
+            .carousel-indicators {
+                top: 70vh;
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .carousel-indicators {
+                top: 65vh;
+            }
+        }
+
+        amp-fit-text {
+            white-space: normal;
+        }
+
+        .amp-carousel-button {
+            display: none
+        }
+
+        .textotitulo {
+            margin: 0 20px;
+        }
+
+        .textop {
+            margin: 0 20px;
+        }
+
+        .seccioncarrusel {
+            background-color: #BC2E80;
+            color: white;
+            text-align: center;
+        }
+
+        .sombreado {
+            filter: contrast(0.4) brightness(150%);
+        }
+    </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+</head>
+
+
+<body>
+    <div class="mt-3 textotitulo">
+        <h4>
+            <strong>SEMANARIO AGROFRUTAS DE DATA INTELLIGENCE</strong>
+        </h4>
+        <p>
+            <b>¡Información actualizada de las 22 frutas del mercado chileno!</b>
+        </p>
+    </div>
+
+    <div>
+        <a href="https://dataintelligence.store/products/semanario-del-agro?variant=42244677107971" target="_blank">
+            <amp-img src="~/Images/SEMANARIO/PAGINA_AGROFRUTA/Semanario_AGROFRUTA_IMAGEN1.jpg" width="220" height="250" layout="responsive"></amp-img>
+        </a>
+    </div>
+
+    <div>
+        <amp-img src="~/Images/SEMANARIO/PAGINA_AGROFRUTA/Semanario_AGROFRUTA_IMAGEN2.jpg" width="220" height="250" layout="responsive"></amp-img>
+    </div>
+    <div>
+        <a href="https://dataintelligence.store/products/semanario-del-agro" target="_blank">
+            <amp-img src="~/Images/SEMANARIO/PAGINA_AGROFRUTA/Semanario_AGROFRUTA_IMAGEN3.jpg" width="220" height="250" layout="responsive"></amp-img>
+        </a>
+    </div>
+    <div class="seccioncarrusel">
+        <p class="h5 textop pt-4">
+            <strong>Todas las frutas del Semanario Agrofrutas</strong>
+        </p>
+        <amp-carousel class="nextwebinar pt-2" controls="never" dir="ltr" visible-count="1" advance-count="1" width="180" height="110" layout="responsive" type="slides" role="region" aria-label="looping carousel" autoplay delay="5000" slide="1">
+            @*SEMANA 1*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro?variant=42244674322691">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Arandano.png">
+                </amp-img>
+            </a>
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Frambuesa.png">
+                </amp-img>
+            </a>
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Kiwi.png">
+                </amp-img>
+            </a>
+            @*SEMANA 2*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Pomelo.png">
+                </amp-img>
+            </a>
+            @*SEMANA 3*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Damasco.png">
+                </amp-img>
+            </a>
+            @*SEMANA 4*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Palta.png">
+                </amp-img>
+            </a>
+            @*MES 2*@
+            @*SEMANA 5*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Mango.png">
+                </amp-img>
+            </a>
+            @*SEMANA 6*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Platano.png">
+                </amp-img>
+            </a>
+            @*SEMANA 7*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_ViddeMesa.png">
+                </amp-img>
+            </a>
+            @*SEMANA 8*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Frutilla.png">
+                </amp-img>
+            </a>
+            @*MES 3*@
+            @*SEMANA 9*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Higo.png">
+                </amp-img>
+            </a>
+            @*SEMANA 10*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Mora.png">
+                </amp-img>
+            </a>
+            @*SEMANA 11*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Limon.png">
+                </amp-img>
+            </a>
+            @*SEMANA 12*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Mandarina.png">
+                </amp-img>
+            </a>
+            @*MES 4*@
+            @*SEMANA 13*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Cereza.png">
+                </amp-img>
+            </a>
+            @*SEMANA 14*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Ciruela.png">
+                </amp-img>
+            </a>
+            @*SEMANA 15*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Durazno.png">
+                </amp-img>
+            </a>
+            @*SEMANA 16*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Nectarin.png">
+                </amp-img>
+            </a>
+            @*MES 5*@
+            @*SEMANA 17*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Manzana.png">
+                </amp-img>
+            </a>
+            @*SEMANA 18*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Pera.png">
+                </amp-img>
+            </a>
+            @*SEMANA 19*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img  width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Chirimoya.png">
+                </amp-img>
+            </a>
+            @*SEMANA 20*@
+            <a class="pt-5" href="https://dataintelligence.store/products/semanario-del-agro">
+                <amp-img width="155" height="150" src="~/Images/SEMANARIO/cuadrados_frutasLOGO/cuadrado_Papaya.png">
+                </amp-img>
+            </a>
+
+        </amp-carousel>
+    </div>
+
+
+</body>
+</html>

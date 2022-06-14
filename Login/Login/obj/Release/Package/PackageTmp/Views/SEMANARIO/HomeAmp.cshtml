@@ -1,0 +1,319 @@
+﻿
+@{
+    ViewBag.Title = "HomeAmp";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<!doctype html>
+<html amp lang="es">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Index AMP</title>
+    <link rel="canonical" href="https://www.dataintelligence-group.com/SEMANARIO/Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org",
+          "@@type": "NewsArticle",
+          "headline": "Article headline",
+          "datePublished": "2021-11-20T12:02:41Z",
+               "image": [
+            "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+              ],
+            "author": {
+                "@@type": "Organization",
+                "name": "Data Intelligence",
+                "url": "https://www.dataintelligence-group.com/Data/Index"
+            },
+        "publisher": {
+            "@@type": "Organization",
+            "name": "DI",
+            "logo": {
+            "@@type": "ImageObject",
+            "url": "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+            }
+        }
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+
+
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+
+    <style amp-custom>
+        :root {
+            --bg-color: Black;
+            --text-color: white;
+        }
+
+        .nextwebinar {
+            background-color: #BC2E80;
+            padding: 0 45px;
+        }
+
+        .seccion2 {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .scroll {
+            max-height: 50vh;
+            overflow: hidden;
+        }
+
+            .scroll:hover {
+                overflow-y: scroll;
+            }
+
+            .scroll::-webkit-scrollbar {
+                width: 12px; /* ancho scrollbar */
+            }
+
+            .scroll::-webkit-scrollbar-track {
+                background: #878787; /*color area fondo scroll*/
+            }
+
+            .scroll::-webkit-scrollbar-thumb {
+                background-color: white; /* color scroll */
+                border-radius: 20px; /* bordes del scroll */
+                /*border: 3px solid orange;*/ /*color del border scroll  */
+            }
+
+        @@media (min-width: 768px) {
+            .carousel-indicators {
+                top: 70vh;
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .carousel-indicators {
+                top: 65vh;
+            }
+        }
+
+        amp-fit-text {
+            white-space: normal;
+        }
+
+        .amp-carousel-button {
+            display: none
+        }
+
+        .texto1 {
+            background-color: #BC2E80;
+            color: white;
+        }
+
+        .ptexto1 {
+            font-size: 0.8rem;
+            margin: 0 20px;
+        }
+
+        .h5 {
+            font-size: 0.9rem;
+            margin: 0 50px;
+            text-align: center;
+        }
+
+        .sombreado {
+            filter: contrast(0.4) brightness(150%);
+        }
+
+        .body1 {
+            background-color: #BC2E80;
+        }
+    </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+</head>
+
+<body class="body1">
+    <amp-img src="~/Images/SEMANARIO/paginaSEMANARIO/Semanario_AGROFRUTA_celular_imagen1.jpg" width="220" height="100" layout="responsive"></amp-img>
+
+    <div class="texto1">
+        <br />
+        <p class="ptexto1">
+            Semanarios Data Intelligence es una NUEVA HERRAMIENTA de información interactiva
+            ideal para el uso diario en el ámbito privado, público, comercial y académico.
+        </p><br />
+        <p class="ptexto1">
+            Permite acceder a INDICADORES CLAVES de acuerdo a tu sector de interés, que
+            son actualizados cada semana a nivel nacional y regional.
+        </p><br />
+        <p class="ptexto1">
+            Incluye GRÁFICOS INTERACTIVOS de fácil uso y análisis. Buscamos que sea un
+            material de consulta que pueda acompañar tu día a día.
+        </p>
+        <p class="h5 pt-4">
+            <strong>  ¡Contamos con una PRUEBA GRATUITA en cada uno de los Semanarios!</strong>
+
+        </p>
+    </div>
+
+
+    <amp-carousel class="nextwebinar mt-3" controls="never" dir="ltr" visible-count="1" advance-count="1" width="180" height="110" layout="responsive" type="slides" role="region" aria-label="looping carousel" autoplay delay="5000" slide="1">
+
+        <a href="~/SEMANARIO/semanario_AgroAMP" data-toggle="tooltip">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_AgroFrutas.png">
+            </amp-img>
+        </a>
+        <a href="~/SEMANARIO/semanario_ImpuestosAMP" data-toggle="tooltip">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_RindenImpuestos.png">
+            </amp-img>
+        </a>
+        <a href="~/SEMANARIO/Focos_FuegoAMP" data-toggle="tooltip">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/ICONO_azul_semanarioFOCOSdeFUEGO.png">
+            </amp-img>
+        </a>
+        <a href="~/SEMANARIO/GlaciaresAMP" data-toggle="tooltip">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Glaciares.png">
+            </amp-img>
+        </a>
+        <a href="~/SEMANARIO/areas_protegidasAMP" data-toggle="tooltip">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_AreasProtegidas.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Denuncias&Sentencias.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Educacion.png">
+            </amp-img>
+        </a>
+
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Energia.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_EstadisticasEconomicas.png">
+            </amp-img>
+        </a>
+
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_GasesGEI.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Genero.png">
+            </amp-img>
+        </a>
+
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Incendios.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Patentes.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_PoliticaEconomica.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_PueblosOriginarios.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_Transparencia.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_UrgenciasSalud.png">
+            </amp-img>
+        </a>
+        <a href="#" data-toggle="tooltip">
+            <amp-img class="sombreado" width="180" height="110" src="~/Images/SEMANARIO/iconoc_azulesSEMANARIOS/iconos_VariacionesClimaticas.png">
+            </amp-img>
+        </a>
+
+    </amp-carousel>
+
+    <div class="texto1 mb-2">
+        <p class=" h5">
+            <strong>
+                Te invitamos a conocer esta NUEVA HERRAMIENTA de Data Intelligence.
+                Cada semana se integran nuevos elementos a nuestra colección de semanarios.
+            </strong>
+
+        </p>
+    </div>
+
+</body>
+</html>
+<script src="~/Scripts/semanarioSlider/semanarioAgro.js"></script>
+
+<script>
+    ActivarMenuSuperior4("#public_semanario")
+</script>

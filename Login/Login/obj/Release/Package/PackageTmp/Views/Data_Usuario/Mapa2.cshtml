@@ -1,0 +1,414 @@
+﻿
+@{
+    ViewBag.Title = "Mapa";
+    Layout = "~/Views/Shared/_LayoutUsuario.cshtml";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+    function mostrador(seccion1) {
+        var arreglo = [
+            '#vista1',
+            '#vista2',
+            '#vista3',
+            '#cambio1',
+            '#cambio2',
+            '#cambio3',
+            '#cambio4',
+            '#cambio1Q2',
+            '#cambio2Q2',
+            '#cambio3Q3',
+            '#nsc1Q2',
+            '#nsc2Q2',
+            '#nsc3Q3',
+            '#mm',
+            '#pdf5',
+            '#pdf6',
+            '#detalle',
+            '#vistaMaxMin',
+            '#vistaq1_1718',
+            '#vistaq2_1718',
+            '#vistaq1_1819',
+            '#vistaq2_1819',
+            '#vistaq1_1920',
+            '#vistaq2_1920',
+            '#vistaq1_2021',
+            '#vistaq2_2021',
+            '#zohoDinamica'
+        ];
+        //arreglo.forEach
+        jQuery.each(arreglo, function (i, val) {
+            $(val).hide();
+        });
+        $(seccion1).show();
+
+    }
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-12" style="background-color:#c6ccdc;">
+            <div class="row">
+                <div class="col-12 col-md-3 p-1">
+                    <form action="~/Data_Usuario/PaginaBusqueda" method="get">
+                        <input type="text" id="id" name="id" placeholder="Búsqueda de palabras claves" style="font-size:0.8em; padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                        <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-3  pt-2">
+                    <p style="color: #1774b9"><strong>Glaciar:</strong> Nombre del Glaciar</p>
+                </div>
+                <div class="col-12 col-md-6 p-2" style="text-align:right">
+
+                    <div class="btn-group p-1 p-md-0">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dinámica de Cambio
+                        </button>
+                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                            <li class="dropdown-submenu dropdown-item ">
+                                <a tabindex="-1" href="#" class="livista" style="font-size: 14px;">
+                                    2017-2018
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                    <li>
+                                        <a tabindex="-1" class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq1_1718')">Q1</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq2_1718')">Q2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item ">
+                                <a tabindex="-1" href="#" class="livista" style="font-size: 14px;">
+                                    2018-2019
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                    <li>
+                                        <a tabindex="-1" class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq1_1819')">Q1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq2_1819')">Q2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item ">
+                                <a tabindex="-1" href="#" class="livista" style="font-size: 14px;">
+                                    2019-2020
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                    <li>
+                                        <a tabindex="-1" class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq1_1920')">Q1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq2_1920')">Q2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item ">
+                                <a tabindex="-1" href="#" class="livista" style="font-size: 14px;">
+                                    2020-2021
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                    <li>
+                                        <a tabindex="-1" class="dropdown-item livista" style="font-size: 14px;"
+                                           onclick="mostrador('#vistaq1_2021')">Q1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item livista" style="font-size: 14px;"
+                                   onclick="mostrador('#zohoDinamica')">Estadísticas</a>
+                            </li>
+                            <li class="dropdown-submenu dropdown-item ">
+                                <a tabindex="-1" href="#" class="livista" style="font-size:14px;">
+                                    PDF Dinamica
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                    <li class="dropdown-submenu dropdown-item ">
+                                        <a href="#" style="font-size: 14px;" class="livista">2017 - 2018</a>
+                                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio1')">Q1</a></li>
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio1Q2')">Q2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu dropdown-item ">
+                                        <a href="#" style="font-size: 14px;" class="livista">2018 - 2019</a>
+                                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio2')">Q1</a></li>
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio2Q2')">Q2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu dropdown-item ">
+                                        <a href="#" style="font-size: 14px;" class="livista">2019 - 2020</a>
+                                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio3')">Q1</a></li>
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio13Q2')">Q2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu dropdown-item ">
+                                        <a href="#" style="font-size: 14px;" class="livista">2020 - 2021</a>
+                                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#cambio4')">Q1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group p-1 p-md-0">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Superficie Max-Min
+                        </button>
+                        <ul class="dropdown-menu dropleft float-right" style="background-color:#c6ccdc;">
+                            <li>
+                                <a class="dropdown-item livista" style="font-size: 14px;"
+                                   onclick="mostrador('#vistaMaxMin')">Mapas</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item livista" style="font-size: 14px;"
+                                   onclick="mostrador('#vista3')">Estadísticas</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item livista" style="font-size: 14px;"
+                                   onclick="mostrador('#mm')">Pdf</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group p-1 p-md-0 ">
+                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="mostrador('#detalle')"
+                                style="font-size: 13px;" aria-expanded="false">
+                            Caracterización
+                        </button>
+
+                    </div>
+
+                    <div class="btn-group p-1 p-md-0 ">
+                        <button type="button" class="btn btn-outline-primary btn-sm " onclick="mostrador('#vista1')"
+                                style="font-size: 13px;" aria-expanded="false">
+                            Instrucciones
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-12">
+            <div id="vista1">
+
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://analytics.zoho.com/open-view/2395394000009054229"> </iframe>
+            </div>
+            <div id="vista2" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px" src="https://analytics.zoho.com/open-view/2395394000007574395"> </iframe>
+            </div>
+            <div id="vista3" style="display:none">
+                @{ string zohoMaxMin = "https://analytics.zoho.com/open-view/2395394000008979469?ZOHO_CRITERIA=%22Glaciares%2010%20Final%22.%22idZonGlac%22%3D" + ViewBag.cod;}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px" src="@zohoMaxMin"> </iframe>
+            </div>
+
+            <div id="cambio1" style="display:none">
+                @{ string url = "https://sud-austral.github.io/Pdf2/Layout_Q1_17_18_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@url" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="cambio2" style="display:none">
+                @{ string urlg2 = "https://sud-austral.github.io/Pdf2/Layout_Q1_18_19_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlg2" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="cambio3" style="display:none">
+                @{ string urlg3 = "https://sud-austral.github.io/Pdf2/Layout_Q1_19_20_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlg3" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="cambio4" style="display:none">
+                @{ string urlg4 = "https://sud-austral.github.io/Pdf2/Layout_Q1_20_21_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlg4" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="cambio1Q2" style="display:none">
+                @{ string urlg5 = "https://sud-austral.github.io/Pdf2/Layout_Q2_17_18_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlg5" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="cambio2Q2" style="display:none">
+                @{ string urlg6 = "https://sud-austral.github.io/Pdf2/Layout_Q2_18_19_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlg6" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="cambio3Q2" style="display:none">
+                @{ string urlg7 = "https://sud-austral.github.io/Pdf2/Layout_Q2_19_20_Dinamica_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlg7" style="width:100%; height:1290px"></iframe>
+            </div>
+
+            <div id="nsc1" style="display:none">
+                @{ string urln1 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_17_18_nive_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln1" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="nsc2" style="display:none">
+                @{ string urln2 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_18_19_nieve_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln2" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="nsc3" style="display:none">
+                @{ string urln3 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_19_20_nieve_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln3" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="nsc4" style="display:none">
+                @{ string urln4 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_20_21_nieve_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln4" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="nsc1Q2" style="display:none">
+                @{ string urln5 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_17_18_nive_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln5" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="nsc2Q2" style="display:none">
+                @{ string urln6 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_18_19_nive_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln6" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="nsc3Q2" style="display:none">
+                @{ string urln7 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_19_20_nive_sin_cambio_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urln7" style="width:100%; height:1290px"></iframe>
+            </div>
+
+
+            <div id="perdida1" style="display:none">
+                @{ string urlp1 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_17_18_pérdida_R10_" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlp1" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="perdida2" style="display:none">
+                @{ string urlp2 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_18_19_pérdida_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlp2" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="perdida3" style="display:none">
+                @{ string urlp3 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_19_20_pérdida_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlp3" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="perdida4" style="display:none">
+                @{ string urlp4 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_20_21_pérdida_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlp4" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="perdida1Q2" style="display:none">
+                @{ string urlp5 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_17_18_pérdida_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlp5" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="perdida2Q2" style="display:none">
+                @{ string urlp6 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_18_19_pérdida_R10__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlp6" style="width:100%; height:1290px"></iframe>
+            </div>
+
+            <div id="mm" style="display:none">
+                @{ string urlm = "https://sud-austral.github.io/Pdf2/Layout_Acumulación_Max_Min_Q1_Q2_R10/" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlm" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="min1Q2" style="display:none">
+                @{ string urlmin2 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_Min__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlmin2" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="max1" style="display:none">
+                @{ string urlmax1 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q1_Max__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlmax1" style="width:100%; height:1290px"></iframe>
+            </div>
+            <div id="max1Q2" style="display:none">
+                @{ string urlmax2 = "https://sud-austral.github.io/pdf/R10_Layout_PDF/Mapa_Q2_Max__" + ViewBag.cod + ".pdf";}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@urlmax2" style="width:100%; height:1290px"></iframe>
+            </div>
+
+
+            <div id="detalle" style="display:none">
+                @{ string detalle = "https://servidormapa.azurewebsites.net/estructura/Glaceares/" + ViewBag.cod;}
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" src="@detalle" style="width:100%; height:1290px"></iframe>
+            </div>
+
+            <div id="vistaq1_1718">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q1&p=17-18&id=@ViewBag.cod"> </iframe>
+            </div>
+            <div id="vistaq2_1718" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q2&p=17-18&id=@ViewBag.cod"> </iframe>
+            </div>
+
+            <div id="vistaq1_1819" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q1&p=18-19&id=@ViewBag.cod"> </iframe>
+            </div>
+            <div id="vistaq2_1819" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q2&p=18-19&id=@ViewBag.cod"> </iframe>
+            </div>
+
+            <div id="vistaq1_1920">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q1&p=20-21&id=@ViewBag.cod"> </iframe>
+            </div>
+
+            <div id="vistaq2_1920" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q2&p=19-20&id=@ViewBag.cod"> </iframe>
+            </div>
+
+            <div id="vistaq1_2021" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q1&p=20-21&id=@ViewBag.cod"> </iframe>
+            </div>
+            <div id="vistaq2_2021" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px"
+                        src="https://mapaglaciares.herokuapp.com/periodo?q=Q2&p=20-21&id=@ViewBag.cod"> </iframe>
+            </div>
+
+            <div id="vistaMaxMin" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px" src="https://mapaglaciares.herokuapp.com/?id=@ViewBag.cod"> </iframe>
+            </div>
+            @{ string zohoDinamica = "https://analytics.zoho.com/open-view/2395394000008984479?ZOHO_CRITERIA=%22Glaciares%2010%20Final%22.%22idZonGlac%22%3D" + ViewBag.cod;}
+
+            <div id="zohoDinamica" style="display:none">
+                <iframe loading="lazy" id="Imprimeme" class="pruebarara" style="width:100%; height:1290px" src="@zohoDinamica"> </iframe>
+            </div>
+            @* imagen precargado  *@
+            <style>
+                /*Loading page*/
+                .jm-loadingpage {
+                    position: fixed;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 999999999;
+                    background: url(../../Content/img/cargando.gif) center no-repeat rgb(0 0 0 / 0.00);
+                }
+                /*Loading page*/
+            </style>
+            <div class="jm-loadingpage"></div>
+            <script>
+                $(document).ready(function () {
+                    $(".jm-loadingpage").fadeOut("slow");
+                });
+            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            @*fin imagen precargado *@
+
+            <script>
+                //alert($("iframe").src);
+
+                var iframesURL = []
+                //$("iframe").attr("src").map(x => iframesURL.push(x));
+                $("iframe").each(x =>
+                    iframesURL.push(x.attr("src"))
+                )
+                alert(iframesURL);
+                $("iframe").attr("src", "")
+            </script>
+
+        </div>
+    </div>
+
+</div>
+
+

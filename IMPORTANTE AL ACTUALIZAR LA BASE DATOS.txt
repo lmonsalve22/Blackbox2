@@ -1,0 +1,26 @@
+Controlador: CONTENIDO_INSERTADO
+
+
+public string _comentario
+        {
+            set { _comentario = value; }
+            get
+            {
+                if (comentario == null)
+                {
+                    return "https://forms.monday.com/forms/embed/1b0cdae45f7d2f680d5d8c0b508aac68?r=use1";
+                }
+                if (comentario == "")
+                {
+                    return "https://forms.monday.com/forms/embed/1b0cdae45f7d2f680d5d8c0b508aac68?r=use1";
+                }
+                try
+                {
+                    return comentario;
+                }
+                catch (Exception)
+                {
+                    return "https://forms.monday.com/forms/embed/1b0cdae45f7d2f680d5d8c0b508aac68?r=use1";
+                }
+            }
+        }

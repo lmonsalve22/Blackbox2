@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Login.Models.TABLA_AREAS_PROTEGIDAS>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_ap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.designacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cod_ap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hectareas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_area_protegida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo_region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo_provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo_comuna)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comuna)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_ap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.designacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cod_ap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hectareas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_area_protegida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo_region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo_provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo_comuna)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comuna)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

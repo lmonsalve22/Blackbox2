@@ -1,0 +1,137 @@
+﻿@model Login.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Registrarse";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+@*<link href="~/Content/Site.css" rel="stylesheet" />*@
+<style>
+    @@media only screen and (max-width: 600px) {
+        /* Big smartphones [426px -> 600px]*/
+        iframe {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+    }
+</style>
+<div class="container-fluid">
+
+    <div class="row" style="font-size:0.8rem;">
+
+        <div class="row">
+            <div class="col-md-12  mt-5 ml-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="h6">
+                            <b>Prueba por 7 días algunas de nuestras colecciones ¡solo te debes registrar!</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 mt-3 text-center" @*style="background-color:black"*@>
+
+            <p class="h6 pb-2 pt-2 mb-0 " style="color:white; background-color:black;">
+                Nuestra misión es que puedas visualizar información de manera rápida y eficiente
+            </p>
+            <iframe style="width:100%;height:76vh;padding:5%" src="https://www.youtube.com/embed/pwvHXTqMIdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            @*<p class="h6 mt-4 mb-2">
+                ¿Qué hacemos en Data Intelligence?<br />
+                Seleccionamos los temas de contingencia, buscamos cada uno de los datos públicos disponibles,
+                sistematizamos la información y creamos millones de gráficos y mapas interactivos agrupados en diversas colecciones.
+            </p>*@
+        </div>
+        <div class="col-12 col-md-4 mt-md-4">
+            <div class="row ">
+                <div class="col-6 col-md-6 mt-3 mt-md-0 ">
+                    <img class="img-fluid" src="~/Content/logo_dataIntelligence_sinslogan.jpg" alt="Logo DataIntelligence" />
+                </div>
+                <div class="col-12 col-md-12">
+
+                    <p>
+                        <b>
+                            En Data Intelligence transformamos datos en información,
+                            nuestras colecciones se generan a partir de millones de datos
+                            públicos representados en gráficos y mapas interactivos.
+                            ¡Regístrate y accede a una prueba gratis de 7 días para que conozcas algunas de nuestras colecciones!
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <h6>Cree una cuenta nueva</h6>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <hr />
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                <div class="form-group">
+                    <label class="col-md-6 control-label" for="Nombre" style="font-weight:bold;">Nombre</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="Nombre" name="Nombre" type="text" value="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-6 control-label", @style = "font-weight:bold;" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-6 control-label", @style = "font-weight:bold;" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    </div>
+                    @*<div class="col-md-10 mt-3 mb-3">
+                    La contraseña debe poseer al menos:
+                    <br />
+
+                    <strong>∙</strong> 6 Carácteres
+                    <br />
+                    <strong>∙</strong> 1 Número
+                    <br />
+                    <strong>∙</strong> 1 Carácter especial
+                    <br />
+                    <strong>∙</strong> 1 Mayúscula
+                    <br />
+                    <strong>∙</strong> 1 Minúscula
+                    <br />
+                </div>*@
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-6 control-label", @style = "font-weight:bold;" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                    </div>
+                    <div class="col-md-10 mt-3 mb-3">
+                        La contraseña debe poseer al menos:
+                        <br />
+
+                        <strong>∙</strong> 8 Carácteres
+                        <br />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 mt-4">
+                        <input type="submit" class="btn btn-primary" value="Registrarse" />
+                    </div>
+                </div><br><br>
+            }
+        </div>
+    </div>
+
+    <!--<div class="jumbotron" style="background-color:transparent;padding:0;">-->
+    <!-- <h1 class="display-4">Error - Licencia caducada</h1>-->
+    <!--<img class="img-fluid" src="~/Images/Error/creoCuentaNueva.jpg" style="width:100%;" alt="Crear Cuenta" />
+    </div>-->
+
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script>
+        ActivarMenuSuperior4("#public_dataAcceso")
+    </script>
+</div>

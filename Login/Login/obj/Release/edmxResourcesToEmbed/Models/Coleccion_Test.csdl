@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="graficosModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TABLA_GENERICA_PRUEBA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="graficosEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TABLA_GENERICA_PRUEBA" EntityType="Self.TABLA_GENERICA_PRUEBA" />
+    <EntitySet Name="DATA_METRICA_EDUCACION_160" EntityType="graficosModel1.DATA_METRICA_EDUCACION_160" />
+    <EntitySet Name="D000_SITIO_PUBLICO" EntityType="graficosModel1.D000_SITIO_PUBLICO" />
+    <EntitySet Name="D100_AGRICULTURA" EntityType="graficosModel1.D100_AGRICULTURA" />
+    <EntitySet Name="D400_INGRESO_HISTORICO" EntityType="graficosModel1.D400_INGRESO_HISTORICO" />
+    <EntitySet Name="D990_AGENCIA_INFORMACION" EntityType="graficosModel1.D990_AGENCIA_INFORMACION" />
+    <EntitySet Name="D360_ENFERMEDADES_MUNDIALES" EntityType="graficosModel1.D360_ENFERMEDADES_MUNDIALES" />
+    <EntitySet Name="D140_ECONOMIA" EntityType="graficosModel1.D140_ECONOMIA" />
+    <EntitySet Name="D300_VIOLENCIA_CONTRA_LA_MUJER" EntityType="graficosModel1.D300_VIOLENCIA_CONTRA_LA_MUJER" />
+    <EntitySet Name="D261_GLACIARES" EntityType="graficosModel1.D261_GLACIARES" />
+    <EntitySet Name="D101_INCENDIOS" EntityType="graficosModel1.D101_INCENDIOS" />
+    <EntitySet Name="PLATAFORMA_AUX" EntityType="graficosModel1.PLATAFORMA_AUX" />
+    <EntitySet Name="CONTENIDO_INSERTADO" EntityType="graficosModel1.CONTENIDO_INSERTADO" />
+    <EntitySet Name="D241_CIUDADES" EntityType="graficosModel1.D241_CIUDADES" />
+    <EntitySet Name="D161_RANKING_COMUNAL_EDUCACION" EntityType="graficosModel1.D161_RANKING_COMUNAL_EDUCACION" />
+    <EntitySet Name="D240_Municipio" EntityType="graficosModel1.D240_Municipio" />
+    <EntitySet Name="MONITOR" EntityType="graficosModel1.MONITOR" />
+    <EntitySet Name="BOX_INFOTMATION" EntityType="graficosModel1.BOX_INFOTMATION" />
+    <EntitySet Name="TABLA_SEMANARIO" EntityType="graficosModel1.TABLA_SEMANARIO" />
+  </EntityContainer>
+  <EntityType Name="DATA_METRICA_EDUCACION_160">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D000_SITIO_PUBLICO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D100_AGRICULTURA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D400_INGRESO_HISTORICO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D990_AGENCIA_INFORMACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D360_ENFERMEDADES_MUNDIALES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D140_ECONOMIA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D300_VIOLENCIA_CONTRA_LA_MUJER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D261_GLACIARES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D101_INCENDIOS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLATAFORMA_AUX">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="variante" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_inicio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sku_completo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_final" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CONTENIDO_INSERTADO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="comentario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="medio_objetivo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_medio_objetivo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="servicio_base" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D241_CIUDADES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D161_RANKING_COMUNAL_EDUCACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="D240_Municipio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="coleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idcoleccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="filtro_integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="muestra_temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="temporalidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="unidad_medida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_larga" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="visualizacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="suscripcion" Type="Int64" />
+    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_grafico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_territorio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_contenido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_muestra" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MONITOR">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="parametro1_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro2_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro3_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro4_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parametro4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_extendida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_tabla" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="aux" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="aux2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="BOX_INFOTMATION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="id_tema" Type="Int64" />
+    <Property Name="id_tabla" Type="Int64" />
+    <Property Name="titulo_box" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro1" Type="Int64" />
+    <Property Name="desc_filtro1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_filtro2" Type="Int64" />
+    <Property Name="desc_filtro2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url_expandida" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="aux" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="aux2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TABLA_SEMANARIO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="detalles" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="otro" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_publicacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="auxiliar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tabla_padre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tabla_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

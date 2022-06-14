@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Mapa";
+    Layout = "~/Views/Shared/_LayoutEconomia.cshtml";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+    function mostrador(seccion1) {
+        var arreglo = [
+            '#vista1',
+            '#vista2',
+            '#vista3',
+            '#vista4'
+        ];
+        //arreglo.forEach
+        jQuery.each(arreglo, function (i, val) {
+            $(val).hide();
+        });
+        $(seccion1).show();
+    }
+</script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12" style="background-color:#c6ccdc;">
+            <div class="row">
+                <div class="col-12 col-md-9 p-2">
+                    <div class="btn-group p-1 p-md-0">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Superficie de Nieve Q1-Q2 Anual
+                        </button>
+                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista1')">Mapas</a></li>
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista2')">Estadísticas</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group p-1 p-md-0">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Superficie Máx-Min Periodo Q1-Q2
+                        </button>
+                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista3')">Mapas</a></li>
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista4')">Estadísticas</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group p-1 p-md-0">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Superficie Acumulación Permanente
+                        </button>
+                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista1')">Mapas</a></li>
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista2')">Estadísticas</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group p-1 p-md-0">
+                        <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle" style="font-size: 13px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Superficie Acumulación Temporal
+                        </button>
+                        <ul class="dropdown-menu" style="background-color:#c6ccdc;">
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista3')">Mapas</a></li>
+                            <li><a class="dropdown-item livista" style="font-size: 14px;" onclick="mostrador('#vista4')">Estadísticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-1">
+                    <form action="~/ECONOMIA/PaginaBusqueda" method="get">
+                        <input type="text" id="id" name="id" placeholder="Busqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                        <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div id="vista1">
+                <iframe id="Imprimeme" class="pruebarara" style="width:100%; height:1490px" src="https://servidormapa.azurewebsites.net/glaciares/index/10"> </iframe>
+            </div>
+            <div id="vista2" style="display:none">
+                <iframe id="Imprimeme" class="pruebarara" style="width:100%; height:1490px" src="https://analytics.zoho.com/open-view/2395394000007574395"> </iframe>
+            </div>
+            <div id="vista3" style="display:none">
+                <iframe id="Imprimeme" class="pruebarara" style="width:100%; height:490px" src="https://analytics.zoho.com/open-view/2395394000000824986?ZOHO_CRITERIA=%22Trasposicion_4.1%22.%22Id_Categor%C3%ADa%22%20%3D%20100108007"> </iframe>
+            </div>
+            <div id="vista4" style="display:none">
+                <iframe id="Imprimeme" class="pruebarara" style="width:100%; height:490px" src="https://analytics.zoho.com/open-view/2395394000006080273?ZOHO_CRITERIA=%22Trasposicion_4.2%22.%22C%C3%B3digo_Regi%C3%B3n%22%20%3D%207"> </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+

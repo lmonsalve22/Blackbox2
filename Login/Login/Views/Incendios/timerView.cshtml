@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>timerView</title>
+</head>
+<body>
+    <div>
+        @{
+
+
+            ////List<Product> products = new List<Product> {
+            ////    new Product{ Id = 1, Name = "test product", Categorie = 1},
+            ////    new Product{ Id = 2, Name = "another product",Categorie = 1},
+            ////    new Product{ Id = 3, Name = "more stuff",Categorie = 1},
+            ////    new Product{ Id = 4, Name = "even more",Categorie = 2},
+            ////    new Product{ Id = 5, Name = "and the last",Categorie = 2}
+            ////};
+        }
+        <h1>@DateTime.Now</h1>
+        <script>
+        //fill the javascript variable with products
+            var products = 'Hola'; @*@(Html.Raw(Json.Encode(ViewBag.test)));*@
+            @*products = @(Html.Raw("{'id':1,'idcoleccion':101}"));*@
+            products = @(Html.Raw(Json.Encode(ViewBag.test)));
+            
+            console.log(products);
+        </script>
+        <h1>Hola</h1>
+        <h1>@DateTime.Now</h1>
+    </div>
+</body>
+</html>

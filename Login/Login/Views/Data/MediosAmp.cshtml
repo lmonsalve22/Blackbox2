@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Medios";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<div class="container-fluid">
+    @*<div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h2>Iframe de Prueba</h2>
+            </div>
+        </div>*@
+    <div class="row justify-content-center" style="height:330vh;">
+
+        <div class="col-12 col-md-10 text-center" style="padding:0;">
+            <div class="ratio ratio-4x3">
+                <iframe style="height:320vh;" src="~/Contenido/Medios3amp/@ViewBag.id" title="Box Info" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

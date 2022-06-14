@@ -1,0 +1,220 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<style>
+    :root {
+        --bg-color: Black;
+        --text-color: white;
+    }
+
+    .nextwebinar {
+        background: repeating-linear-gradient(to right, rgb(47 135 199), rgb(157 33 99)) !important;
+    }
+
+    .seccion2 {
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
+
+    .scroll {
+        max-height: 50vh;
+        overflow: hidden;
+    }
+
+        .scroll:hover {
+            overflow-y: scroll;
+        }
+
+        .scroll::-webkit-scrollbar {
+            width: 12px; /* ancho scrollbar */
+        }
+
+        .scroll::-webkit-scrollbar-track {
+            background: #878787; /*color area fondo scroll*/
+        }
+
+        .scroll::-webkit-scrollbar-thumb {
+            background-color: white; /* color scroll */
+            border-radius: 20px; /* bordes del scroll */
+            /*border: 3px solid orange;*/ /*color del border scroll  */
+        }
+
+    @@media (min-width: 768px) {
+        .carousel-indicators {
+            top: 70vh;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .carousel-indicators {
+            top: 65vh;
+        }
+    }
+</style>
+<!--<div class="container-fluid nextwebinar">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-5 mb-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+@*<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>*@
+@*<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>*@
+<!--</div>
+<div class="carousel-inner">-->
+@*<div class="carousel-item active">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 text-center">
+                <img src="~/Content/landing main webinar/pagina_webinarsProx_violenciamujer_1_1.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación">
+            </div>
+            <div class="col-md-6 text-center">
+                <a style="margin:0px;padding:0px;" href="https://www.dataintelligence-group.com/marketing/webinarIncendio" target="_blank"><img src="~/Content/imagennes reemplazar webinar master/pagina_webinarsProx_incendios_1_2.png" class="d-block w-100 img-fluid" alt="siguiente webinar Incendio"></a>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="~/Content/imagennes reemplazar webinar master/pagina_webinarsProx_incendios_1_3.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación">
+            </div>
+        </div>
+    </div>*@
+
+<!--<div class="carousel-item active">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-12 text-center ">
+            <img src="~/Content/landing main webinar/pagina_webinarsProx_violenciamujer_1_1.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación">
+        </div>
+        <div class="col-md-6 text-center ">
+            <a style="margin:0px;padding:0px;" href="https://www.dataintelligence-group.com/marketing/webinarEducacion" target="_blank"><img src="~/Content/landing main webinar/pagina_webinarsProx_educacion_1_2.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación"></a>
+        </div>
+        <div class="col-md-6 text-center ">
+            <img src="~/Content/imagennes reemplazar webinar master/pagina_webinarsProx_educacion_1_3.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación">
+        </div>
+    </div>
+</div>-->
+@*<div class="carousel-item">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 text-center">
+                <img src="~/Content/landing main webinar/pagina_webinarsProx_violenciamujer_1_1.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación">
+            </div>
+            <div class="col-md-6 text-center">
+                <a style="margin:0px;padding:0px;" href="https://www.dataintelligence-group.com/marketing/webinarMunicipio" target="_blank"><img src="~/Content/landing main webinar/Municipio/pagina_webinarsProx_municipio_1_1.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación"></a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="~/Content/landing main webinar/Municipio/pagina_webinarsProx_municipio_1_2.png" class="d-block w-100 img-fluid" alt="siguiente webinar educación">
+            </div>
+        </div>
+    </div>*@
+<!--</div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--<div class="container-fluid seccion2">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center mt-5">
+            <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsCalendario_titulo1.png" />
+            <p class="texto mt-3">
+                Esta es la programación de Webinars para los siguientes días, conozca las nuevas herramientas
+                que Data Intelligence pone a su disposición, todas enfocadas a resolver las principales dificultades
+                de acceso, sistematización, orden y clasificación de datos.
+            </p>
+        </div>
+        <div class="col-12 col-md-8 mt-5 mb-5">
+            <div class="row justify-content-center mb-3 scroll">-->
+@*<div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsCalendario_incendios_1_1.png" />
+    </div>
+    <div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsCalendario_incendios_1_2.png" />
+    </div>
+    <div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/imagennes reemplazar webinar master/pagina_webinarsCalendario_incendios_1_3.png" />
+    </div>*@
+@*<div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsCalendario_agricultura_1_1.png" />
+    </div>
+    <div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/imagennes reemplazar webinar master/pagina_webinarsCalendario_agricultura_1_2.png" />
+    </div>
+    <div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/imagennes reemplazar webinar master/pagina_webinarsCalendario_agricultura_1_3.png" />
+    </div>*@
+<!--<div class="col-4 mt-3">
+    <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsCalendario_educacion_1_1.png" />
+</div>
+<div class="col-4 mt-3">
+    <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsCalendario_educacion_1_2.png" />
+</div>
+<div class="col-4 mt-3">
+    <img class="img-fluid" src="~/Content/imagennes reemplazar webinar master/correccion de lo enviado/pagina_webinarsCalendario_educacion_1_3.png" />
+</div>-->
+@*<div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/landing main webinar/Municipio/pagina_webinarsCalendario_municipio_1_1.png" />
+    </div>
+    <div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/landing main webinar/Municipio/pagina_webinarsCalendario_municipio_1_2.png" />
+    </div>
+    <div class="col-4 mt-3">
+        <img class="img-fluid" src="~/Content/landing main webinar/Municipio/pagina_webinarsCalendario_municipio_1_3.png" />
+    </div>*@
+<!--</div>
+        </div>
+    </div>
+</div>-->
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center mt-5">
+            <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsRealizados_titulo_!.png" />
+            <p>
+                Si se perdió el ciclo de Webinars puede acceder a la grabación de la transmisión, en estos link
+                encontrará información sobre la charla y podrá interactuar con información destacada.
+            </p>
+        </div>
+        <div class="row justify-content-center mt-4 mb-5">
+
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarEducacion" target="_blank"><img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_educacion1.png" /></a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarMunicipio" target="_blank"><img class="img-fluid" src="~/Content/landing main webinar/Municipio/pagina_webinarsPasados_MUNICIPIO.png" /></a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarAgricultura" target="_blank"><img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_agricultura.png" /></a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarIncendio" target="_blank"><img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_incendios.png" /></a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3 mb-5">
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarGenero" target="_blank"><img class="img-fluid" src="~/Content/imagennes reemplazar webinar master/pagina_webinarsPasados_violenciamujer.png" /></a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarAgenciaDI" target="_blank"><img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_agenciaDI.png" /></a>
+            </div>
+            <div class="col-6 col-md-2">
+                <a href="https://www.dataintelligence-group.com/marketing/webinarGlaciares" target="_blank"><img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_glaciares.png" /></a>
+            </div>
+
+            @*<div class="col-6 col-md-2">
+                    <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_agenciaDI.png" />
+                </div>
+                <div class="col-6 col-md-2">
+                    <img class="img-fluid" src="~/Content/landing main webinar/pagina_webinarsPasados_agenciaDI.png" />
+                </div>*@
+        </div>
+    </div>
+</div>
+<script>
+    ActivarMenuSuperior4("#Marketing_index")
+</script>

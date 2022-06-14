@@ -1,0 +1,44 @@
+﻿<style>
+    /* Start: Video Responsive */
+    .video-responsive {
+        overflow: hidden;
+        padding-bottom: 400px; /* Adecua este valor para controlar la altura del video */
+        position: relative;
+        height: 0;
+    }
+
+        .video-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    /* End: Video Responsive */
+</style>
+<div class="container">
+    <div class="row">
+        <div class="5">
+            <ul>
+
+                <li type="circle">Esto es un tipo de punto.</li>
+
+                <li type="square">Este es otro.</li>
+
+                <li type="disc">Y este es otro diferente.</li>
+
+            </ul>
+        </div>
+        <div class="7">
+            <div class="video-responsive">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/6QpL_ix5RSQ"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>

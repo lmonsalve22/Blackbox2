@@ -1,0 +1,69 @@
+﻿
+
+<div class="container">
+    <div class="row mt-md-5">
+        <div class="col-md-2 d-inline">
+            <img class="img-fluid" src="~/Content/img/Imagenes_temas_colecciones/recuadrosweb_Agricultura_cosecha.png" />
+        </div>
+        <div class="col-md-3 d-flex ">
+            <h5 style="align-self:center;"><B>COSECHA</B> </h5>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8 mt-md-3">
+            <h5><b>Temas</b> </h5>
+            <div class="col">
+                <style>
+                    @@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+
+                    .mb-0 > a {
+                        display: block;
+                        position: relative;
+                    }
+
+                        .mb-0 > a:after {
+                            content: "\f078"; /* fa-chevron-down */
+                            font-family: 'FontAwesome';
+                            position: absolute;
+                            right: 0;
+                        }
+
+                        .mb-0 > a[aria-expanded="true"]:after {
+                            content: "\f077"; /* fa-chevron-up */
+                        }
+                </style>
+                <div id="a-Exportaciones" style="font-size:0.9rem !important;">
+                    <!--<div id="accordion" >-->
+                    <!--Estructura Tema-->
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+        var raw = @Html.Raw(Json.Encode(ViewBag.Resultado));
+    RenderPrincipal(raw, "Exportaciones");
+</script>
+<style>
+    .enlaceFinal {
+        color: black !important;
+    }
+</style>

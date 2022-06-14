@@ -1,0 +1,276 @@
+﻿
+@{
+    ViewBag.Title = "HomeAmp";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<!doctype html>
+<html amp lang="es">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Index AMP</title>
+    <link rel="canonical" href="https://www.dataintelligence-group.com/INFOBOX/Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org",
+          "@@type": "NewsArticle",
+          "headline": "Article headline",
+          "datePublished": "2021-11-20T12:02:41Z",
+               "image": [
+            "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+              ],
+            "author": {
+                "@@type": "Organization",
+                "name": "Data Intelligence",
+                "url": "https://www.dataintelligence-group.com/Data/Index"
+            },
+        "publisher": {
+            "@@type": "Organization",
+            "name": "DI",
+            "logo": {
+            "@@type": "ImageObject",
+            "url": "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+            }
+        }
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+
+
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+
+    <style amp-custom>
+        :root {
+            --bg-color: Black;
+            --text-color: white;
+        }
+
+        .nextwebinar {
+            background-color: #A0ACAC;
+            padding: 0 55px;
+        }
+
+        .seccion2 {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .scroll {
+            max-height: 50vh;
+            overflow: hidden;
+        }
+
+            .scroll:hover {
+                overflow-y: scroll;
+            }
+
+            .scroll::-webkit-scrollbar {
+                width: 12px; /* ancho scrollbar */
+            }
+
+            .scroll::-webkit-scrollbar-track {
+                background: #878787; /*color area fondo scroll*/
+            }
+
+            .scroll::-webkit-scrollbar-thumb {
+                background-color: white; /* color scroll */
+                border-radius: 20px; /* bordes del scroll */
+                /*border: 3px solid orange;*/ /*color del border scroll  */
+            }
+
+        @@media (min-width: 768px) {
+            .carousel-indicators {
+                top: 70vh;
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .carousel-indicators {
+                top: 65vh;
+            }
+        }
+
+        amp-fit-text {
+            white-space: normal;
+        }
+
+        .amp-carousel-button {
+            display: none
+        }
+
+        .texto1 {
+            background-color: #000;
+            color: white;
+        }
+        .texto2 {
+            color: black;
+            margin: 0 20px;
+            text-align:center;
+        }
+
+        .boxtitulo {
+            font-size: 0.8rem;
+            margin: 0 20px;
+        }
+        .boxtitulo1{
+             margin: 0 20px;
+        }
+
+        .h5 {
+            font-size: 0.9rem;
+            margin: 0 50px;
+            text-align: center;
+        }
+
+        .sombreado {
+            filter: contrast(0.4) brightness(150%);
+        }
+
+        .body1 {
+            background-color: #A0ACAC;
+        }
+    </style>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+</head>
+
+<body class="body1">
+    <amp-img src="~/Images/SEMANARIO/PAGINA_INFOBOX_escritorioYcelular.jpg" width="220" height="100" layout="responsive"></amp-img>
+
+    <div class="texto1">
+        <br />
+        <h5 class="boxtitulo1">
+            Generamos contenido permanente a tu Sitio Web
+        </h5>
+        <p class="boxtitulo pt-2">
+            Una vez que elijas el InfoBox que te interese te enviaremos un código para insertar en tu página web.
+        </p>
+        <p class="boxtitulo pt-2">
+            Solo necesitas contactarnos para acompañarte en el proceso.
+        </p>
+        <p class="boxtitulo pt-2 pb-2">
+            Revisa todos nuestros InfoBox disponibles, son totalmente gratuitos.
+        </p>
+    </div>
+
+    <p class="texto2 pt-2">
+        ¡Revisa y Contáctanos para que obtengas totalmente gratis uno de estos InfoBox!
+    </p>
+
+
+    <amp-carousel class="nextwebinar pt-4 pb-2" controls="never" dir="ltr" visible-count="1" advance-count="1" width="150" height="50" layout="responsive" type="slides" role="region" aria-label="looping carousel" autoplay delay="5000" slide="1">
+
+        <a href="~/data/medios/3" data-toggle="tooltip" target="_blank">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/icono_NEGRO_INFOBOX_agrofruta.png">
+            </amp-img>
+        </a>
+
+        <a href="~/data/medios/7" data-toggle="tooltip" target="_blank">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/icono_NEGRO_INFOBOX_focosdefuego.png">
+            </amp-img>
+        </a>
+        <a href="~/data/medios/2" data-toggle="tooltip" target="_blank">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/icono_NEGRO_INFOBOX_indicedeproduccioneconomica.png">
+            </amp-img>
+        </a>
+        <a href="~/data/medios/8" data-toggle="tooltip" target="_blank">
+            <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/ICONOS_NEGROS_gasescontaminantes.png">
+            </amp-img>
+        </a>
+            <a href="~/data/medios/1" data-toggle="tooltip" target="_blank">
+                <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/icono_NEGRO_INFOBOX_COMERCIOsupermercado.png">
+                </amp-img>
+            </a>
+
+            <a href="~/data/medios/6" data-toggle="tooltip" target="_blank">
+                <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/icono_NEGRO_INFOBOX_LoMasDichoAMBIENTAL.png">
+                </amp-img>
+            </a>
+
+            <a href="~/data/medios/5" data-toggle="tooltip" target="_blank">
+                <amp-img width="180" height="110" src="~/Images/SEMANARIO/CUADROS_NEGROS_INFOBOX/icono_NEGRO_INFOBOX_LoMasDichoMEDIOSCOMUNICACION.png">
+                </amp-img>
+            </a>
+    </amp-carousel>
+
+    <p class="texto2 pt-2">
+        Para obtener un InfoBox escríbe un WhatsApp al +56 9 9438 5412 o envíanos un mail a: contacto@dataintelligence-group.com
+    </p>
+
+</body>
+</html>
+<script src="~/Scripts/semanarioSlider/semanarioAgro.js"></script>
+
+<script>
+    ActivarMenuSuperior4("#public_infobox")
+</script>

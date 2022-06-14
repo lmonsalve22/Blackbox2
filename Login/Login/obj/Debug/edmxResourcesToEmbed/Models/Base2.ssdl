@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="graficosModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="D240_MUNICIPIO_2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+    <Property Name="url2" Type="varchar(max)" />
+    <Property Name="url3" Type="varchar(max)" />
+    <Property Name="url4" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D241_REGION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+    <Property Name="url2" Type="varchar(max)" />
+    <Property Name="url3" Type="varchar(max)" />
+    <Property Name="url4" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="UNIDAD_MEDIDA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="250" />
+    <Property Name="descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="auxiliar" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityContainer Name="graficosModel2StoreContainer">
+    <EntitySet Name="D240_MUNICIPIO_2" EntityType="Self.D240_MUNICIPIO_2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D241_REGION" EntityType="Self.D241_REGION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNIDAD_MEDIDA" EntityType="Self.UNIDAD_MEDIDA" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

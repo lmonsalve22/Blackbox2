@@ -1,0 +1,188 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutEconomia.cshtml";
+}
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="~/Scripts/Usuario/Coleccion.js"></script>
+    <script>
+        function ActivarMenuSuperior3(opcionMenu) {
+            $('.active5').removeClass('active5');
+            $(opcionMenu).addClass("active5");
+        }
+    </script>
+    <style>
+
+        .active5 {
+            background-color: #f6f6f6 !important;
+        }
+    </style>
+    <title>Economia-Contenido de la Colección</title>
+</head>
+<body>
+    <main class="container-fluid ">
+        <div class="row ">
+            <div class="col-sm-3 pb-sm-0 pb-3 d-none d-md-block" style="padding-left:0px !important;">
+                <div class="border rounded-3 p-1 ulcolecciones">
+                    <h6 class="h6colecciones">Contenido de la colección</h6>
+                    <ul style="list-style:none; padding-left:0px !important;">
+                        <li class="nav-item licolecciones">
+                            <a onclick="CargarContenido('Comercio'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones active5">
+                                <span class="lispancolecciones">Comercio</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Construcción'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones">Construcción</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Electricidad'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class=" lispancolecciones">Electricidad</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Manufacturas'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones">Manufacturas</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Minería'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+
+                                <span class="lispancolecciones">Minería</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Pesca'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones">Pesca</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Silvoagropecuario'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones"> Silvoagropecuario</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Transporte'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones">Transporte</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Transporte Carga'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones">Transporte de Carga</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a onclick="CargarContenido('Turismo'); ActivarMenuSuperior3(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones">Turismo</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col overflow-auto">
+                @*Dropdaown MENU PARA MOVIL*@
+                <div class="conteiner-fluid d-block d-md-none">
+                    <div class="row">
+                        <div class="col-12 ddcolecciones">
+                            <div class="dropdown ">
+                                <a class="btn dropdown-toggle ddcolecciones" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contenido de la colección
+                                </a>
+                                <ul class="dropdown-menu ddcolecciones" aria-labelledby="dropdownMenuLink">
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Comercio');" class="dropdown-item btn btn-light ddhcolecciones">Comercio</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Construcción');" class="dropdown-item btn btn-light ddhcolecciones">Construcción</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Electricidad');" class="dropdown-item btn btn-light ddhcolecciones">Electricidad</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Manufacturas');" class="dropdown-item btn btn-light ddhcolecciones">Manufacturas</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Minería');" class="dropdown-item btn btn-light ddhcolecciones">Minería</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Pesca');" class="dropdown-item btn btn-light ddhcolecciones">Pesca</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Silvoagropecuario');" class="dropdown-item btn btn-light ddhcolecciones">Silvoagropecuario</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Transporte');" class="dropdown-item btn btn-light ddhcolecciones">Transporte</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Transporte Carga');" class="dropdown-item btn btn-light ddhcolecciones">Transporte de Carga</a></li>
+                                    <li style="border-bottom:1px solid #d1d3de"><a onclick="CargarContenido('Turismo');" class="dropdown-item btn btn-light ddhcolecciones">Turismo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*FIN MENU PARA MOVIL*@
+                <div class="mt-3 mt-md-0">
+                    <div id="bodyContenido">
+                        @*@{ Html.RenderAction("Tematica", "Data_Usuario");}*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3" style="padding-top: 3%; padding-bottom: 1%; background-color: #C6CCDC; height: auto ">
+            <div class="col-12 col-md-3 mt-3 text-center">
+                <!--Buscador -->
+                <form action="~/Economia/PaginaBusqueda" method="get"class="mt-3 mt-md-0">
+                    <input type="text" id="id" name="id" placeholder="Búsqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                    <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-12 col-md-3 text-center mt-md-2 mt-0" >
+                <h4 style="color:black; font-size:1.2rem;"><b>¡Explora, busca y encuentra!</b></h4>
+                <p>en todo nuestro universo de datos</p>
+            </div>
+            <div class="col-12 col-md-3 text-center ">
+                <img class="img-fluid" src="~/Content/img/negro-rojo-trans - copia.png" alt="" />
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function CargarContenido(id) {
+            $('#bodyContenido').html('<h2>Cargando Información...espere un momento por favor</h2>')
+            //$("#PBdos").html("<h1>Hola</h1>")
+            //alert(Grafico)
+            $.ajax(
+                {
+                    type: 'POST',
+                    data: "{'id':" + "'" + id + "'}", //datos o parametros enviados al servidor
+                    dataType: 'html', //el tipo de dato que nos regresara el servidor en este caso regresa html
+                    url: '/Economia/parcialColeccion?contenido=' + id,
+                    //URL del action result que cargara la vista parcial
+                    success: function (result) {
+                        // si la funcion se ejecuta lanzara un alert
+                        /*alert('Success');*/
+                        //cuando se ejecuta bien la funcion agregara al div vistaParcial el contenido
+                        //que recibio del servidor
+                        $("#bodyContenido").html(result);
+                    },
+                    error: function (error) {
+                        // si hay un error lanzara el mensaje de error
+                        //alert('Fail PBGrafico3  CarrucelBusqueda');
+                        $("#bodyContenido").html('<h2>No hemos encontrado gráficos relacionados</h2>');
+                    }
+                });
+        }
+        CargarContenido("Comercio")
+
+    </script>
+
+    <script>
+        ActivarMenuSuperior("#ECONOMIA_ContenidoColeccion")
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

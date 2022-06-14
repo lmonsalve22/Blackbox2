@@ -1,0 +1,415 @@
+﻿
+@{
+    ViewBag.Title = "FuentesUsuario";
+    Layout = "~/Views/Shared/_LayoutCiudades.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-3 mt-md-5 mb-md-5">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2">
+                        <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" />
+                    </div>
+                    <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                        <h5 class="h2 coleccion mt-md-0 pt-md-0 d-none d-md-block"><b>Colección Ciudades</b></h5>
+                        <h5 class="h2 coleccion mt-2 mt-md-0 pt-sm-5 pt-md-0  d-block d-md-none"><b>Colección Ciudades</b></h5>
+                        <p class="d-none d-md-block">
+                            La Colección Ciudades reúne información detallada de 588 centros urbanos, de distintos pueblos,
+                            comunas y regiones de Chile. A través de datos geolocalizados se ofrece información de las distancias
+                            de estas zonas urbanas a los diferentes establecimientos de utilidad para la población. Esta
+                            información es complementada con la caracterización de cada centro urbano según índices de
+                            vegetación, suelo y temperatura, todas variables que inciden en la calidad de vida de las personas.
+                            La información es visualizada en cientos de gráficos y mapas interactivos que proporcionan un
+                            panorama general, facilitando el conocimiento de cada unas de las áreas vinculadas a los habitantes
+                            de la comuna. Es un excelente recurso para dar fundamento a la planificación y toma de decisiones.
+
+                        </p>
+                    </div>
+                    <div class="col-12 d-block d-md-none mt-3 " style="border-left: solid 0.5px #b0b0b0;">
+                        <p style="font-size:1.0rem !important;">
+                            La Colección Ciudades reúne información detallada de 588 centros urbanos, de distintos pueblos,
+                            comunas y regiones de Chile. A través de datos geolocalizados se ofrece información de las distancias
+                            de estas zonas urbanas a los diferentes establecimientos de utilidad para la población. Esta
+                            información es complementada con la caracterización de cada centro urbano según índices de
+                            vegetación, suelo y temperatura, todas variables que inciden en la calidad de vida de las personas.
+                            La información es visualizada en cientos de gráficos y mapas interactivos que proporcionan un
+                            panorama general, facilitando el conocimiento de cada unas de las áreas vinculadas a los habitantes
+                            de la comuna. Es un excelente recurso para dar fundamento a la planificación y toma de decisiones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*CONTAINER TAMAÑO DE PANTALLA MEDIO O SUPERIOR*@
+        <div class="container d-none d-md-block">
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-12 col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 36vh; display: flex;">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:5%; font-weight:bold;">
+                                    Comercio
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Construcción
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Electricidad
+                                </header>
+                                <Strong>Fuente:</Strong> Coordinador Eléctrico Nacional
+                                <br />
+                                <strong>Periodo:</strong>  2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong>  actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Manufacturas
+                                </header>
+                                <Strong>Fuente:</Strong>  Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong>  actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Minería
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadisticas(INE)
+                                <br />
+                                <strong>Periodo:</strong> 2005-2020
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Pesca
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Silvoagropecuario
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE), Servicio Agrícola Ganadero (SAG), Oficina de Estudios y Políticas Agrarias (ODEPA)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Transporte
+                                </header>
+                                <Strong>Fuente:</Strong> Ministerio de Transporte y Telecomunicaciones
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Transporte de Carga
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 36vh; display: flex; ">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Turismo
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        @*CONTAINER TAMAÑO DE PANTALLA PEQUEÑO O INFERIOR*@
+        <div class="container d-block d-md-none">
+            <div class="row justify-content-center d-flex">
+                <div class="col-12">
+                    <div id="carousel6" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 30vh; margin-bottom: 70px;">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:5%; font-weight:bold;">
+                                        Comercio
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Construcción
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Electricidad
+                                    </header>
+                                    <Strong>Fuente:</Strong> Coordinador Eléctrico Nacional
+                                    <br />
+                                    <strong>Periodo:</strong>  2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong>  actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Manufacturas
+                                    </header>
+                                    <Strong>Fuente:</Strong>  Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong>  actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Minería
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadisticas(INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2005-2020
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Pesca
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 100px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Silvoagropecuario
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE), Servicio Agrícola Ganadero (SAG), Oficina de Estudios y Políticas Agrarias (ODEPA)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Transporte
+                                    </header>
+                                    <Strong>Fuente:</Strong> Ministerio de Transporte y Telecomunicaciones
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Transporte de Carga
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Turismo
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualización mensual según registros de la fuente de información.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-center" style="padding-bottom:8%; display:none;">
+                        <div class="col-12">
+                            <a class="btn btn-primary mb-3 mr-1" href="#carousel6" role="button" data-slide="prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <a class="btn btn-primary mb-3" href="#carousel6" role="button" data-slide="next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-md-5" style="background-color: #C6CCDC; height:auto">
+        <div class="row justify-content-center" style="padding-top:3%; padding-bottom:1%;">
+            <div class="col-12 col-sm-12 col-md-3 text-center mt-3 mt-md-0">
+                <!--Buscador -->
+                <form action="~/Ciudades/PaginaBusqueda" method="get" style="padding-top:3%;">
+                    <input type="text" id="id" name="id" placeholder="Búsqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                    <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-10 col-md-3 text-center">
+                <H4 style="margin:0 !important; font-weight:normal; padding-bottom:2%;">¡Explora, busca y encuentra!</H4>
+                <h6 style="line-height:18px;">
+                    Somos un espacio creado para visualizar información.
+                    Ingresa una palabra clave y busca en nuestras bases de datos.
+                </h6>
+            </div>
+            <div class="col-12 mb-3 col-md-2 ">
+                <img class="img-fluid" src="~/Content/img/negro-rojo-trans - copia.png" alt="" />
+            </div>
+        </div>
+    </div>
+    @*Boton para ir arriba*@
+    <style>
+        .ir-arriba {
+            display: none;
+            padding: 10px;
+            background: #024959;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+    </style>
+    <i class="ir-arriba  bi bi-arrow-up-square"></i>
+    @*<span class="ir-arriba icon-arrow-up2"></span>*@
+    <script>
+        $(document).ready(function () {
+
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
+        });
+    </script>
+    <script src="~/Content/carrusel14/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/carrusel14/js/bootstrap.min.js"></script>
+    <script>
+        ActivarMenuSuperior("#Ciudades_FuentesUsuario");
+    </script>
+</body>
+</html>
+

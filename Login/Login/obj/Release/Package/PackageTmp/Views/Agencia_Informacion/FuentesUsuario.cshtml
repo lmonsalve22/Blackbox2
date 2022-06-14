@@ -1,0 +1,1170 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayouAgencia_Informacion.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-3 mt-md-5 mb-3 mb-md-5">
+            <div class="col-12 col-md-10">
+                <div class="row">
+                    <div class="col-4 col-md-2">
+                        <img class="img-fluid" src="~/Content/Imagenes agencia_Informacion/simbolo_coleccion_agenciaDI2.png" />
+                    </div>
+                    <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                        <h5 class="h2 coleccion mt-5 mt-md-0 pt-md-0" style=" font-weight: bold;">Agencia DI</h5>
+                        <p class="d-none d-md-block">
+                            Agencia DI está diseñada con el fin de ahorrar los tiempos de investigación y procesamiento
+                            de datos invertidos en la elaboración de piezas de contenidos requeridas por los diferentes
+                            medios de comunicación en su día a día. A partir de numerosas bases de datos, de variadas temáticas,
+                            elaboramos gráficos listos para ser utilizados dentro de una publicación web o de impresión y
+                            que faciliten la comprensión del análisis y comunicación de la información.
+                        </p>
+                    </div>
+                    <div class="col-12 mt-3" style="border-left: solid 0.5px #b0b0b0;">
+                        <p class="d-block d-md-none ">
+                            Agencia DI está diseñada con el fin de ahorrar los tiempos de investigación y procesamiento
+                            de datos invertidos en la elaboración de piezas de contenidos requeridas por los diferentes
+                            medios de comunicación en su día a día. A partir de numerosas bases de datos, de variadas temáticas,
+                            elaboramos gráficos listos para ser utilizados dentro de una publicación web o de impresión y
+                            que faciliten la comprensión del análisis y comunicación de la información.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*CONTAINER TAMAÑO DE PANTALLA MEDIO O SUPERIOR*@
+        <div class="container d-none d-md-block">
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-12 col-md-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:5%; font-weight:bold;">
+                                    Avance COVID-19
+                                </header>
+                                <Strong>Fuente:</Strong> Ministerio de Salud, Ministerio de Ciencia, Tecnología, Conocimiento e Innovación
+                                <br />
+                                <strong>Periodo:</strong>  2020 – 2021
+                                <br />
+                                <strong>Actualización:</strong> Actualizaciones diarias y según reportes oficiales (4 o 5 días)
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color:#404040;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Agricultura
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio Nacional de Aduanas, Oficina de Estudios y Políticas Agrarias (ODEPA) del Ministerio de Agricultura
+                                <br />
+                                <strong>Periodo:</strong>  2020 – 2021
+                                <br />
+                                <strong>Actualización:</strong>  Anual
+                            </div>
+                        </div>
+                        <style>
+                            .line-clamp4 {
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow-wrap: normal;
+                                overflow-y: hidden;
+                                /*width: 30%;*/
+                                margin: auto;
+                                font-family: sans-serif;
+                                line-height: 1.4;
+                                z-index: 1;
+                            }
+
+                                .line-clamp4:hover {
+                                    -webkit-line-clamp: 100;
+                                    cursor: pointer;
+                                }
+                        </style>
+                        <div class="col-4" style="height: 100%; display: flex; white-space: normal; ">
+                            <div class="w-100 " style="color: #404040; border-radius: 15px; background-color: #c6ccda; padding: 5%;  ">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Violencia contra la Mujer
+                                </header>
+                                <p class="line-clamp4">
+                                    <Strong>Fuente:</Strong>Poder Judicial, Departamento de Estadísticas e Información de la Salud (DEIS) -
+                                    Ministerio de Salud, Servicio Nacional de la Mujer y Equidad de Género (SERNAMEG), Red Chilena CVHM,
+                                    Centro de Estudios y Análisis del Delito (CEAD) de la Subsecretaría de Prevención del Delito, Fiscalía Nacional.
+                                </p>
+                                <br />
+                                <strong>Periodo:</strong>  2008 - 2021
+                                <br />
+                                <strong>Actualización:</strong> Dependiendo de las fuentes de información se incluyen actualizaciones diarias, según reportes oficiales.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color:#404040 !important;font-size:calc(0.5em + 0.5vw);border-radius: 15px; background-color: #c6ccda; padding:5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Mujer Salud
+                                </header>
+                                <Strong>Fuente:</Strong> Departamento de Estadísticas e Información de la Salud (DEIS) - Ministerio de Salud
+                                <br />
+                                <strong>Periodo:</strong>  2011 - 2018
+                                <br />
+                                <strong>Actualización:</strong> Dependiendo de las fuentes de información se incluyen actualizaciones diarias, según reportes oficiales.
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Ingresos Históricos
+                                </header>
+                                <Strong>Fuente:</Strong> Encuestas CASEN del Ministerio de Desarrollo Social
+                                <br />
+                                <strong>Periodo:</strong>  2006, 2009, 2011, 2013, 2015 y 2017
+                                <br />
+                                <strong>Actualización:</strong> Cada 3 años
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Cultura
+                                </header>
+                                <Strong>Fuente:</Strong> Observatorio Cultural
+                                <br />
+                                <strong>Periodo:</strong> 2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Empresas
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio de Impuestos Internos (SII)
+                                <br />
+                                <strong>Periodo:</strong> 2005-2019
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Métricas de la educación
+                                </header>
+                                <Strong>Fuente:</Strong>  Agencia de Calidad de la Educación
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2020
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Inventario de Gases de Efecto Invernadero
+                                </header>
+                                <Strong>Fuente:</Strong> Sistema Nacional de Inventarios de Gases de Efecto Invernadero
+                                <br />
+                                <strong>Periodo:</strong> 1990-2018
+                                <br />
+                                <strong>Actualización:</strong> Bi anual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Vulnerabilidad al Cambio Climático (CC)
+                                </header>
+                                <Strong>Fuente:</Strong>  datos de CONAF/SUD-Austral, CASEN, CENSO 2017
+                                <br />
+                                <strong>Periodo:</strong>2020
+                                <br />
+                                <strong>Actualización:</strong> Cada 2 o 3 años
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Gestión Municipal Territorial
+                                </header>
+                                <Strong>Fuente:</Strong> Sistema Nacional de Información Municipal
+                                <br />
+                                <strong>Periodo:</strong> 2001 - 2020
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Territorio
+                                </header>
+                                <Strong>Fuente:</Strong> Observatorio Urbano - Ministerio de Vivienda y Urbanismo (MINVU)
+                                <br />
+                                <strong>Periodo:</strong> 2020
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Tránsito
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2008 - 2021
+                                <br />
+                                <strong>Actualización:</strong> Mensual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Energía
+                                </header>
+                                <Strong>Fuente:</Strong> Comisión Nacional de Energía (CNE)
+                                <br />
+                                <strong>Periodo:</strong> 2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Elecciones
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio Electoral (SERVEL)
+                                <br />
+                                <strong>Periodo:</strong> 1990 - 2020
+                                <br />
+                                <strong>Actualización:</strong> Según elecciones
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Evaluación de Programas
+                                </header>
+                                <Strong>Fuente:</Strong> Dirección de Presupuestos (DIPRES)
+                                <br />
+                                <strong>Periodo:</strong> 1997-2019
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Programas de Salud
+                                </header>
+                                <Strong>Fuente:</Strong> Departamento de Estadísticas e Información de la Salud (DEIS) - Ministerio de Salud
+                                <br />
+                                <strong>Periodo:</strong> 2011-2018
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Delincuencia
+                                </header>
+                                <Strong>Fuente:</Strong> Centro de Estudios y Análisis del Delito (CEAD) de la Subsecretaría de Prevención del Delito
+                                <br />
+                                <strong>Periodo:</strong> 2008-2020
+                                <br />
+                                <strong>Actualización:</strong> Trimestral
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Demografía
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio de Registro Civil de Chile
+                                <br />
+                                <strong>Periodo:</strong> 2010-2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Forestal
+                                </header>
+                                <Strong>Fuente:</Strong> Corporación Nacional Forestal (CONAF)
+                                <br />
+                                <strong>Periodo:</strong> 2010-2020
+                                <br />
+                                <strong>Actualización:</strong> Por temporada
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Pueblos indígenas
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2017
+                                <br />
+                                <strong>Actualización:</strong> Intercensal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Trabajo
+                                </header>
+                                <Strong>Fuente:</Strong> Banco Central
+                                <br />
+                                <strong>Periodo:</strong> 1986-2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Vivienda y construcción
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014-2021
+                                <br />
+                                <strong>Actualización:</strong> Mensual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Comercio Exterior
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio Nacional de Aduanas
+                                <br />
+                                <strong>Periodo:</strong> 2015-2021
+                                <br />
+                                <strong>Actualización:</strong> Mensual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Gestión Municipal de Educación
+                                </header>
+                                <Strong>Fuente:</Strong> istema Nacional de Información Municipal
+                                <br />
+                                <strong>Periodo:</strong> 2019-2020
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Establecimientos de Salud
+                                </header>
+                                <Strong>Fuente:</Strong> Departamento de Estadísticas e Información de la Salud (DEIS), Ministerio de Salud
+                                <br />
+                                <strong>Periodo:</strong> 2021
+                                <br />
+                                <strong>Actualización:</strong> Diaria para Farmacias de Turno; anual para otras temáticas
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Estado de la Salud
+                                </header>
+                                <Strong>Fuente:</Strong> Encuestas CASEN
+                                <br />
+                                <strong>Periodo:</strong>  2006, 2009, 2011, 2013, 2015 y 2017
+                                <br />
+                                <strong>Actualización:</strong> Cada 3 años
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Internet
+                                </header>
+                                <Strong>Fuente:</Strong> Oficina de Estudios y Políticas Agrarias(ODEPA) del Ministerio de Agricultura
+                                <br />
+                                <strong>Periodo:</strong> 2010-2020
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Minería
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2014-2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Pobreza
+                                </header>
+                                <Strong>Fuente:</Strong> Encuestas CASEN del Ministerio de Desarrollo Social
+                                <br />
+                                <strong>Periodo:</strong> 2006, 2009, 2011, 2013, 2015, 2017 y 2020
+                                <br />
+                                <strong>Actualización:</strong> Cada 3 años
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Protección de Menores
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio Nacional de Menores (SENAME)
+                                <br />
+                                <strong>Periodo:</strong> 2016-2019
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Transporte
+                                </header>
+                                <Strong>Fuente:</Strong> Ministerio de Transportes y Telecomunicaciones
+                                <br />
+                                <strong>Periodo:</strong> 2014-2021
+                                <br />
+                                <strong>Actualización:</strong> Mensual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Turismo
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong> 2016-2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Economía
+                                </header>
+                                <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                <br />
+                                <strong>Periodo:</strong>  2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> Mensual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Pesca y Acuicultura
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio Nacional de Pesca y Acuicultura
+                                <br />
+                                <strong>Periodo:</strong> 2014 - 2021
+                                <br />
+                                <strong>Actualización:</strong> Mensual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Telecomunicaciones
+                                </header>
+                                <Strong>Fuente:</Strong> Biblioteca del Congreso Nacional
+                                <br />
+                                <strong>Periodo:</strong> 2007-2019
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center pb-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Protección Adultos Mayores
+                                </header>
+                                <Strong>Fuente:</Strong> Servicio Nacional del Adulto Mayor (SENAMA)
+                                <br />
+                                <strong>Periodo:</strong> 2020-2021
+                                <br />
+                                <strong>Actualización:</strong> Anual
+                            </div>
+                        </div>
+                        <div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Dinámica de Cambio de Glaciares
+                                </header>
+                                <Strong>Fuente:</Strong> DATA INTELLIGENCE con base en Procesamiento de Imágenes Satelitales SENTINEL
+                                <br />
+                                <strong>Periodo:</strong> 2017-2021
+                                <br />
+                                <strong>Actualización:</strong> Por temporada
+                            </div>
+                        </div>
+                        @*<div class="col-4" style="height: 38vh; display: flex;">
+                            <div class="w-100" style="color: #404040 !important; font-size: calc(0.5em + 0.5vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                    Telecomunicaciones
+                                </header>
+                                <Strong>Fuente:</Strong> Biblioteca del Congreso Nacional
+                                <br />
+                                <strong>Periodo:</strong> 2007-2019
+                                <br />
+                                <strong>Actualización:</strong>
+                            </div>*@
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        @*CONTAINER TAMAÑO DE PANTALLA PEQUEÑO O INFERIOR*@
+        <div class="container d-block d-md-none">
+            <div class="row justify-content-center d-flex mb-5" style="margin-bottom:150px;">
+                <div class="col-12">
+                    <div id="carousel6" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height:50%;margin-bottom:20px;">
+                                <div class="w-100 " style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:5%; font-weight:bold;">
+                                        Avance COVID-19
+                                    </header>
+                                    <Strong>Fuente:</Strong> Ministerio de Salud, Ministerio de Ciencia, Tecnología, Conocimiento e Innovación
+                                    <br />
+                                    <strong>Periodo:</strong>  2020 – 2021
+                                    <br />
+                                    <strong>Actualización:</strong> actualizaciones diarias y según reportes oficiales (4 o 5 días)
+                                </div>
+                            </div>
+                            <div class="carousel-item mb-5" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0; ">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Agricultura
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio Nacional de Aduanas, Oficina de Estudios y Políticas Agrarias (ODEPA) del Ministerio de Agricultura,
+                                    <br />
+                                    <strong>Periodo:</strong>  2012 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 50%; margin-bottom: 20px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%;">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Violencia contra la Mujer
+                                    </header>
+                                    <Strong>Fuente:</Strong> Poder Judicial, Departamento de Estadísticas e Información de la Salud (DEIS) -
+                                    Ministerio de Salud, Servicio Nacional de la Mujer y Equidad de Género (SERNAMEG), Centro de Estudios
+                                    y Análisis del Delito (CEAD) de la Subsecretaría de Prevención del Delito, Fiscalía Nacional
+                                    <br />
+                                    <strong>Periodo:</strong>  2008 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Según ocurrencia de casos para Femicidios; anual para otras temáticas
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:50%; margin-bottom:20px; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Mujer Salud
+                                    </header>
+                                    <Strong>Fuente:</Strong> Departamento de Estadísticas e Información de la Salud (DEIS) - Ministerio de Salud
+                                    <br />
+                                    <strong>Periodo:</strong>  2011 - 2018
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 50%; margin-bottom: 20px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Ingresos Históricos
+                                    </header>
+                                    <Strong>Fuente:</Strong> Encuestas CASEN del Ministerio de Desarrollo Social
+                                    <br />
+                                    <strong>Periodo:</strong>  2006, 2009, 2011, 2013, 2015 y 2017
+                                    <br />
+                                    <strong>Actualización:</strong> Cada 2 o 3 años
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Cultura
+                                    </header>
+                                    <Strong>Fuente:</Strong> Observatorio Cultural
+                                    <br />
+                                    <strong>Periodo:</strong> 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Empresas
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio de Impuestos Internos (SII)
+                                    <br />
+                                    <strong>Periodo:</strong> 2005-2019
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Métricas de la educación
+                                    </header>
+                                    <Strong>Fuente:</Strong> Agencia de Calidad de la Educación
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2020
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Inventario de Gases de Efecto Invernadero
+                                    </header>
+                                    <Strong>Fuente:</Strong> Sistema Nacional de Inventarios de Gases de Efecto Invernadero
+                                    <br />
+                                    <strong>Periodo:</strong> 1990-2018
+                                    <br />
+                                    <strong>Actualización:</strong> Bienal
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 30vh; margin-bottom: 70px; border-radius: 15px; background-color: white; padding: 5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Vulnerabilidad al Cambio Climático (CC)
+                                    </header>
+                                    <Strong>Fuente:</Strong> DATA INTELLIGENCE con datos de CONAF/SUD-Austral, CASEN, CENSO 2017
+                                    <br />
+                                    <strong>Periodo:</strong> 2020
+                                    <br />
+                                    <strong>Actualización:</strong> Cada 2 o 3 años
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Gestión Municipal Territorial
+                                    </header>
+                                    <Strong>Fuente:</Strong> Sistema Nacional de Información Municipal
+                                    <br />
+                                    <strong>Periodo:</strong> 2001 - 2020
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Territorio
+                                    </header>
+                                    <Strong>Fuente:</Strong> Observatorio Urbano - Ministerio de Vivienda y Urbanismo (MINVU)
+                                    <br />
+                                    <strong>Periodo:</strong> 2020
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Tránsito
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2008 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Energía
+                                    </header>
+                                    <Strong>Fuente:</Strong> Comisión Nacional de Energía (CNE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Elecciones
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio Electoral (SERVEL)
+                                    <br />
+                                    <strong>Periodo:</strong> 1990 - 2020
+                                    <br />
+                                    <strong>Actualización:</strong> Según elecciones
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Evaluación de Programas
+                                    </header>
+                                    <Strong>Fuente:</Strong> Dirección de Presupuestos (DIPRES)
+                                    <br />
+                                    <strong>Periodo:</strong> 1997-2019
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Programas de Salud
+                                    </header>
+                                    <Strong>Fuente:</Strong> Departamento de Estadísticas e Información de la Salud (DEIS) - Ministerio de Salud
+                                    <br />
+                                    <strong>Periodo:</strong>  2011-2018
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Delincuencia
+                                    </header>
+                                    <Strong>Fuente:</Strong> Centro de Estudios y Análisis del Delito (CEAD) de la Subsecretaría de Prevención del Delito
+                                    <br />
+                                    <strong>Periodo:</strong> 2008-2020
+                                    <br />
+                                    <strong>Actualización:</strong> Trimestral
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Demografía
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio de Registro Civil de Chile
+                                    <br />
+                                    <strong>Periodo:</strong> 2010-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Forestal
+                                    </header>
+                                    <Strong>Fuente:</Strong> Corporación Nacional Forestal (CONAF)
+                                    <br />
+                                    <strong>Periodo:</strong> 2010-2020
+                                    <br />
+                                    <strong>Actualización:</strong> Por temporada
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Pueblos indígenas
+                                    </header>
+                                    <Strong>Fuente:</Strong> Oficina de Estudios y Políticas Agrarias(ODEPA) del Ministerio de Agricultura
+                                    <br />
+                                    <strong>Periodo:</strong> 1979-2020
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Trabajo
+                                    </header>
+                                    <Strong>Fuente:</Strong> Banco Central
+                                    <br />
+                                    <strong>Periodo:</strong> 1986-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Vivienda y construcción
+                                    </header>
+                                    <Strong>Fuente:</Strong>  Instituto Nacional de Estadísticas (INE)ral
+                                    <br />
+                                    <strong>Periodo:</strong> 2014-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Mensual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Comercio Exterior
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio Nacional de Aduanas
+                                    <br />
+                                    <strong>Periodo:</strong> 2015-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Mensual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Gestión Municipal de la Educación
+                                    </header>
+                                    <Strong>Fuente:</Strong> Sistema Nacional de Información Municipal
+                                    <br />
+                                    <strong>Periodo:</strong> 2019-2020
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:38vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Establecimientos de Salud
+                                    </header>
+                                    <Strong>Fuente:</Strong> Departamento de Estadísticas e Información de la Salud (DEIS), Ministerio de Salud
+                                    <br />
+                                    <strong>Periodo:</strong> 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Diaria para Farmacias de Turno; anual para otras temáticas
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:35vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Estado de la Salud
+                                    </header>
+                                    <Strong>Fuente:</Strong> Encuestas CASEN del Ministerio de Desarrollo Social
+                                    <br />
+                                    <strong>Periodo:</strong> 2006, 2009, 2011, 2013, 2015 y 2017
+                                    <br />
+                                    <strong>Actualización:</strong> Cada 2 o 3 años
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Internet
+                                    </header>
+                                    <Strong>Fuente:</Strong> Biblioteca del Congreso Nacional
+                                    <br />
+                                    <strong>Periodo:</strong> 2007-2019
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Minería
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:35vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Pobreza
+                                    </header>
+                                    <Strong>Fuente:</Strong> Encuestas CASEN del Ministerio de Desarrollo Social
+                                    <br />
+                                    <strong>Periodo:</strong> 2006, 2009, 2011, 2013, 2015, 2017 y 2020
+                                    <br />
+                                    <strong>Actualización:</strong> Cada 2 o 3 años
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Protección de Menores
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio Nacional de Menores (SENAME)
+                                    <br />
+                                    <strong>Periodo:</strong> 2016-2019
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Transporte
+                                    </header>
+                                    <Strong>Fuente:</Strong> Ministerio de Transportes y Telecomunicaciones
+                                    <br />
+                                    <strong>Periodo:</strong> 1979-2020
+                                    <br />
+                                    <strong>Actualización:</strong> Mensual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Turismo
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2016-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Economía
+                                    </header>
+                                    <Strong>Fuente:</Strong> Instituto Nacional de Estadísticas (INE)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Mensual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Pesca y Acuicultura
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio Nacional de Pesca y Acuicultura (SERNAPESCA)
+                                    <br />
+                                    <strong>Periodo:</strong> 2014 - 2021
+                                    <br />
+                                    <strong>Actualización:</strong> Mensual
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:30vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Protección Adultos Mayores
+                                    </header>
+                                    <Strong>Fuente:</Strong> Servicio Nacional del Adulto Mayor (SENAMA)
+                                    <br />
+                                    <strong>Periodo:</strong> 2020-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Anual
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" style="height:38vh; border-radius:15px; background-color:white; padding:5% 0">
+                                <div class="w-100" style="color: #404040; font-size: calc(0.8em + 0.8vw); border-radius: 15px; background-color: #c6ccda; padding: 5%; ">
+                                    <header style="text-align: center;  align-self:center; padding-bottom:3%; font-weight:bold;">
+                                        Dinámica de Cambio de Glaciares
+                                    </header>
+                                    <Strong>Fuente:</Strong> DATA INTELLIGENCE con base en Procesamiento de Imágenes Satelitales SENTINEL
+                                    <br />
+                                    <strong>Periodo:</strong> 2017-2021
+                                    <br />
+                                    <strong>Actualización:</strong> Por temporada
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-center" style="padding-bottom:8%; display:none;">
+                        <div class="col-12">
+                            <a class="btn btn-primary mb-3 mr-1" href="#carousel6" role="button" data-slide="prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <a class="btn btn-primary mb-3" href="#carousel6" role="button" data-slide="next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center" style="background-color:#c6ccda;">
+            <div class="col-lg-2"></div>
+            <div class="col-12 col-lg-4 text-center mt-3 mt-md-0" style="padding-top:2%; padding-bottom:2%;">
+                <!--Form buscador-->
+                <form action="~/Agencia_Informacion/PaginaBusqueda" method="get" style="padding-top:3%;">
+                    <input type="text" id="id" name="id" placeholder="Búsqueda de palabras claves" style="padding: 6px; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                    <button id="search-button" type="submit" value="Submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 text-center" style="padding-top:2%; padding-bottom:2%;">
+                <H4 style="margin:0 !important; font-weight:normal; padding-bottom:2%;">¡Explora, busca y encuentra!</H4>
+                <h6 style="line-height:18px;">
+                    Somos un espacio creado para visualizar información.
+                    Ingresa una palabra clave y busca en nuestras bases de datos.
+                </h6>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    @*Boton para ir arriba*@
+    <style>
+        .ir-arriba {
+            display: none;
+            padding: 10px;
+            background: #024959;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+    </style>
+    <i class="ir-arriba  bi bi-arrow-up-square"></i>
+
+    @*<span class="ir-arriba icon-arrow-up2"></span>*@
+    <script>
+        $(document).ready(function () {
+
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
+        });
+    </script>
+    <script src="~/Content/carrusel14/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/carrusel14/js/bootstrap.min.js"></script>
+    <script>
+        ActivarMenuSuperior("#Enfermedades_FuentesUsuario");
+    </script>
+</body>
+</html>

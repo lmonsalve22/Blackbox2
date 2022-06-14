@@ -1,0 +1,443 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="canonical" href="~/Views/Data/Index.cshtml" />
+    <meta name="viewport" content="width=device-width" />
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <style amp-custom>
+        h1 {
+            margin: 1rem;
+        }
+    </style>
+    @*<link href="~/Content/Home.css" rel="stylesheet" />*@
+    <!-- Hotjar Tracking Code for https://www.dataintelligence-group.com/data/index -->
+    <script async>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2580997, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+</head>
+<body>
+    <!--sección content-cabecera-->
+    <div class="container-fluid content-header">
+        <div class="row justify-content-center" style="background-color: black">
+            <div class="col-12 col-md-8">
+                @*<H3 id="titulo1">¡Cientos de estadísticas!</H3>*@
+                <style custom-amp>
+                    /* Basic styles */
+                    *,
+                    *::before,
+                    *::after {
+                        box-sizing: border-box;
+                    }
+
+                    .carousel-control-next{
+                        display:none;
+                    }
+
+                    .amp-carousel-button {
+                        display: none
+                    }
+
+                    :root {
+                        --bg-color: #D8D8D8;
+                    }
+
+                    h3 {
+                        font-size: 2em;
+                        font-weight: normal;
+                    }
+                    /* title styles */
+                    .home-title span {
+                        position: relative;
+                        overflow: hidden;
+                        display: block;
+                        line-height: 1.2;
+                    }
+
+                        .home-title span::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: white;
+                            animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+                            transform: translateX(-101%);
+                        }
+
+                        .home-title span::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: var(--bg-color);
+                            animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+                            transform: translateX(0);
+                        }
+
+                        .home-title span:nth-of-type(1)::before,
+                        .home-title span:nth-of-type(1)::after {
+                            animation-delay: 1s;
+                        }
+
+                        .home-title span:nth-of-type(2)::before,
+                        .home-title span:nth-of-type(2)::after {
+                            animation-delay: 1.5s;
+                        }
+
+                    @@keyframes a-ltr-after {
+                        0% {
+                            transform: translateX(-100%)
+                        }
+
+                        100% {
+                            transform: translateX(101%)
+                        }
+                    }
+
+                    @@keyframes a-ltr-before {
+                        0% {
+                            transform: translateX(0)
+                        }
+
+                        100% {
+                            transform: translateX(200%)
+                        }
+                    }
+                    
+                </style>
+                <h3 class="home-title">
+                    <span style="color:white">¡Miles de estadísticas!</span>
+
+                </h3>
+                <p style="padding-left:5%; padding-right:5%;">
+                    Generamos día a día información histórica, actual y proyectada disponible de forma gratuita y con suscripción.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--seccion slider o carrusel-->
+    <div class="container slide-big" style="margin-bottom: 25px; margin-top: 25px;">
+        @{ Html.RenderAction("CarruselVetical", "Info");}
+
+
+    </div>
+    <div class="col-s-12 col-s-12 col-md-8 d-s-block d-md-none mt-3">
+
+        @{ Html.RenderAction("CarruselVetical2", "Info");}
+
+    </div>
+    <!-- BUSCADOR INTELIGENTE de carrusel-->
+    <div class="container-fluid content1 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-5 ">
+                <h3 id="header2">
+                    <b>¿Quieres ver otras estadísticas?</b>
+                </h3>
+                <p id="text2">
+                    ¡Nuestro Buscador Inteligente contiene miles de gráficos y
+                    mapas interactivos listos para utilizar de forma gratuita!"
+                </p>
+
+
+            </div>
+            <div class="col-12 col-md-8 text-center" style="margin-bottom: 4%; border-radius: 20px; background-color: rgb(210 220 235 / 0.60) ">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="row mt-3 justify-content-center">
+                            <div class="col-12 col-md-6 text-center mb-md-3">
+                                <h3 style="font-weight:800;"><img class="img-fluid" width="30" src="~/Images/favicons/Icono_dataIntelligence_Rojo.png" /><b>BUSCADOR INTELIGENTE</b></h3>
+                            </div>
+
+                        </div>
+                        @*<p id="text4"><b>¡Nuestro buscador contiene más de 1 millón de gráficos interactivos!</b></p>*@
+                    </div>
+                    <!--Buscador-->
+                    <div class="col-12 col-md-12 text-center " style="margin-bottom:40px;">
+                        <form class="example d-flex" action="~/Data/PaginaBusqueda" method="get" style="border:none !important;">
+                            <input type="text" placeholder="Escribe tu tema de interés" name="id" style="border:none !important;">
+                            <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-md-11 mb-3 text-left">
+                        @*<p id="text3">Más buscado:  Forestal, economía, agricultura, género, pesca.</p>*@
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--seccion contenido-->
+    <div class="container-fluid content2">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h3 style="font-weight:bold;">
+                    Nuestra Propuesta
+                </h3>
+                <p id="text4">
+                    Nuestro norte es desarrollar productos digitales bajo la modalidad Datos como Servicio (Data As A Service) que
+                    respondan las preguntas que se puedan presentar en tu día a día.
+                </p>
+            </div>
+        </div>
+        <div class="row  justify-content-center mt-4">
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div style="padding: 10%;">
+                        <amp-img width="90" height="75" layout="responsive" src="~/Images/imagen_inicio.png">
+                        </amp-img>
+                    </div>
+                    <div class="col-12 col-md-8 text-left mt-4">
+                        <h3 id="TituloCon" style="font-weight:bold; text-align:left;">
+                            ¡Miles y miles de datos!
+                        </h3>
+                        <p id="text4">
+                            Seleccionamos los temas de contingencia, buscamos cada uno de los datos
+                            públicos disponibles, sistematizamos la información y creamos millones
+                            de gráficos y mapas interactivos para quien necesite ampliar la visión de
+                            esas realidades.
+                        </p>
+                        <h3 id="TituloCon" class="mt-4" style="font-weight:bold; text-align:left;">
+                            Y agrupamos los miles de datos en Colecciones con información
+                        </h3>
+                        <p id="text4">
+                            Transformamos los temas de contingencia en gráficos y
+                            mapas interactivos agrupándolos en colecciones
+                            especializadas para una búsqueda más eficiente y útil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        @*****carrusel de iconos de suscripciones*****@
+        <h3 class="font-weight-bold mb-md-3">Conoce las Colecciones Data intelligence</h3>
+
+        <amp-carousel dir="ltr" visible-count="1" advance-count="1" width="400" height="250" padding="10" layout="responsive" type="slides" role="region" aria-label="looping carousel" autoplay delay="5000" controls="never" slide="1">
+
+            <a href="~/Data/ColeccionesAgencia" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/image_estadistica/icono_agenciaDI.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesSalud" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Images/suscripciones/D360_ENFERMEDADES_MUNDIALES.png">
+                </amp-img>
+
+            </a>
+
+            <a href="~/Data/ColeccionesEconomia" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/imagenes_temas economia/iconocoleccion_economia.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesIngresoH" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/Ingresos histodicos imagenes/icono_ingresoshistoricos.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesAgricultura" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/img/Iconos recursos/icono_coleccion_agricultura.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesGlaciares_R10" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Images/suscripciones/D261_GLACIARES_10.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesViolenciaMujer" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Images/suscripciones/D300_VIOLENCIA_CONTRA_LA_MUJER.png">
+                </amp-img>
+            </a>
+
+
+        </amp-carousel>
+        @*<h5 class="mt-2 fw-light">advances one slide at a time</h5>*@
+
+        @****final carrusel de iconos de suscripciones***@
+        @***SECCION DE VIDEO **@
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-8 text-center">
+                <!-- 16:9 aspect ratio -->
+                <amp-youtube data-videoid="CXOFxGJFKVo" width="560" height="314" layout="responsive">
+
+                </amp-youtube>
+
+            </div>
+        </div>
+        @*** FINAL SECCION DE VIDEO **@
+        <!--SECCION DE SLIDER DE PATROCINADORES-->
+        <link href="~/Content/testCarrusel_Netflix/css/estilos.css" rel="stylesheet" />
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 mt-5 slide1">
+                <h4 style="padding-bottom:1%; font-weight:bold;">
+                    Estos medios de comunicación han confiado en nuestra información
+                </h4>
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <a href=" https://www.cnnchile.com/elecciones2021/candidatos-gore-concejales-alcaldes-constituyentes_20210511/" target="_blank"><img src="~/Content/empresas de noticias/cnn chile.png" height="100" width="250" alt="CNN CHILE "></a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.elmostrador.cl/braga/2021/07/09/mapa-de-femicidios-en-chile-victima-mas-joven-era-una-nina-de-solo-11-anos/ " target="_blank">
+                                <img src="~/Content/empresas de noticias/mostrador.png" height="100" width="250" alt="Noticias El Mostrador">
+                            </a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.chvnoticias.cl/elecciones2021/candidatos-concejal-15-y-16-mayo_20210510/ " target="_blank">
+                                <img src="~/Content/empresas de noticias/noticias.png" height="100" width="250" alt="Chile Vision">
+                            </a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.radiopanama.com.pa/" target="_blank"> <img src="~/Content/empresas de noticias/panama.png" height="100" width="250" alt="Radio Panama"></a>
+
+                        </div>
+                        <div class="slide">
+                            <a href=" https://www.cnnchile.com/elecciones2021/candidatos-gore-concejales-alcaldes-constituyentes_20210511/ " target="_blank"><img src="~/Content/empresas de noticias/cnn chile.png" height="100" width="250" alt="CNN CHILE "></a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.elmostrador.cl/braga/2021/07/09/mapa-de-femicidios-en-chile-victima-mas-joven-era-una-nina-de-solo-11-anos/ " target="_blank">
+                                <img src="~/Content/empresas de noticias/mostrador.png" height="100" width="250" alt="Noticias El Mostrador">
+                            </a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.chvnoticias.cl/elecciones2021/candidatos-concejal-15-y-16-mayo_20210510/ ">
+                                <img src="~/Content/empresas de noticias/noticias.png" height="100" width="250" alt="Chile Vision">
+                            </a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.radiopanama.com.pa/"> <img src="~/Content/empresas de noticias/panama.png" height="100" width="250" alt="Radio Panama"></a>
+
+                        </div>
+                        <div class="slide">
+                            <a href=" https://www.cnnchile.com/elecciones2021/candidatos-gore-concejales-alcaldes-constituyentes_20210511/ "><img src="~/Content/empresas de noticias/cnn chile.png" height="100" width="250" alt="CNN CHILE "></a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.elmostrador.cl/braga/2021/07/09/mapa-de-femicidios-en-chile-victima-mas-joven-era-una-nina-de-solo-11-anos/ ">
+                                <img src="~/Content/empresas de noticias/mostrador.png" height="100" width="250" alt="Noticias El Mostrador">
+                            </a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.chvnoticias.cl/elecciones2021/candidatos-concejal-15-y-16-mayo_20210510/ ">
+                                <img src="~/Content/empresas de noticias/noticias.png" height="100" width="250" alt="Chile Vision">
+                            </a>
+
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.radiopanama.com.pa/"> <img src="~/Content/empresas de noticias/panama.png" height="100" width="250" alt="Radio Panama"></a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--FINAL SECCION DE SLIDER DE PATROCINADORES-->
+    </div>
+    <script async>
+        ActivarMenuSuperior4("#public_Index")
+    </script>
+    <!--SCRIPT DE CARRUSEL DE SECCION DE ICONOS DE SUSCRIPCIONES-->
+    <script async src="~/Scripts/Carrusel_suscripcionIndex/CarruselIndex.js"></script>
+    <!--SCRIPT DE CARRUSEL DE SECCION DE ICONOS DE SUSCRIPCIONES-->
+</body>
+</html>

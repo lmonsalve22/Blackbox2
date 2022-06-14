@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="68fb655be98f48ffa3145bba1781013b" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="graficosModel1.TABLA_GENERICA_PRUEBA" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="graficosModel1.DATA_METRICA_EDUCACION_160" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.D000_SITIO_PUBLICO" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.D100_AGRICULTURA" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.D400_INGRESO_HISTORICO" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="graficosModel1.D990_AGENCIA_INFORMACION" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="graficosModel1.D360_ENFERMEDADES_MUNDIALES" Width="1.5" PointX="5.375" PointY="8.75" />
+        <EntityTypeShape EntityType="graficosModel1.D140_ECONOMIA" Width="2.5" PointX="7.375" PointY="8.75" />
+        <EntityTypeShape EntityType="graficosModel1.D300_VIOLENCIA_CONTRA_LA_MUJER" Width="2.875" PointX="10.125" PointY="8.375" />
+        <EntityTypeShape EntityType="graficosModel1.D261_GLACIARES" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.D101_INCENDIOS" Width="1.5" PointX="12.375" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.PLATAFORMA_AUX" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.CONTENIDO_INSERTADO" Width="1.5" PointX="14.375" PointY="3.75" />
+        <EntityTypeShape EntityType="graficosModel1.D241_CIUDADES" Width="1.5" PointX="14.375" PointY="7.75" />
+        <EntityTypeShape EntityType="graficosModel1.D161_RANKING_COMUNAL_EDUCACION" Width="1.5" PointX="10.375" PointY="15.75" />
+        <EntityTypeShape EntityType="graficosModel1.D240_Municipio" Width="1.5" PointX="12.375" PointY="15.75" />
+        <EntityTypeShape EntityType="graficosModel1.MONITOR" Width="1.5" PointX="14.375" PointY="15.75" />
+        <EntityTypeShape EntityType="graficosModel1.BOX_INFOTMATION" Width="1.5" PointX="16.375" PointY="0.75" />
+        <EntityTypeShape EntityType="graficosModel1.TABLA_SEMANARIO" Width="1.5" PointX="0.75" PointY="16.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

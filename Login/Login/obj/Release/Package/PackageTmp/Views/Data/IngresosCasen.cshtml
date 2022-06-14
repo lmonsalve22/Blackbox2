@@ -1,0 +1,706 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <title>Ingreso Historico</title>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                @*<h5 class="h2 coleccion mt-5 mt-md-0 pt-sm-5 pt-md-0 d-none d-md-block">Ingresos Históricos</h5>*@
+                <h4 class="coleccion mt-4 mt-md-0 pt-sm-5 pt-md-0" style=" font-weight: bold;">Ingresos Históricos</h4>
+                <p class="pcoleccion d-none d-md-block">
+                    Data Intelligence en su Colección Ingresos Históricos, describe la evolución
+                    del ingreso promedio detallada por sexo, etnia y alfabetismo. La información
+                    es obtenida del cruce de diferentes datos levantados en el marco de la realización
+                    de la Encuesta de Caracterización Socioeconómica Nacional (CASEN) en Chile para los
+                    años 2006, 2009, 2011, 2013, 2015 y 2017. Información interactiva que permite analizar
+                    la efectividad de las medidas aplicadas y orientar futuras decisiones.
+
+                </p>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    Data Intelligence en su Colección Ingresos Históricos, describe la evolución
+                    del ingreso promedio detallada por sexo, etnia y alfabetismo. La información
+                    es obtenida del cruce de diferentes datos levantados en el marco de la realización
+                    de la Encuesta de Caracterización Socioeconómica Nacional (CASEN) en Chile para los
+                    años 2006, 2009, 2011, 2013, 2015 y 2017. Información interactiva que permite analizar
+                    la efectividad de las medidas aplicadas y orientar futuras decisiones.
+
+                </p>
+            </div>
+            <!--video de coleccion-->
+            <section class="container video mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                            Conoce más acerca de esta colección
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/lkD9a9u0mzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-12 text-center d-none d-md-block mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b> La suscripción a la colección de Ingresos Históricos contiene</b></p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none mt-2" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b> La suscripción a la colección de Ingresos Históricos contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <div class="d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide p-sm-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoPromedioMensual.png" alt="Ingreso Promedio Mensual" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Ingreso Promedio Mensual</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etnia.png" alt="Ingreso por Etnia" />
+                                <div class="row">
+                                    <div class="col-9 ">
+                                        <h6 class="card-title mt-1">Ingreso por Etnia</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoporSexo.png" alt="Ingreso de Hombres y Mujeres" />
+                                <div class="row justify-content-center">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">
+                                            Ingreso de Hombres y Mujeres
+                                        </h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoPorAlfabetismo.png" alt="Ingreso por Alfabetismo" />
+                                <div class="row justify-content-center">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Ingreso por Alfabetismo</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoporSexoYAlfabetismo.png" alt="Ingreso por Sexo y Alfabetismo" />
+                                <div class="row justify-content-center">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Ingreso por Sexo y Alfabetismo</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etniayalfabetismo.png" alt="Ingreso por Etnia y Alfabetismo" />
+                                <div class="row justify-content-center">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Ingreso por Etnia y Alfabetismo</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etniaysexo.png" alt="Ingreso por Etnia y Sexo" />
+                                <div class="row justify-content-center">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Ingreso por Etnia y Sexo</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#IC7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoPromedioMensual.png" alt="IPM" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Ingreso Promedio Mensual</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etnia.png" alt="IE" />
+                    <div class="row">
+                        <div class="col-10 ">
+                            <h6 class="card-title mt-1">Ingreso por Etnia</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoporSexo.png" alt="IHM" />
+                    <div class="row">
+                        <div class="col-10 ">
+                            <h6 class="card-title">
+                                Ingreso de Hombres y Mujeres
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoPorAlfabetismo.png" alt="IA" />
+                    <div class="row">
+                        <div class="col-10 ">
+                            <h6 class="card-title mt-1">Ingreso por Alfabetismo</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC4" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoporSexoYAlfabetismo.png" alt="ISA" />
+                    <div class="row">
+                        <div class="col-10 ">
+                            <h6 class="card-title mt-1">Ingreso por Sexo y Alfabetismo</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etniayalfabetismo.png" alt="IEA" />
+                    <div class="row ">
+                        <div class="col-10 ">
+                            <h6 class="card-title mt-1">Ingreso por Etnia y Alfabetismo</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etniaysexo.png" alt="IES" />
+                    <div class="row">
+                        <div class="col-10 ">
+                            <h6 class="card-title mt-1">Ingreso por Etnia y Sexo</h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#IC7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video de coleccion-->
+    <!--<section class="container video mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                    Conoce más acerca de esta colección
+                </p>
+            </div>
+            <div class="col-md-12 ">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/lkD9a9u0mzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- Modal Ingreso historico -->
+    <div class="modal fade" id="IC1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoPromedioMensual.png" alt="Ingreso Promedio Mensual" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Ingreso Promedio Mensual</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Encuestas</strong><br>Datos años 2006, 2009, 2011, 2013, 2015 y 2017
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Ingresos
+                                </strong><br>Evolución en pesos y porcentaje
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="IC2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etnia.png" alt="Ingreso por Etnia" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Ingreso por Etnia</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Pueblos indígenas</strong><br>Autoidentificados en el pais
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Ingresos de cada pueblo
+                                </strong><br>Evolución en pesos y porcentaje
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Encuestas</strong><br>Datos años 2006, 2009, 2011, 2013, 2015 y 2017
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="IC3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoporSexo.png" alt=" Ingreso de Hombres y Mujeres" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ingreso de Hombres y Mujeres
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" style="width:50%;" src="~/Content/Ingresos histodicos imagenes/ingresoHombreMujer.png" />
+                            </p>
+
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Ingresos hombres y mujeres </strong><br>Evolución en pesos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Encuestas</strong><br>Datos años 2006, 2009, 2011, 2013, 2015 y 2017
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="IC4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoPorAlfabetismo.png" alt="Ingreso por Alfabetismo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ingreso por Alfabetismo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Ingresos</strong><br>Evolución según alfabetismo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Encuestas
+                                </strong><br>Datos años 2006, 2009, 2011, 2013, 2015, 2017
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="IC5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/recuadrosweb_DATASocioeconomico_IngresoporSexoYAlfabetismo.png" alt="Ingreso por Sexo y Alfabetismo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Ingreso por Sexo y Alfabetismo
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" style="width:50%;" src="~/Content/Ingresos histodicos imagenes/ingresoHombreMujer.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Hombres y mujeres
+                                </strong><br>Variación ingresos según alfabetismo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            width:4ch;
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Encuestas
+                                </strong><br>Datos años 2006, 2009, 2011, 2013, 2015, 2017
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="IC6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etniayalfabetismo.png" alt="Ingreso por Etnia y Alfabetismo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Ingreso por Etnia y Alfabetismo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Pueblos indígenas</strong><br>Se autoidentifican en el país
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Ingresos de cada pueblo
+                                </strong><br>Evolución según alfabetismo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Encuestas</strong><br>Datos años 2006, 2009, 2011, 2013, 2015 y 2017
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="IC7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_ingresosseguncasen.png" alt="Ingreso Historico" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/contenidopublico/DATAINGRESOS_CASEN/imagenes_recuadrosweb_ingresos_por_etniaysexo.png" alt="Ingreo por Etnia y Sexo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Ingreso por Etnia y Sexo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución de ingresos
+                                </strong><br>Promedio Nacional, Regional y Comunal
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">
+                                <img class="img-fluid" style="width:50%;" src="~/Content/Ingresos histodicos imagenes/ingresoHombreMujer.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Hombres y Mujeres
+                                </strong><br>Variación ingresos según etnia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch;">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Encuestas</strong><br>Datos años 2006, 2009, 2011, 2013, 2015 y 2017
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

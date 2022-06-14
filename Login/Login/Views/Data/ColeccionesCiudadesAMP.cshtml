@@ -1,0 +1,314 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+
+<!doctype html>
+<html amp lang="es">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Colección Ciudades</title>
+    <link rel="canonical" href="https://www.dataintelligence-group.com/amp/Indexamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org",
+          "@@type": "NewsArticle",
+          "headline": "Article headline",
+          "datePublished": "2021-11-20T12:02:41Z",
+               "image": [
+            "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+              ],
+            "author": {
+                "@@type": "Organization",
+                "name": "Data Intelligence",
+                "url": "https://www.dataintelligence-group.com/Data/Index"
+            },
+        "publisher": {
+            "@@type": "Organization",
+            "name": "DI",
+            "logo": {
+            "@@type": "ImageObject",
+            "url": "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+            }
+        }
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <meta name="author" content="Data Intelligence">
+    <style amp-custom>
+        .cabecera {
+            background-color: #0f70b7;
+            padding: 0 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .titulo1 {
+            border-left: solid 0.5px #b0b0b0;
+        }
+
+        .img1 {
+            padding: 0 50px;
+        }
+
+        .txt1 {
+            padding: 0 20px;
+        }
+
+        .stitulo1 {
+            text-align: center;
+        }
+
+        .stitul2 {
+            color: #1074BC;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .content1 {
+            border-radius: 15px;
+            justify-content: center;
+        }
+
+        .fa-ul {
+            text-align: left;
+            color: white;
+        }
+
+        .card-text {
+            color: white;
+            margin-bottom: 0px !important;
+            text-align: center;
+        }
+
+        .dropdown {
+            background-color: #DBDDE9;
+            padding: 0 30px;
+        }
+
+        #dropdownMenuButton1 {
+            background-color: #DBDDE9;
+            color: black;
+            border-color: transparent;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+    <div class="cabecera content1">
+        <h5 class="pt-3">Colecciones Data Intelligence</h5>
+        <p>
+            Revisa y explora un tema en profundidad. A partir de millones de datos hemos creado un conjunto de
+            gráficos y mapas interactivos con la información más destacada.
+        </p>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            COLECCIONES
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="~/Data/ColeccionesSalud">COVID-19</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesIngresoH">Ingresos Históricos</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesEconomia">Economía</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesAgencia">Agencia DI</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesAgricultura">Agricultura</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesViolenciaMujer">Violencia contra la Mujer</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesGlaciares_R10">Glaciares Región de los Lagos</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesIncendios">Incendios</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesMunicipio">Municipio</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesEducacion">Educación</a></li>
+            <li><a class="dropdown-item" href="~/Data/ColeccionesCiudades">Ciudades</a></li>
+            <li><a class="dropdown-item" href="~/Data/EducacionSuperior">Elijo fácil: Educación Superior</a></li>
+        </ul>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+
+            <div class="col-4 img1">
+                <amp-img src="~/Images/simbolossolos_botones/icono_coleccion_ciudades_redondo_azul.png" alt="Ciudades" height="60" width="60"></amp-img>
+            </div>
+            <div class="col-8 titulo1">
+                <h4 class="pt-3"><strong>Ciudades</strong> </h4>
+            </div>
+            <div class="col-12">
+                <p class="txt1">
+                    La Colección Ciudades reúne información detallada de 588 centros urbanos, de distintos pueblos,
+                    comunas y regiones de Chile. A través de datos geolocalizados se ofrece información de las
+                    distancias de estas zonas urbanas a los diferentes establecimientos de utilidad para la población.
+                    Esta información es complementada con la caracterización de cada centro urbano según índices de
+                    vegetación, suelo y temperatura, todas variables que inciden en la calidad de vida de las personas.
+                    La información es visualizada en cientos de gráficos y mapas interactivos que proporcionan un panorama
+                    general, facilitando el conocimiento de cada unas de las áreas vinculadas a los habitantes de la comuna.
+                    Es un excelente recurso para dar fundamento a la planificación y toma de decisiones.
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+    @*Sección VIDEO*@
+    <!--<section class="video">
+        <div class="col-12 text-center estiloVideo">
+            <p>
+                <strong>Conoce más acerca de esta colección</strong>
+            </p>
+        </div>
+
+        <div class="col-md-12">
+            <div class="ratio ratio-16x9">
+                <amp-youtube data-videoid="jAHEFI22WBg" width="560" height="314" layout="responsive">
+                </amp-youtube>
+            </div>
+        </div>
+
+    </section>-->
+
+
+    <div class="container">
+        <!--SECCION DE SUSCRIPCIONES-->
+        <div class="row">
+            <div class="col-12">
+                <p class="stitul2">
+                    ¿Te quieres suscribir a esta Colección?
+                </p>
+            </div>
+
+            <div class="col-12 content1 mb-2">
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <amp-img src="~/Content/empresas de noticias/logosus.png" alt="Agricultura3" height="70" width="245"></amp-img>
+                        <p class="fa-ul pl-4">Contamos con 3 opciones:</p>
+                        <ul class="fa-ul listilo">
+                            <li><span class="fa-li"><i class="bi bi-check2-square"></i></span>Regional,</li>
+                            <li><span class="fa-li"><i class="bi bi-check2-square"></i></span>Región Metropolitana o</li>
+                            <li><span class="fa-li"><i class="bi bi-check2-square"></i></span>Nacional</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="card" style="background-color:transparent; border:1px solid #fff; border-radius:15px;">
+                            <div class="card-body" style="color:white;">
+                                <h5 class="card-title mt-2">Paso 1</h5>
+                                <ul style="padding-left: inherit;">
+                                    <li class="card-text mt-3">
+                                        Ingresas a la plataforma de pago en el botón Adquirir Suscripción.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="card" style="background-color:transparent; border:1px solid #fff; border-radius:15px;">
+                            <div class="card-body" style="color:white;">
+                                <h5 class="card-title mt-2">Paso 2</h5>
+                                <ul style="padding-left: inherit;">
+                                    <li class="card-text mt-3">
+                                        Luego de completar tu proceso de pago recibirás un link de acceso.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="card" style="background-color:transparent; border:1px solid #fff; border-radius:15px;">
+                            <div class="card-body" style="color:white;">
+                                <h5 class="card-title mt-2">Paso 3</h5>
+                                <ul style="padding-left: inherit;">
+                                    <li class="card-text mt-3">
+                                        Crearás tu perfil de registro y listo. Podrás comenzar a utilizar tu colección.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3 pb-4">
+                        <a class="btn  btn-danger" style="border-radius: 20px; font-size: 0.8rem;" href="https://dataintelligence.store/products/coleccion-dataagro" target="_blank">ADQUIRIR SUSCRIPCIÓN</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        ActivarMenuSuperior4("#public_Colecciones")
+    </script>
+</body>
+</html>

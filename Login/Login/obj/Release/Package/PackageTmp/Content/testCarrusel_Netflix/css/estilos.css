@@ -1,0 +1,523 @@
+
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+	margin-bottom: 10px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 32%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	/*padding: 20px 0;*/
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 32%;/*tamanio de slider*/
+	transition: .3s ease all;
+	/*box-shadow: 5px 5px 10px rgba(0,0,0, .3);*/
+	padding-left:20px;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+/******************carrusel2*******************************************/
+/*header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+	header nav a:hover,
+	header nav a.activo {
+		color: #FFF;
+	}*/
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+	.contenedor-titulo-controles h3 {
+		color: #fff;
+		font-size: 30px;
+	}
+
+	.contenedor-titulo-controles .indicadores button {
+		background: #fff;
+		height: 3px;
+		width: 10px;
+		cursor: pointer;
+		border: none;
+		margin-right: 2px;
+	}
+
+		.contenedor-titulo-controles .indicadores button:hover,
+		.contenedor-titulo-controles .indicadores button.activo {
+			background: red;
+		}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas2 {
+	margin-bottom: 10px;
+}
+
+	.peliculas-recomendadas2 .contenedor-principal2 {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+		.peliculas-recomendadas2 .contenedor-principal2 .flecha-izquierda2,
+		.peliculas-recomendadas2 .contenedor-principal2 .flecha-derecha2 {
+			position: absolute;
+			border: none;
+			background: rgba(0,0,0,0.3);
+			font-size: 40px;
+			height: 50%;
+			top: calc(50% - 32%);
+			line-height: 40px;
+			width: 50px;
+			color: #fff;
+			cursor: pointer;
+			z-index: 500;
+			transition: .2s ease all;
+		}
+
+			.peliculas-recomendadas2 .contenedor-principal2 .flecha-izquierda2:hover,
+			.peliculas-recomendadas2 .contenedor-principal2 .flecha-derecha2:hover {
+				background: rgba(0,0,0, .9);
+			}
+
+		.peliculas-recomendadas2 .contenedor-principal2 .flecha-izquierda2 {
+			left: 0;
+		}
+
+		.peliculas-recomendadas2 .contenedor-principal2 .flecha-derecha2 {
+			right: 0;
+		}
+
+	/* ---- ----- ----- Carousel ----- ----- ----- */
+	.peliculas-recomendadas2 .contenedor-carousel2 {
+		width: 100%;
+		/*padding: 20px 0;*/
+		overflow: hidden;
+		scroll-behavior: smooth;
+	}
+
+		.peliculas-recomendadas2 .contenedor-carousel2 .carousel2 {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+
+			.peliculas-recomendadas2 .contenedor-carousel2 .carousel2 .pelicula2 {
+				min-width: 32%; /*tamanio de slider*/
+				transition: .3s ease all;
+				/*box-shadow: 5px 5px 10px rgba(0,0,0, .3);*/
+				padding-left: 20px;
+			}
+
+				.peliculas-recomendadas2 .contenedor-carousel2 .carousel2 .pelicula2.hover {
+					transform: scale(1.2);
+					transform-origin: center;
+				}
+
+				.peliculas-recomendadas2 .contenedor-carousel2 .carousel2 .pelicula img {
+					width: 100%;
+					vertical-align: top;
+				}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor2 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal2 {
+		font-size: 14px;
+	}
+
+		.pelicula-principal2 .descripcion {
+			max-width: 100%;
+		}
+
+	.peliculas-recomendadas2 .contenedor-carousel2 {
+		overflow: visible;
+	}
+
+		.peliculas-recomendadas2 .contenedor-carousel2 .carousel2 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+
+	.peliculas-recomendadas2 .indicadores,
+	.peliculas-recomendadas2 .flecha-izquierda2,
+	.peliculas-recomendadas2 .flecha-derecha2 {
+		display: none;
+	}
+}
+
+/******************carrusel3*******************************************/
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+	header nav a:hover,
+	header nav a.activo {
+		color: #FFF;
+	}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+	.contenedor-titulo-controles h3 {
+		color: #fff;
+		font-size: 30px;
+	}
+
+	.contenedor-titulo-controles .indicadores button {
+		background: #fff;
+		height: 3px;
+		width: 10px;
+		cursor: pointer;
+		border: none;
+		margin-right: 2px;
+	}
+
+		.contenedor-titulo-controles .indicadores button:hover,
+		.contenedor-titulo-controles .indicadores button.activo {
+			background: red;
+		}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas3 {
+	margin-bottom: 70px;
+}
+
+	.peliculas-recomendadas3 .contenedor-principal3 {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+		.peliculas-recomendadas3 .contenedor-principal3 .flecha-izquierda3,
+		.peliculas-recomendadas3 .contenedor-principal3 .flecha-derecha3 {
+			position: absolute;
+			border: none;
+			background: rgba(0,0,0,0.3);
+			font-size: 40px;
+			height: 50%;
+			top: calc(50% - 32%);
+			line-height: 40px;
+			width: 50px;
+			color: #fff;
+			cursor: pointer;
+			z-index: 500;
+			transition: .2s ease all;
+		}
+
+			.peliculas-recomendadas3 .contenedor-principal3 .flecha-izquierda3:hover,
+			.peliculas-recomendadas3 .contenedor-principal3 .flecha-derecha3:hover {
+				background: rgba(0,0,0, .9);
+			}
+
+		.peliculas-recomendadas3 .contenedor-principal3 .flecha-izquierda3 {
+			left: 0;
+		}
+
+		.peliculas-recomendadas3 .contenedor-principal3 .flecha-derecha3 {
+			right: 0;
+		}
+
+	/* ---- ----- ----- Carousel ----- ----- ----- */
+	.peliculas-recomendadas3 .contenedor-carousel3 {
+		width: 100%;
+		/*padding: 20px 0;*/
+		overflow: hidden;
+		scroll-behavior: smooth;
+	}
+
+		.peliculas-recomendadas3 .contenedor-carousel3 .carousel3 {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+
+			.peliculas-recomendadas3 .contenedor-carousel3 .carousel3 .pelicula3 {
+				min-width: 32%; /*tamanio de slider*/
+				transition: .3s ease all;
+				/*box-shadow: 5px 5px 10px rgba(0,0,0, .3);*/
+				padding-left: 20px;
+			}
+
+				.peliculas-recomendadas3 .contenedor-carousel3 .carousel3 .pelicula3.hover {
+					transform: scale(1.2);
+					transform-origin: center;
+				}
+
+			.peliculas-recomendadas3 .contenedor-carousel3 .carousel3 .pelicula img {
+				width: 100%;
+				vertical-align: top;
+			}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor3 {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal3 {
+		font-size: 14px;
+	}
+
+		.pelicula-principal3 .descripcion {
+			max-width: 100%;
+		}
+
+	.peliculas-recomendadas2 .contenedor-carousel3 {
+		overflow: visible;
+	}
+
+		.peliculas-recomendadas3 .contenedor-carousel3 .carousel3 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+
+	.peliculas-recomendadas3 .indicadores,
+	.peliculas-recomendadas3 .flecha-izquierda3,
+	.peliculas-recomendadas3 .flecha-derecha3 {
+		display: none;
+	}
+}
+
+/************test carrusel de empresas*/
+
+
+/*.slide {
+	align-items: center;
+	background: #ffff;*/
+	/*display: flex;*/
+	/*height: 100vh;*/
+	/*justify-content: center;
+}*/
+
+@-webkit-keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-150px * 7));
+		transform: translateX(calc(-150px * 7));
+	}
+}
+
+.slider {
+	background: white;
+	/*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 98%;
+}
+
+	.slider::before, .slider::after {
+		/*background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);*/
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 50px;
+		z-index: 2;
+	}
+
+	.slider::after {
+		right: 0;
+		top: 0;
+		-webkit-transform: rotateZ(180deg);
+		transform: rotateZ(180deg);
+	}
+
+	.slider::before {
+		left: 0;
+		top: 0;
+	}
+
+	.slider .slide-track {
+		-webkit-animation: scroll 40s linear infinite;
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 4);
+	}
+
+	.slider .slide {
+		height: 50px;
+		width: 250px;
+	}
+
+.slide img {
+}
+
+
+/************test carrusel de empresas*/
+

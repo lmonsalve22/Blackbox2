@@ -1,0 +1,741 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colecciones</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="~/Content/Home.css" rel="stylesheet" />
+    <link href="~/Content/carrusel14/css/bootstrap.min.css" rel="stylesheet" />
+    <script>
+        function mostrador(seccion1) {
+            var arreglo = [
+                '#ins',
+                '#ins1',
+                '#ins2',
+                '#ins3',
+                '#ins4',
+                '#ins5',
+                '#ins6',
+                '#ins7',
+                '#ins8'
+            ];
+            //arreglo.forEach
+            jQuery.each(arreglo, function (i, val) {
+                $(val).hide();
+            });
+            $(seccion1).show();
+        }
+    </script>
+
+    <script>
+        function ActivarMenuSuperior9(opcionMenu) {
+            $('.active9').removeClass('active9');
+            $(opcionMenu).addClass("active9");
+        }
+    </script>
+
+    <style>
+        .active9 {
+            background-color: #f6f6f6 !important;
+        }
+    </style>
+    <!-- Hotjar Tracking Code for https://www.dataintelligence-group.com/data/colecciones -->
+</head>
+<body>
+
+    @*menu*@
+    <main class="pb-3">
+        <div class="row ">
+            <div class="col-sm-3 pb-sm-0 pb-3 d-none d-md-block" style="padding-left:0px !important;">
+                <div class="border p-1 ulcolecciones">
+                    <h6 class="h6colecciones ml-3">Instrucciones para navegar</h6>
+                    <ul class="nav nav-pills flex-sm-column flex-row mb-auto justify-content-between text-truncate">
+                        <li class="licolecciones">
+                            <a>
+                                <span class="lispancolecciones ml-3">
+                                    <strong>&bull;</strong> DINÁMICA DE CAMBIO
+                                </span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a id="inst1" onclick="mostrador('#ins1'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones ">
+                                <span class="lispancolecciones ml-4">Mapas Web</span>
+                            </a>
+                        </li>
+
+                        <li class="licolecciones">
+                            <a id="inst2" onclick="mostrador('#ins2'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones ml-4">Estadísticas</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a id="inst3" onclick="mostrador('#ins3'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones ml-4">Mapas Pdf</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a>
+                                <span class="lispancolecciones ml-3"> <strong>&bull;</strong> SUPERFICIE MAX-MIN</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a id="inst4" onclick="mostrador('#ins4'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones ml-4">Mapas Web</span>
+                            </a>
+                        </li>
+
+                        <li class="licolecciones">
+                            <a id="inst5" onclick="mostrador('#ins5'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones ml-4">Estadísticas</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a id="inst6" onclick="mostrador('#ins6'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones ml-4">Mapas Pdf</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a>
+                                <span class="lispancolecciones ml-3"> <strong>&bull;</strong> CARACTERIZACIÓN</span>
+                            </a>
+                        </li>
+                        <li class="licolecciones">
+                            <a id="inst7" onclick="mostrador('#ins7'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones ">
+                                <span class="lispancolecciones ml-4">Sup. Max-Min de nieve</span>
+                            </a>
+                        </li>
+
+                        <li class="licolecciones">
+                            <a id="inst8" onclick="mostrador('#ins8'); ActivarMenuSuperior9(this);" class="nav-link px-2 text-truncate liacolecciones">
+                                <span class="lispancolecciones ml-4">Dinámica de Cambio</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col overflow-auto">
+                @*Dropdaown MENU PARA MOVIL*@
+                <div class="conteiner-fluid d-block d-md-none">
+                    <div class="row">
+                        <div class="col-12 ddcolecciones">
+                            <div class="dropdown ">
+                                <a class="btn dropdown-toggle ddcolecciones" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Instrucciones para navegar
+                                </a>
+                                <ul class="dropdown-menu ddcolecciones" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item btn btn-light ddhcolecciones">
+                                            <strong>&bull;</strong>  DINAMICA DE CAMBIO
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins1'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Mapas Web
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins2'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Estadísticas
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins3'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Mapas Pdf
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item btn btn-light ddhcolecciones">
+                                            <strong>&bull;</strong> SUPERFICIE MAX-MIN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins4'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Mapas Web
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins5'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Estadísticas
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins6'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Mapas Pdf
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item btn btn-light ddhcolecciones">
+                                            <strong>&bull;</strong> CARACTERIZACIÓN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins7'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Sup. Max-Min de nieve
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="mostrador('#ins8'); ActivarMenuSuperior9(this);" class="dropdown-item btn btn-light ddhcolecciones">
+                                            Dinámica de Cambio
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*FIN MENU MOVIL**@
+
+
+                @*CONTENIDO*@
+                <div id="ins" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciarazul.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciarazul.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 " style="border-left: solid 0.5px #B6B6B6;">
+                                <h4 class="coleccion pt-sm-2 pt-md-0" style=" font-weight: bold;">Instrucciones de Uso para navegar en la Colección Glaciares</h4>
+                                @*<h5 class="h2 coleccion mt-3  mt-md-0 pt-sm-5 pt-md-0 d-block d-md-none" style=" font-weight: bold;" >Glaciares Región de Los Lagos</h5>*@
+                                <p class="pcoleccion d-none d-md-block">
+                                    Los glaciares de montaña son muy sensibles a las fluctuaciones de temperatura y precipitación y contienen
+                                    información importante sobre variables climáticas. En Data Intelligence, monitoreamos los cambios en el área de
+                                    los glaciares utilizando tecnología de teledetección de manera continua desde el año 2017 hasta la actualidad.
+                                    La plataforma ayuda a comprender la dinámica de los cambios y el monitoreo constante de los glaciares como
+                                    un recurso esencial para estudiar el clima, la gestión de los recursos hídricos y también para predecir y mitigar
+                                    los peligros relacionados con los glaciares.
+                                </p>
+                            </div>
+                            <div class="col-12 d-block d-md-none mt-3">
+                                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                                    Los glaciares de montaña son muy sensibles a las fluctuaciones de temperatura y precipitación y contienen
+                                    información importante sobre variables climáticas. En Data Intelligence, monitoreamos los cambios en el área de
+                                    los glaciares utilizando tecnología de teledetección de manera continua desde el año 2017 hasta la actualidad.
+                                    La plataforma ayuda a comprender la dinámica de los cambios y el monitoreo constante de los glaciares como
+                                    un recurso esencial para estudiar el clima, la gestión de los recursos hídricos y también para predecir y mitigar
+                                    los peligros relacionados con los glaciares.
+                                </p>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <h6 class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">¿Qué incluye la Colección?</h6>
+                                @*<h5 class="h2 coleccion mt-3  mt-md-0 pt-sm-5 pt-md-0 d-block d-md-none" style=" font-weight: bold;" >Glaciares Región de Los Lagos</h5>*@
+                                <p class="pins">
+                                    La Colección Glaciares está conformada en 3 secciones: Dinámica de Cambios, Superficie Max-Min y
+                                    Caracterización. Estas secciones se encuentran como un submenú.
+                                    <br />  <br />
+                                    En las secciones Dinámica de Cambios y Superficie Max-Min la información se visualiza a través de Mapas Web,
+                                    Estadísticas y Mapas en Pdf para descargar.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-5">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina1_grafico1.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-5 mt-2 mt-md-0">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina1_grafico2.jpg" />
+                            </div>
+                            <div class="offset-7 col-5 offset-sm-9 col-sm-3 offset-md-10 col-md-2 mt-2">
+                                <img onclick="mostrador('#ins1'); ActivarMenuSuperior9('#inst1');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins1" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Dinámica de Cambio</h4>
+                                    </div>
+                                </div>
+
+                                <p class="pcoleccion d-none d-md-block mt-2">
+                                    Posicionándose en Dinámica de Cambio, solo al seleccionar el periodo a consultar (1), aparecerá en el mapa
+                                    el recuadro para activar el límite del Complejo Glaciar (2), los Sectores del Complejo Glaciar (3) y la Imagen
+                                    Satelital (4).
+                                </p>
+                            </div>
+                            <div class="col-12 d-block d-md-none mt-3">
+                                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                                    Posicionándose en Dinámica de Cambio, solo al seleccionar el periodo a consultar (1), aparecerá en el mapa
+                                    el recuadro para activar el límite del Complejo Glaciar (2), los Sectores del Complejo Glaciar (3) y la Imagen
+                                    Satelital (4).
+                                </p>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <h6 class="coleccion mt-2 mt-md-0 pt-sm-3 pt-md-0 pb-md-2" style="font-weight: bold; border-bottom: solid 1px #acacac; ">Mapa Web</h6>
+
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina2_grafico1.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 offset-md-1 col-md-3 mt-3 mt-md-4 ">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina2_grafico2.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina2_grafico3.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina2_grafico3.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-6 mt-3 mt-md-5">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina2_grafico5.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 mt-3 mt-md-5 text-center">
+                                <img class="img-fluid" style="width:73%" src="~/Images/InstructivoGlaciares/pagina2_grafico6.jpg" />
+                            </div>
+
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins'); ActivarMenuSuperior9(this);" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins2'); ActivarMenuSuperior9('#inst2');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins2" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Dinámica de Cambio</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-2">
+                                <h6 class="coleccion mt-2 mt-md-0 pt-sm-3 pt-md-0 pb-md-2" style="font-weight: bold; border-bottom: solid 1px #acacac; ">Estadísticas</h6>
+                            </div>
+                            <div class="col-8 col-sm-4 offset-md-2 col-md-3 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina3_grafico1.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-8  col-md-7 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina3_grafico2.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 offset-md-1 col-md-3 mt-3 mt-md-4 ">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina3_grafico3.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina3_grafico4.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina3_grafico5.jpg" />
+                            </div>
+
+                            <div class="col-12 col-sm-12 offset-md-1 col-md-4 mt-3 mt-md-5 text-center">
+                                <img class="img-fluid" style="width:73%" src="~/Images/InstructivoGlaciares/pagina3_grafico6.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 mt-3 mt-md-5">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina3_grafico7.jpg" />
+                            </div>
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins1'); ActivarMenuSuperior9('#inst1');" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins3'); ActivarMenuSuperior9('#inst3');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins3" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Dinámica de Cambio</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-2">
+                                <h6 class="coleccion mt-2 mt-md-0 pt-sm-3 pt-md-0 pb-md-2" style="font-weight: bold; border-bottom: solid 1px #acacac; ">Mapas Pdf</h6>
+                            </div>
+
+                            <div class="col-8 col-sm-5 col-md-3 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina4_grafico1.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-5  col-md-3 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina4_grafico2.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-1 col-md-2 mt-2">
+                                @* ESTE DIV IMPORTA *@
+                            </div>
+
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins2');ActivarMenuSuperior9('#inst2');" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins4'); ActivarMenuSuperior9('#inst4');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins4" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Superficie Max-Min</h4>
+                                    </div>
+                                </div>
+
+                                <p class="pcoleccion d-none d-md-block mt-2">
+                                    Posicionándose en Superficie Max-Min, seleccione Mapas y aparecerá el mapa con el recuadro activado en
+                                    Mapa del Complejo Glaciar (2). Puede seleccionar en el recuadro la casilla Sectores del Complejo Glaciar (3).
+                                </p>
+                            </div>
+                            <div class="col-12 d-block d-md-none mt-3">
+                                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                                    Posicionándose en Superficie Max-Min, seleccione Mapas y aparecerá el mapa con el recuadro activado en
+                                    Mapa del Complejo Glaciar (2). Puede seleccionar en el recuadro la casilla Sectores del Complejo Glaciar (3).
+                                </p>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <h6 class="coleccion mt-2 mt-md-0 pt-sm-3 pt-md-0 pb-md-2" style="font-weight: bold; border-bottom: solid 1px #acacac; ">Mapas Web</h6>
+
+                            </div>
+                            <div class="col-8 col-sm-10 offset-md-1 col-md-3 mt-3 mt-md-4 ">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina5_grafico1.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina5_grafico2.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina5_grafico3.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-6 mt-3 mt-md-5">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina5_grafico4.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 mt-3 mt-md-5 text-center">
+                                <img class="img-fluid" style="width:73%" src="~/Images/InstructivoGlaciares/pagina5_grafico5.jpg" />
+                            </div>
+
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins3'); ActivarMenuSuperior9('#inst3');" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins5'); ActivarMenuSuperior9('#inst5');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins5" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Superficie Max-Min</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-2">
+                                <h6 class="coleccion mt-2 mt-md-0 pt-sm-3 pt-md-0 pb-md-2" style="font-weight: bold; border-bottom: solid 1px #acacac; ">Estadísticas</h6>
+                            </div>
+
+                            <div class="col-8 col-sm-10 offset-md-1 col-md-3 mt-3 mt-md-4 ">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina6_grafico1.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina6_grafico2.jpg" />
+                            </div>
+                            <div class="col-8 col-sm-10 col-md-3 mt-3 mt-md-4">
+                                <img class="img-fluid" style="width:100%" src="~/Images/InstructivoGlaciares/pagina6_grafico3.jpg" />
+                            </div>
+
+                            <div class="col-12 col-sm-12 offset-md-1 col-md-9 mt-3 mt-md-5 text-center">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina6_grafico4.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-1  col-md-9 mt-3 mt-md-5">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina6_grafico5.jpg" />
+                            </div>
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins4'); ActivarMenuSuperior9('#inst4');" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins6'); ActivarMenuSuperior9('#inst6');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins6" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Superficie Max-Min</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-2">
+                                <h6 class="coleccion mt-2 mt-md-0 pt-sm-3 pt-md-0 pb-md-2" style="font-weight: bold; border-bottom: solid 1px #acacac; ">Mapas Pdf</h6>
+                            </div>
+
+                            <div class="col-8 col-sm-5 col-md-3 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina7_grafico1.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-5  col-md-3 mt-2">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina7_grafico2.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-1 col-md-2 mt-2">
+                                @* ESTE DIV IMPORTA *@
+                            </div>
+
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins5'); ActivarMenuSuperior9('#inst5');" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins7'); ActivarMenuSuperior9('#inst7');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins7" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Caracterización</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <h6 class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    <span class="fa-stack fa-lg">
+                                        <i style="color:#000000;" class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa-stack-1x fa-inverse">1</i>
+                                    </span>
+                                    Superficies máximas y mínimas de nieve
+                                </h6>
+                                <p class="pins">
+                                    La máxima y mínima superficie alcanzada por la nieve se refiere a la suma de cada una de las superficies de las
+                                    diferentes zonas del complejo glaciar, que estuvieron cubiertas con nieve, al menos un año del periodo considerado,
+                                    en la temporada específica. La superficie máxima se obtiene de la suma de las máximas superficies de cada zona cubierta
+                                    de nieve en el periodo. La superficie mínima se obtiene de la suma de las mínimas superficies de cada zona cubierta de
+                                    nieve en el periodo.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <p class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    Superficies máximas y mínimas de nieve en temporada seca
+                                </p>
+                                <p class="pins">
+                                    El Complejo Glaciar FUTALEUFÚ || Río Blanco y Río Espolón hasta Desembocadura Lago Espolón-3 tiene una
+                                    superficie de 218,45 ha. Durante el periodo 2017-2021, en la temporada seca, época de menor acumulación
+                                    (enero – abril), la superficie máxima alcanzada por la nieve fue de 71,46 ha y la mínima 7,03 ha. Esto implica
+                                    que 67,3% de los límites del complejo glaciar se mantuvo sin nieve durante todo el periodo analizado.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mt-2 mt-md-3">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina8_grafico1.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <p class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    Superficie con nieve en temporada seca
+                                </p>
+                                <p class="pins">
+                                    En la temporada seca, el año 2017, la superficie cubierta con nieve fue de 13 ha, el año 2019 fue de 44,7 ha y
+                                    el año 2020 fue de 60,3 hectáreas.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mt-2 mt-md-3">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina8_grafico2.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <p class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    Superficies máximas y mínimas de nieve en temporada Fría
+                                </p>
+                                <p class="pins">
+                                    Durante el periodo 2017-2021, de las 218,45 ha del complejo glaciar FUTALEUFÚ || Río Blanco y Río Espolón
+                                    Hasta Desembocadura Lago Espolón-3, en la época de mayor acumulación (mayo – diciembre), la máxima
+                                    superficie alcanzada por la nieve fue de 207,02 ha y la mínima superficie fue de 19,14 ha. Esto implica que el
+                                    5,2 % de los límites del complejo glaciar se mantuvo sin nieve durante todo el periodo analizado.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-10  col-md-6 mt-2 mt-md-3">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina8_grafico3.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-10  col-md-12 ">
+                                @*DIV IMPORTANTE*@
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mt-2 mt-md-3">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina8_grafico4.jpg" />
+                            </div>
+
+                            <div class="col-7 col-sm-8 col-md-9 mt-md-2 text-right">
+                                <img onclick="mostrador('#ins6'); ActivarMenuSuperior9('#inst6');" class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                            <div class="col-5 col-sm-4 col-md-3 mt-md-2">
+                                <img onclick="mostrador('#ins8'); ActivarMenuSuperior9('#inst8');" class="img-fluid" src="~/Images/InstructivoGlaciares/Siguiente.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ins8" style="display:none" class="mt-2 mt-md-5">
+                    <div class="container justify-content-center mt-4  mt-md-5 mb-md-5 mb-3">
+                        <div class="row justify-content-center">
+                            <div class="col-md-2 text-right d-none d-md-block">
+                                <img class="img-fluid" style="width:70%" src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-5 col-sm-3 text-right d-block d-md-none">
+                                <img class="img-fluid " src="~/Images/InstructivoGlaciares/icono_glaciargris.jpg" alt="Glaciares" />
+                            </div>
+                            <div class="col-7 col-sm-9 col-md-10 ">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: solid 0.5px #B6B6B6;">
+                                        <h4 class="coleccion pt-sm-2 pt-md-3" style=" font-weight: bold;">Instrucciones para navegar / Caracterización</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <h6 class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    <span class="fa-stack fa-lg">
+                                        <i style="color:#000000;" class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa-stack-1x fa-inverse">2</i>
+                                    </span>
+                                    Dinámica de cambio
+                                </h6>
+                                <p class="coleccion mt-4 mt-md-4 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    &bull; Dinámica de cambio 2017-2018
+                                </p>
+                                <p class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    Dinámica de cambio en la temporada Seca
+                                </p>
+                                <p class="pins">
+                                    Durante la época de menor acumulación de nieve (enero – abril), en el periodo 2017-2018, de las 218,45 ha
+                                    del complejo glaciar, 8,7 ha se mantuvieron sin cambio (es decir se mantuvieron cubiertas de nieve), 4,3 ha se
+                                    perdieron y 45,7 ha se ganaron. La superficie que se mantuvo sin nieve fue de 159,7 ha.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mt-2 mt-md-3">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina9_grafico1.jpg" />
+                            </div>
+                            <div class="col-12 col-sm-12 offset-md-2 col-md-10 mt-md-4">
+                                <p class="coleccion mt-4 mt-md-0 pt-sm-3 pt-md-0" style=" font-weight: bold;">
+                                    Dinámica de cambio en la temporada fría
+                                </p>
+                                <p class="pins">
+                                    Durante la época mayor acumulación de nieve (mayo-diciembre), en el periodo 2017-2018, de las 218,45 ha
+                                    del complejo glaciar, 69,8 ha se mantuvieron sin cambio, 56,8 ha se perdieron y 8,4 ha se ganaron. La
+                                    superficie que se mantuvo sin nieve fue de 83,5 ha.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mt-2 mt-md-3">
+                                <img class="img-fluid" src="~/Images/InstructivoGlaciares/pagina9_grafico2.jpg" />
+                            </div>
+
+
+                            <div class="offset-7 col-5 offset-sm-9 col-sm-3 offset-md-10 col-md-2 mt-2">
+                                <img onclick="mostrador('#ins7'); ActivarMenuSuperior9('#inst7'); " class="img-fluid" src="~/Images/InstructivoGlaciares/Anterior.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link href="~/Content/carrusel14/fonts/icomoon/style.css" rel="stylesheet" />
+    <link href="~/Content/carrusel14/css/owl.carousel.min.css" rel="stylesheet" />
+
+
+    <script src="~/Content/carrusel14/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/carrusel14/js/popper.min.js"></script>
+    <script src="~/Content/carrusel14/js/bootstrap.min.js"></script>
+    <script src="~/Content/carrusel14/js/owl.carousel.min.js"></script>
+    <script src="~/Content/carrusel14/js/main.js"></script>
+
+    <script>
+        ActivarMenuSuperior4("#public_Colecciones")
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+

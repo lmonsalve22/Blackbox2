@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="graficosModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BOX_INFOTMATION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="id_tema" Type="bigint" />
+    <Property Name="id_tabla" Type="bigint" />
+    <Property Name="titulo_box" Type="varchar(max)" />
+    <Property Name="id_filtro1" Type="bigint" />
+    <Property Name="desc_filtro1" Type="varchar(max)" />
+    <Property Name="id_filtro2" Type="bigint" />
+    <Property Name="desc_filtro2" Type="varchar(max)" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="url_miniatura" Type="varchar(max)" />
+    <Property Name="url_expandida" Type="varchar(max)" />
+    <Property Name="activo" Type="int" />
+    <Property Name="aux" Type="varchar(max)" />
+    <Property Name="aux2" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="CONTENIDO_INSERTADO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="clave" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="comentario" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="medio_objetivo" Type="varchar(max)" />
+    <Property Name="url_medio_objetivo" Type="varchar(max)" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="servicio_base" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D000_SITIO_PUBLICO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D100_AGRICULTURA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D101_INCENDIOS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D140_ECONOMIA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D161_RANKING_COMUNAL_EDUCACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D240_Municipio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D241_CIUDADES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D261_GLACIARES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D300_VIOLENCIA_CONTRA_LA_MUJER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D360_ENFERMEDADES_MUNDIALES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D400_INGRESO_HISTORICO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D990_AGENCIA_INFORMACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="DATA_METRICA_EDUCACION_160">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MONITOR">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="parametro1_id" Type="varchar(max)" />
+    <Property Name="parametro1" Type="varchar(max)" />
+    <Property Name="parametro2_id" Type="varchar(max)" />
+    <Property Name="parametro2" Type="varchar(max)" />
+    <Property Name="parametro3_id" Type="varchar(max)" />
+    <Property Name="parametro3" Type="varchar(max)" />
+    <Property Name="parametro4_id" Type="varchar(max)" />
+    <Property Name="parametro4" Type="varchar(max)" />
+    <Property Name="url_miniatura" Type="varchar(max)" />
+    <Property Name="url_extendida" Type="varchar(max)" />
+    <Property Name="id_tabla" Type="varchar(max)" />
+    <Property Name="aux" Type="varchar(max)" />
+    <Property Name="aux2" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="PLATAFORMA_AUX">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="nombre" Type="varchar(max)" />
+    <Property Name="variante" Type="varchar(max)" />
+    <Property Name="url_inicio" Type="varchar(max)" />
+    <Property Name="sku_completo" Type="varchar(max)" />
+    <Property Name="url_final" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TABLA_GENERICA_PRUEBA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="coleccion" Type="varchar(max)" />
+    <Property Name="idcoleccion" Type="varchar(max)" />
+    <Property Name="sector" Type="varchar(max)" />
+    <Property Name="filtro_url" Type="varchar(max)" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="contenido" Type="varchar(max)" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="territorio" Type="varchar(max)" />
+    <Property Name="filtro_integrado" Type="varchar(max)" />
+    <Property Name="muestra_temporalidad" Type="varchar(max)" />
+    <Property Name="temporalidad" Type="varchar(max)" />
+    <Property Name="unidad_medida" Type="varchar(max)" />
+    <Property Name="fuente" Type="varchar(max)" />
+    <Property Name="titulo" Type="varchar(max)" />
+    <Property Name="descripcion_larga" Type="varchar(max)" />
+    <Property Name="visualizacion" Type="varchar(max)" />
+    <Property Name="tag" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="suscripcion" Type="bigint" />
+    <Property Name="color" Type="varchar(max)" />
+    <Property Name="id_grafico" Type="varchar(max)" />
+    <Property Name="id_territorio" Type="varchar(max)" />
+    <Property Name="id_tema" Type="varchar(max)" />
+    <Property Name="id_contenido" Type="varchar(max)" />
+    <Property Name="id_filtro" Type="varchar(max)" />
+    <Property Name="id_muestra" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TABLA_SEMANARIO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="nombre" Type="varchar(max)" />
+    <Property Name="url" Type="varchar(max)" />
+    <Property Name="observacion" Type="varchar(max)" />
+    <Property Name="detalles" Type="varchar(max)" />
+    <Property Name="otro" Type="varchar(max)" />
+    <Property Name="fecha_publicacion" Type="varchar(max)" />
+    <Property Name="auxiliar" Type="varchar(max)" />
+    <Property Name="tabla_padre" Type="varchar(max)" />
+    <Property Name="tabla_id" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="graficosModel1StoreContainer">
+    <EntitySet Name="BOX_INFOTMATION" EntityType="Self.BOX_INFOTMATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTENIDO_INSERTADO" EntityType="Self.CONTENIDO_INSERTADO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D000_SITIO_PUBLICO" EntityType="Self.D000_SITIO_PUBLICO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D100_AGRICULTURA" EntityType="Self.D100_AGRICULTURA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D101_INCENDIOS" EntityType="Self.D101_INCENDIOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D140_ECONOMIA" EntityType="Self.D140_ECONOMIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D161_RANKING_COMUNAL_EDUCACION" EntityType="Self.D161_RANKING_COMUNAL_EDUCACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D240_Municipio" EntityType="Self.D240_Municipio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D241_CIUDADES" EntityType="Self.D241_CIUDADES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D261_GLACIARES" EntityType="Self.D261_GLACIARES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D300_VIOLENCIA_CONTRA_LA_MUJER" EntityType="Self.D300_VIOLENCIA_CONTRA_LA_MUJER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D360_ENFERMEDADES_MUNDIALES" EntityType="Self.D360_ENFERMEDADES_MUNDIALES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D400_INGRESO_HISTORICO" EntityType="Self.D400_INGRESO_HISTORICO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D990_AGENCIA_INFORMACION" EntityType="Self.D990_AGENCIA_INFORMACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DATA_METRICA_EDUCACION_160" EntityType="Self.DATA_METRICA_EDUCACION_160" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MONITOR" EntityType="Self.MONITOR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PLATAFORMA_AUX" EntityType="Self.PLATAFORMA_AUX" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TABLA_GENERICA_PRUEBA" EntityType="Self.TABLA_GENERICA_PRUEBA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TABLA_SEMANARIO" EntityType="Self.TABLA_SEMANARIO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

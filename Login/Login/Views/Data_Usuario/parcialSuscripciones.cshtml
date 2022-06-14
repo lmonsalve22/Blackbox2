@@ -1,0 +1,50 @@
+﻿<div class="grid">
+    @{
+        int i = 0;
+        int j = 0;
+    }
+    @foreach (var item in ViewBag.Resultado)
+    {
+        <a href="/@item.controlador/Index?elemento=@i" style="padding:1%;text-decoration: None; ">
+            <div class="cardcontainer justify-content-center mt-3 @item.resultadoNivel">
+                <img src="@item.imagen" alt="Colección" />
+                <h5 class="niveles text-center" style="color:black; font-weight:bold;">@item.resultadoNivel</h5>
+                <h6 class="regiones text-center" style="color:black; ">@item.resultadoRegion</h6>
+            </div>
+        </a>
+        i++;
+
+    }
+
+    @foreach (var item in ViewBag.Resultado3)
+    {
+        @*<a href="/@item.controlador/Index?elemento=@j" style="padding:1%;text-decoration: None ">*@
+        <a href="/SEMANARIO_PAGO/Index?elemento=@j" style="padding:1%;text-decoration: None ">
+            <div class="cardcontainer justify-content-center mt-3 Semanario">
+                <img src="@item.imagen" alt="Colección" />
+                <h5 class="niveles text-center" style="color:black; font-weight:bold;text-transform: capitalize !important;">@item.resultadoNivel</h5>
+                <h6 class="regiones text-center" style="color:black; ">@item.resultadoRegion</h6> 
+            </div>
+        </a>
+        j++;
+    }
+
+    @foreach (var item in ViewBag.Resultado2)
+    {
+        <a href="@item.SKU.Replace("https://www.dataintelligence-group.com/","https://training-dataintelligence.odoo.com/")" target="_blank" style="padding:1%;text-decoration: None ">
+            <div class="cardcontainer justify-content-center mt-3">
+                <img src="@item.URL_IMAGEN" alt="Colección" />
+                <h6 class="text-center" style="color:black; font-weight:bold;">@item.NOMBRE</h6>
+            </div>
+        </a>
+        i++;
+    }
+</div>
+<style>
+    .Gratuito {
+        background-color: red;
+    }
+    .Semanario{
+        background-color: #0f70B7;
+    }
+</style>

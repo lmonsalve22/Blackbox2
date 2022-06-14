@@ -1,0 +1,1118 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agicultura</title>
+    <link href="~/Content/Home.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/icono_coleccion_ciudades_redondo_azul.png" alt="Agricultura" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                <h4 class="coleccion mt-4 mt-md-0 mt-md-0 pt-md-0" style=" font-weight: bold;">Ciudades</h4>
+
+                <p class="pcoleccion d-none d-md-block">
+                    La Colección Ciudades reúne información detallada de 588 centros urbanos, de distintos pueblos,
+                    comunas y regiones de Chile. A través de datos geolocalizados se ofrece información de las
+                    distancias de estas zonas urbanas a los diferentes establecimientos de utilidad para la población.
+                    Esta información es complementada con la caracterización de cada centro urbano según índices de
+                    vegetación, suelo y temperatura, todas variables que inciden en la calidad de vida de las personas.
+                    La información es visualizada en cientos de gráficos y mapas interactivos que proporcionan un panorama
+                    general, facilitando el conocimiento de cada unas de las áreas vinculadas a los habitantes de la comuna.
+                    Es un excelente recurso para dar fundamento a la planificación y toma de decisiones.
+                </p>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    La Colección Ciudades reúne información detallada de 588 centros urbanos, de distintos pueblos,
+                    comunas y regiones de Chile. A través de datos geolocalizados se ofrece información de las
+                    distancias de estas zonas urbanas a los diferentes establecimientos de utilidad para la población.
+                    Esta información es complementada con la caracterización de cada centro urbano según índices de
+                    vegetación, suelo y temperatura, todas variables que inciden en la calidad de vida de las personas.
+                    La información es visualizada en cientos de gráficos y mapas interactivos que proporcionan un panorama
+                    general, facilitando el conocimiento de cada unas de las áreas vinculadas a los habitantes de la comuna.
+                    Es un excelente recurso para dar fundamento a la planificación y toma de decisiones.
+                </p>
+            </div>
+            <div class="col-md-12 text-center d-none d-md-block  mt-md-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p>La suscripción a la colección de Ciudades contiene</p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b>La suscripción a la colección de Ciudades contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <div class=" d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+
+                        <!--   Mapas Interactivos de Distancias a Servicios-->
+
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_MapasInteractivosDistanciasServicios.png" alt="Mapas Interactivos de Distancias a Servicios" />
+
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Mapas Interactivos de Distancias a Servicios
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Índices Espectrales-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_IndicesEspectrales.png" alt=" Índices Espectrales" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Índices Espectrales
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Distancia a Servicios-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_DistanciasServicios.png" alt="Distancia a Servicios" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title text-center">
+                                            Distancia a Servicios
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Población-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Poblacion.png" alt="Población" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Población
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Viviendas-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Viviendas.png" alt="Viviendas" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Viviendas
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc4" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Hogares-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Hogares.png" alt="Hogares" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Hogares
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mujeres-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Mujeres.png" alt=" Mujeres" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Mujeres
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Niños-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Ninos.png" alt="Niños" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Niños
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tercera Edad-->
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_TerceraEdad.png" alt="Tercera Edad" />
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="card-title">
+                                            Tercera Edad
+                                        </h6>
+                                    </div>
+                                    <div class="col-2">
+                                        <a data-bs-toggle="modal" data-bs-target="#Modalc8" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <!-- Mapas Interactivos de Distancias a Servicios-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_MapasInteractivosDistanciasServicios.png" alt="Mapas Interactivos de Distancias a Servicios" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Mapas Interactivos de Distancias a Servicios
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Índices Espectrales-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_IndicesEspectrales.png" alt=" Índices Espectrales" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Índices Espectrales
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc1" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Distancia a Servicios-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_DistanciasServicios.png" alt="Distancia a Servicios" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title text-center">
+                                Distancia a Servicios
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc2" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--Población-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Poblacion.png" alt="Población" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Población
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc3" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Viviendas-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Viviendas.png" alt="Viviendas" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Viviendas
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc4" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Hogares-->
+            <div class="col-4 text-center">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Hogares.png" alt="Hogares" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Hogares
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc5" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--Mujeres-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Mujeres.png" alt="Mujeres" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Mujeres
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc6" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Niños-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Ninos.png" alt=" Niños" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Niños
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc7" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercera Edad-->
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="img-fluid card-img-top" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_TerceraEdad.png" alt=" Tercera Edad" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title">
+                                Tercera Edad
+                            </h6>
+                        </div>
+                        <div class="col-2">
+                            <a data-bs-toggle="modal" data-bs-target="#Modalc8" data-toggle="tooltip" data-placement="right" title="Click para mas información" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--video de coleccion-->
+    <!--<section class="container video">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h4>Tutorial de uso de la colección</h4>
+            </div>
+            <div class="col-md-12 ">
+                <div class="ratio ratio-21x9">
+                    <iframe src="https://www.youtube.com/embed/Qr0R0vq5vp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- Modal -->
+    <!--Mapas Interactivos de Distancias a Servicios-->
+    <div class="modal fade" id="Modalc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/icono_coleccion_ciudades_redondo_azul.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_MapasInteractivosDistanciasServicios.png" alt="Exportaciones" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Mapas Interactivos de Distancias a Servicios
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                588
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Centros urbanos</strong><br>Comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Establecimientos</strong><br>Centros de Salud; Carabineros; Educación Parvularia, Básica, Media y Superior; Sitios Turísticos; Monumento Nacional y Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen2.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong> Distancia promedio</strong><br>Representación geográfica de la distancia de los centros urbanos a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Índices Espectrales-->
+    <div class="modal fade" id="Modalc1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/icono_coleccion_ciudades_redondo_azul.png" alt="Índices Espectrales" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_IndicesEspectrales.png" alt="Índices Espectrales" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Índices Espectrales
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen3 indice vegetacion.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Índices de Vegetación NDVI, SAVI y EVI
+                                </strong><br>Índices de vegetación que establecen la cobertura de vegetación de un sector
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen4 indice suelo.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Índices de Suelo Desnudo (BSI)
+                                </strong><br>Índice que monitorea suelos desnudos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen5 temperatura.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Temperatura
+                                </strong><br>De los centros urbanos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Distancia a Servicios-->
+    <div class="modal fade" id="Modalc2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="ciudades" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes_tematicas_coleccionagricultura/recuadrosweb_Agricultura_precios.png" alt="Distancia a Servicios" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Distancia a Servicios
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width:4ch;">
+                                588
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Centros urbanos
+                                </strong><br>Comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br> Centros de Salud, Carabineros, Educación Parvularia, Básica, Media y Superior, Sitios Turísticos, Monumento Nacional, Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Distancia promedio
+                                </strong><br>De los centros urbanos a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Población    -->
+    <div class="modal fade" id="Modalc3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="ciudades" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Poblacion.png" alt="Población" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Población
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen7 poblacion.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Población
+                                </strong><br>588 Centros urbanos, comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br>Centros de Salud; Carabineros; Educación Parvularia,
+                                Básica, Media y Superior; Sitios Turísticos; Monumento Nacional y Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rango de distancia promedio
+                                </strong><br>De los habitantes a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen3 indice vegetacion.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Índices Espectrales y Temperatura
+                                </strong><br>Índices de vegetación (NDVI, SAVI y EVI)  y de suelo (BSI)
+                                que establecen la cobertura de vegetación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Viviendas-->
+    <div class="modal fade" id="Modalc4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="Ciudad" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Viviendas.png" alt="Viviendas" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Viviendas
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen8 Viviendas.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Viviendas
+                                </strong><br>De 588 Centros urbanos, comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br>Centros de Salud; Carabineros; Educación Parvularia, Básica, Media y Superior; Sitios Turísticos; Monumento Nacional y Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rango de distancia promedio
+                                </strong><br>De viviendas a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen3 indice vegetacion.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Índices Espectrales y Temperatura
+                                </strong><br>Índices de vegetación (NDVI, SAVI y EVI)  y de suelo (BSI) que establecen la cobertura de vegetación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hogares-->
+    <div class="modal fade" id="Modalc5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="Agricultura" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Hogares.png" alt="Hogares" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Hogares
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen9 hogares.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Hogares
+                                </strong><br>De 588 Centros urbanos, comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br>Centros de Salud; Carabineros; Educación Parvularia, Básica, Media
+                                y Superior; Sitios Turísticos; Monumento Nacional y Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rango de distancia promedio
+                                </strong><br>De hogares a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen3 indice vegetacion.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Índices Espectrales y Temperatura
+                                </strong><br>Índices de vegetación (NDVI, SAVI y EVI)  y de suelo (BSI) que establecen la cobertura de vegetación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Mujeres-->
+    <div class="modal fade" id="Modalc6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="Ciudades" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Mujeres.png" alt="Mujeres" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Mujeres
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen10 mujeres.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Mujeres
+                                </strong><br>De 588 Centros urbanos, comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br>Centros de Salud; Carabineros; Educación Parvularia, Básica y Media; y Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rango de distancia promedio
+                                </strong><br>De los centros urbanos a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Niños-->
+    <div class="modal fade" id="Modalc7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="Ciudades" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_Ninos.png" alt="Niños" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Niños
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width:4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen11 niños.png" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Niños
+                                </strong><br>Entre las edades de 0-5 y 6-14 de 588 Centros urbanos,
+                                comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br>Centros de Salud, Educación Parvularia, Básica, Media y Superior
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rango de distancia promedio
+                                </strong><br>De los centros urbanos a los diferentes establecimientos de interés
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tercera Edad-->
+    <div class="modal fade" id="Modalc8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/imagenes iconos portada coleccion ciudades/icono_coleccion_ciudades_redondo_azul.png" alt="Ciudades" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/imagenes iconos portada coleccion ciudades/recuadrosweb_ciudades_TerceraEdad.png" alt="Tercera Edad" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">
+                                Tercera Edad
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen12 Tercera Edad.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Población mayor a 65 años
+                                </strong><br>De 588 Centros urbanos, comunas y pueblos de diferentes regiones
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen1.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Establecimientos
+                                </strong><br>Centros de Salud; Carabineros; Sitios Turísticos y Sitio de Interés Poblacional
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #8FAADC; border-radius: 5px; width: 4ch">
+
+                                <img class="img-fluid" src="~/Images/imagenes iconos portada coleccion ciudades/Imagen6 distancia promedio.svg" />
+                            </p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rango de distancia promedio
+                                </strong><br>De los centros urbanos a los diferentes establecimientos de interés
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

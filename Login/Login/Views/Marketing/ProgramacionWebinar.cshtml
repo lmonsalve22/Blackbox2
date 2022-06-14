@@ -1,0 +1,283 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="es">
+<head prefix="og: http://ogp.me/ns#">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Programación Webinar</title>
+    <meta name="description" content="En este webinar exploraremos una nueva herramienta para visualizar información accesible e interactiva compuesta por un alto volumen de datos públicos.">
+</head>
+<body style="overflow-x:hidden;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" data-toggle="elementscroll" href="#"><img src="~/Content/img/blanco-trans.png" height="48" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li><a data-toggle="elementscroll" class="nav-link" href="#event">CONFERENCIA</a></li>
+                    <li><a data-toggle="elementscroll" class="nav-link" href="#program-header">AGENDA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid" style="background-color: #1F236D;">
+        <div class="row align-items-center p-5" style="min-height: 80vh">
+            <div class="col-md-6">
+                <img class="img-fluid" src="~/Images/Imagenes Marketing/Imagenes landingpage educacion/5.jpg" />
+            </div>
+            <div class="col-md-6 mt-md-5">
+                <img class="img-fluid" src="~/Images/Imagenes Marketing/Imagenes landingpage educacion/4.jpg" />
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <img class="img-fluid" src="~/Images/Imagenes Marketing/Imagenes landingpage educacion/3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <section>
+
+            <div class="row justify-content-center" style="background-image: url('../../Images/Imagenes Marketing/fondo_pagina.png'); background-color: #152c45;">
+                <div class="col-12 col-md-6 mt-md-5 mb-md-5 pt-md-5 pb-md-5">
+                    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                    <a href="https://logwork.com/countdown-ri3n" class="countdown-timer" data-style="circles" data-timezone="America/Tegucigalpa" data-language="es" data-textcolor="#ffffff" data-date="2021-11-18 10:00" data-unitscolor="#ffffff">ÚNETE AL EVENTO</a>
+                </div>
+
+                @*<div class="col-md-12">
+                        <style>
+                            p {
+                                color: white;
+                                text-align: center;
+                                font-size: 60px;
+                                margin-top: 0px;
+                            }
+                        </style>
+                        <p id="demo"></p>
+
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Nov 15, 2021 15:37:25").getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function () {
+
+                                // Get today's date and time
+                                var now = new Date().getTime();
+
+                                // Find the distance between now and the count down date
+                                var distance = countDownDate - now;
+
+                                // Time calculations for days, hours, minutes and seconds
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                // Output the result in an element with id="demo"
+                                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                    + minutes + "m " + seconds + "s ";
+
+                                // If the count down is over, write some text
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("demo").innerHTML = "EXPIRED";
+                                }
+                            }, 1000);
+                        </script>
+                    </div>*@
+            </div>
+        </section>
+        <div class="container" id="event">
+            <div class="row">
+                <div class="col py-4 text-center">
+
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4CK84X4Hf1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="row justify-content-center" style="color:white; background-image: url('../../Images/Imagenes Marketing/add_calendar_bg.png'); background-color: #ec776dff ">
+                <div class="col-md-4 mt-md-5 pt-md-5 mb-md-5 pb-md-5 text-center">
+
+                    <h1>
+
+                        APARTA LA FECHA <br />
+                        EN EL CALENDARIO
+                    </h1>
+                    <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NG9saGtwa3ZuOGl1ZzA1bDY5ZTJvZDN0NWkgY2xlbnRlYmFua3MwQG0&amp;tmsrc=clentebanks0%40gmail.com" style="background-color: #9eb6deff; font-size: 2.5rem !important; border-radius: 50rem !important; color:white; padding-right: 1.5rem !important; padding-left: 1.5rem !important; text-align: center; text-decoration: none; ">AGENDAR</a>
+                </div>
+            </div>
+            <div id="program-header" class="row justify-content-center" style="color:white; background-color: #c71618;padding-top:3rem;padding-bottom:3rem; ">
+                <div class="col-md-4 text-center">
+                    <h2>AGENDA</h2>
+                    <p>Jueves 18 de noviembre</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row" style="background-image: url('../../Images/Imagenes Marketing/texture_opacity30.png');background-color:#ccc;">
+                <div class="col-md-12 ">
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="container-fluid py-5" style="background-image: url('../../Images/Imagenes Marketing/texture_opacity30.png');background-color:#ccc;">
+        <div class="container bg-light p-5">
+            <div class="row">
+                <div class="col-3 text-end fs-6 fs-md-4">09:00</div>
+                <div class="col-9 border-2 border-start border-primary ">
+                    <h3 class="fs-4 fs-md-3">
+                        Intervención del Consejo Centroamericano de Vivienda y
+                        Asentamientos Humanos (CCVAH)
+                    </h3>
+                    <p>
+                        Ing. Sergio AMAYA, Comisionado Presidente de la Comisión Nacional
+                        de Vivienda y Asentamientos Humanos de Honduras (CONVIVIENDA) y
+                        Representante ante el CCVAH
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-end fs-6 fs-md-4">09:10</div>
+                <div class="col-9 border-2 border-start border-primary">
+                    <h3 class="fs-4 fs-md-3">Intervención del Gobierno Alemán</h3>
+                    <p>
+                        Lena SCHWARM, Jefa de Cooperación y Asuntos Culturales de la
+                        Embajada Alemana San Salvador
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-end fs-6 fs-md-4">09:20</div>
+                <div class="col-9 border-2 border-start border-primary">
+                    <h3 class="fs-4 fs-md-3">
+                        Presentación del Programa Resiliencia Urbana: Objetivos, enfoques e impactos
+                        previstos
+                    </h3>
+                    <p>
+                        Anna WITTENBORG, Directora de Portafolio SICA y Representante
+                        Permanente de la GIZ El Salvador
+                    </p>
+                    <p>Abner JIMÉNEZ, Coordinador Técnico, GIZ El Salvador</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-end fs-6 fs-md-4">09:40</div>
+                <div class="col-9 border-2 border-start border-primary">
+                    <h3 class="fs-4 fs-md-3">
+                        Panel de discusión: Desafíos y oportunidades para la planificación
+                        urbana con enfoque de gestión del riesgo de desastres en el marco de
+                        la Nueva Agenda Urbana
+                    </h3>
+                    <p>
+                        Representantes de la Secretaría de la Integración Social
+                        Centroamericana (SISCA), del Banco Centroamericano de Integración
+                        Económica (BCIE), de la Red Mujer y Hábitat de América Latina y El
+                        Caribe y de contrapartes nacionales de El Salvador y Honduras
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-end fs-6 fs-md-4">10:40</div>
+                <div class="col-9 border-2 border-start border-primary">
+                    <h3 class="fs-4 fs-md-3">Cierre del evento</h3>
+                    <p>Anita ZETINA, Secretaria General, SISCA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" style="background-color: #1F236D">
+        <div class="container">
+            <div class="row justify-content-center" style="background-color: #1F236D">
+                <div class="col-md-10 mt-md-5 mb-md-5 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-4">
+                            <img class="img-fluid" src="~/Images/Imagenes Marketing/Imagenes landingpage educacion/5.jpg" />
+                        </div>
+                        <div class=" col-lg-4 col-md-12 mt-5 text-center" style="background-color: #1F236D">
+                            @*<h5 class="text-uppercase mt-md-2" style="font-size:1rem;">SÍGUENOS</h5>*@
+                            <section class="mt-md-5 pt-md-5">
+                                <!-- Facebook -->
+                                <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.facebook.com/dataintelligencecl/" role="button">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-outline-light btn-floating " target="_blank" href="https://twitter.com/data_int" role="button">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <!-- Instagram -->
+                                <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.instagram.com/data.intelligence/" role="button">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+
+                                <!-- Linkedin -->
+                                <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.linkedin.com/in/data-intelligence-5916b41a5/" role="button">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+
+                                <!-- Youtube -->
+                                <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.youtube.com/channel/UCXo5Vhu65cOl3OcwWF9wLUA" role="button">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <!-- Pinterest -->
+                                <a class="btn btn-outline-light btn-floating " target="_blank" href="https://www.pinterest.cl/dataintelligencechile/_created/" role="button">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </section>
+                        </div>
+                        <div class="col-12 col-md-4 text-center pt-md-3">
+
+                            <img class="img-fluid" src="~/Images/Imagenes Marketing/Imagenes landingpage educacion/6.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid urban-draw" style="display: block; height: 200px; background-image: url('../../Images/Imagenes Marketing/urban_draw.png'); background-repeat: repeat-x; background-position-y: bottom; background-size: auto 100%; margin-top: 3em;"></section>
+    <footer id="footer" class="container-fluid py-5" style="background-color: #152c45">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <img class="img-fluid" src="~/Content/img/blanco-trans.png" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    © Data Intelligence, ® Todos los derechos reservados
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutUsuario.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container-fluid" style="background-color:#010510">
+        <div class="row align-content-center pt-5">
+            <div class="col-12 text-center">
+                <img class="img-fluid" style=" width:25%;  border-radius:15px 15px 15px 15px;" src="~/Images/SuscripcionCancelada/imagen_suscripcion_expiro.png" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3 pt-2" style="color:white">
+                <p class="h3">¡Lo sentimos!</p>
+                <p>Su suscripción ha expirado. Para seguir navegando <br> adquiera su suscripción</p>
+            </div>
+            <div class="col-12 text-center mb-5">
+                @*<button type="button" class="btn btn-primary">Ir a Suscripción</button>*@
+                @*<a href="@ViewBag.url" class="btn btn-primary">Ir a Suscripción</a>*@
+                <a href="@ViewBag.url" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

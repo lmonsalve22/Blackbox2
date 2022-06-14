@@ -1,0 +1,300 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPublico.cshtml";
+}
+<!doctype html>
+<html amp lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Data Intelligence</title>
+    <link rel="canonical" href="https://www.dataintelligence-group.com/amp/IndexampLayout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org",
+          "@@type": "NewsArticle",
+          "headline": "Article headline",
+          "datePublished": "2021-11-20T12:02:41Z",
+               "image": [
+            "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+              ],
+            "author": {
+                "@@type": "Organization",
+                "name": "Data Intelligence",
+                "url": "https://www.dataintelligence-group.com/Data/Index"
+            },
+        "publisher": {
+            "@@type": "Organization",
+            "name": "DI",
+            "logo": {
+            "@@type": "ImageObject",
+            "url": "~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+            }
+        }
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @@-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @@keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <meta name="author" content="Data Intelligence">
+    <style amp-custom>
+        #Encabezado {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        #Cvertical {
+            padding: 0 20px;
+            color: white;
+            border: none;
+        }
+
+        #content1 {
+            width: 100%;
+            text-align: center;
+            background: repeating-linear-gradient(to right, rgb(47 135 199), rgb(157 33 99));
+        }
+
+        #buscador {
+            margin-bottom: 4%;
+            border-radius: 20px;
+            background-color: rgb(210 220 235 / 0.60);
+            padding: 0 20px;
+        }
+
+        #header2 {
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        #text2 {
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        #propuesta {
+            text-align: center;
+        }
+
+        #margen1 {
+            margin: 0 20px;
+        }
+
+        #TituloCon {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        #text4 {
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        #car2 {
+            text-align: center;
+        }
+
+        .amp-carousel-button {
+            display: none
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+</head>
+<body>
+    <div id="Encabezado">
+        <h4> ¡Miles de estadísticas! </h4>
+        <p>
+            Generamos día a día información histórica, actual y proyectada disponible de forma gratuita y con suscripción.
+        </p>
+    </div>
+    <!--seccion slider o carrusel-->
+    @*<div id="Cvertical">
+            @{ Html.RenderAction("CarruselVetical2", "Info");}
+        </div>*@
+
+    <!-- BUSCADOR INTELIGENTE de carrusel-->
+    <div id="content1">
+        <h4 id="header2">
+            <b>¿Quieres ver otras estadísticas?</b>
+        </h4>
+        <p id="text2">
+            ¡Nuestro Buscador Inteligente contiene miles de gráficos y
+            mapas interactivos listos para utilizar de forma gratuita!"
+        </p>
+
+
+        <div id="buscador">
+            <div>
+                <h4 @*style="font-weight:300;"*@>
+                    <amp-img src="~/Images/favicons/Icono_dataIntelligence_Rojo.png"
+                             width="25"
+                             height="20"
+                             alt="logo">
+                    </amp-img>
+                    <b>BUSCADOR INTELIGENTE</b>
+                </h4>
+            </div>
+            <!--Buscador-->
+            <div @*style="margin-bottom:40px;"*@>
+                <form class="example d-flex" action="~/Data/PaginaBusqueda" method="get" style="border:none">
+                    <input type="text" placeholder="Escribe tu tema de interés" name="id" style="border:none">
+                    <button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="propuesta">
+        <h3>
+            <strong>Nuestra Propuesta</strong>
+        </h3>
+        <p id="text4">
+            Nuestro norte es desarrollar productos digitales bajo la modalidad Datos como Servicio (Data As A Service) que
+            respondan las preguntas que se puedan presentar en tu día a día.
+        </p>
+    </div>
+
+    <amp-img id="margen1" width="90" height="75" layout="responsive" src="~/Images/imagen_inicio.png">
+    </amp-img>
+
+    <div>
+        <h3 id="TituloCon">
+            <strong>¡Miles y miles de datos!</strong>
+        </h3>
+        <p id="text4">
+            Seleccionamos los temas de contingencia, buscamos cada uno de los datos
+            públicos disponibles, sistematizamos la información y creamos millones
+            de gráficos y mapas interactivos para quien necesite ampliar la visión de
+            esas realidades.
+        </p>
+        <h3 id="TituloCon">
+            <strong>Y agrupamos los miles de datos en Colecciones con información</strong>
+        </h3>
+        <p id="text4">
+            Transformamos los temas de contingencia en gráficos y
+            mapas interactivos agrupándolos en colecciones
+            especializadas para una búsqueda más eficiente y útil.
+        </p>
+    </div>
+
+
+    @*****carrusel de iconos de suscripciones*****@
+    <div id="car2">
+        <h3><strong>Conoce las Colecciones Data intelligence</strong> </h3>
+
+        <amp-carousel controls="never" dir="ltr" visible-count="1" advance-count="1" width="400" height="250" padding="10" layout="responsive" type="slides" role="region" aria-label="looping carousel" autoplay delay="5000" slide="1">
+
+            <a href="~/Data/ColeccionesAgencia" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/image_estadistica/icono_agenciaDI.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesSalud" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Images/suscripciones/D360_ENFERMEDADES_MUNDIALES.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesEconomia" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/imagenes_temas economia/iconocoleccion_economia.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesIngresoH" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/Ingresos histodicos imagenes/icono_ingresoshistoricos.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesAgricultura" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Content/img/Iconos recursos/icono_coleccion_agricultura.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesGlaciares_R10" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Images/suscripciones/D261_GLACIARES_10.png">
+                </amp-img>
+            </a>
+
+            <a href="~/Data/ColeccionesViolenciaMujer" data-toggle="tooltip" title="Click para mas información">
+                <amp-img width="210" height="185" src="~/Images/suscripciones/D300_VIOLENCIA_CONTRA_LA_MUJER.png">
+                </amp-img>
+            </a>
+        </amp-carousel>
+    </div>
+
+    <amp-youtube id="margen1" data-videoid="CXOFxGJFKVo" width="560" height="314" layout="responsive">
+    </amp-youtube>
+</body>
+</html>

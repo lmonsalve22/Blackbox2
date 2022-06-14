@@ -1,0 +1,988 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia</title>
+
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-3 col-md-2">
+                <img class="img-fluid" style="width:90%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 " style="border-left: solid 0.5px #b0b0b0;">
+                <h4 class="coleccion mt-4 mt-md-0 pt-sm-5 pt-md-0" style=" font-weight: bold;">Economía</h4>
+                @*<h5 class="h2 coleccion mt-5 mt-md-0 pt-sm-5 pt-md-0 d-block d-md-none" style=" font-weight: bold;">Economía</h5>*@
+                <p class="pcoleccion d-none d-md-block">
+                    La Colección Economía entrega información obtenida del cruce de datos registrados de diferentes actividades económicas del país
+                    entre los años 2014 y 2021, tanto a nivel Nacional como Regional. Data Intelligence, a través de DataEconomía, describe por
+                    medio de sus gráficos, la evolución del Índice de ventas de Supermercados, la Superficie de Solicitud de Edificación, la
+                    producción de Electricidad, el Índice de Producción Manufacturera y el de Producción Minera, además del panorama de sectores
+                    como el Silvoagropecuario, Transporte y Turismo, entre otros datos.
+                </p>
+            </div>
+            <div class="col-12 d-block d-md-none mt-3">
+                <p class="pcoleccion" style="font-size:1.0rem !important;">
+                    La Colección Economía entrega información obtenida del cruce de datos registrados de diferentes actividades económicas del país
+                    entre los años 2014 y 2021, tanto a nivel Nacional como Regional. Data Intelligence, a través de DataEconomía, describe por
+                    medio de sus gráficos, la evolución del Índice de ventas de Supermercados, la Superficie de Solicitud de Edificación, la
+                    producción de Electricidad, el Índice de Producción Manufacturera y el de Producción Minera, además del panorama de sectores
+                    como el Silvoagropecuario, Transporte y Turismo, entre otros datos.
+                </p>
+            </div>
+            <!--video de coleccion-->
+            <section class="container video mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                            Conoce más acerca de esta colección
+                        </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/VJWl14mX3E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-12 text-center d-none d-md-block mt-5" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p>La suscripción a la colección de Economía contiene</p>
+            </div>
+            <div class="col-12 text-center d-block d-md-none mt-2" style="border-bottom: solid 0.5px #b0b0b0;">
+                <p><b>La suscripción a la colección de Economía contiene</b></p>
+            </div>
+        </div>
+    </div>
+    @*Carrusel contenido movil*@
+    <div class=" d-block d-md-none mt-2 mt-sm-0">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div id="carouselExampleControls" class="carousel slide p-sm-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_comercio.png" alt="Comercio" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Comercio</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_construccion.png" alt="Construcción" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Construcción</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_electricidad.png" alt="Electricidad" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Electricidad</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_manufactura.png" alt="Manufacturas" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Manufacturas</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_mineria.png" alt="Minería" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Minería</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_pesca.png" alt="Pesca" />
+                                <div class="row justify-content-center">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Pesca</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_silvoagropecuario.png" alt="Silvoagropecuario" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Silvoagropecuario</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_transporte.png" alt="Transporte" />
+                                <div class="row ">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Transporte</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC8" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_transportecargamaritima.png" alt="Transporte de Carga" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Transporte de Carga</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC9" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card cardcoleccion" data-toggle="tooltip" data-placement="right" title="Click para mas información" data-bs-toggle="modal" data-bs-target="#EC10">
+                                <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_turismo.png" alt="Turismo" />
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="card-title mt-1">Turismo</h6>
+                                    </div>
+                                    <div class="col-3" style="z-index:100">
+                                        <a data-bs-toggle="modal" data-bs-target="#EC10" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                            ver
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Contenido pantalla grande *@
+    <style>
+        .card-img-top {
+            cursor: default !important;
+        }
+
+        .card-title {
+            cursor: default !important;
+        }
+    </style>
+    <div class="container-fluid mt-2  d-none d-md-block">
+        <div class="row">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" style="cursor:default;" src="~/Images/Economia/imagenes_recuadrosweb_economia_comercio.png" alt="Comercio" />
+                    <div class="row ">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Comercio</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC1" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_construccion.png" alt="Construcción" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Construcción</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC2" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_electricidad.png" alt="Electricidad" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Electricidad</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC3" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_manufactura.png" alt="Manufacturas" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Manufacturas</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC4" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_mineria.png" alt="Minería" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Minería</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC5" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_pesca.png" alt="Pesca" />
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Pesca</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC6" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_silvoagropecuario.png" alt="Silvoagropecuario" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Silvoagropecuario</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC7" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_transporte.png" alt="Transporte" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Transporte</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC8" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_transportecargamaritima.png" alt="Transporte de Carga" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Transporte de Carga</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC9" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4 text-center ">
+                <div class="card cardcoleccion">
+                    <img class="d-block w-100 card-img-top" src="~/Images/Economia/imagenes_recuadrosweb_economia_turismo.png" alt="Turismo" />
+                    <div class="row">
+                        <div class="col-10">
+                            <h6 class="card-title mt-1">Turismo</h6>
+                        </div>
+                        <div class="col-2" style="z-index:100" data-toggle="tooltip" data-placement="right" title="Click para mas información">
+                            <a data-bs-toggle="modal" data-bs-target="#EC10" style="text-decoration:underline; color:blue; cursor:pointer;">
+                                ver
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--video de coleccion-->
+    <!--<section class="container video mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <p style="font-size:1.1rem; font-weight:700; text-align:center;">
+                    Conoce más acerca de esta colección
+                </p>
+            </div>
+            <div class="col-md-12 ">
+                <div class="ratio ratio-16x9">
+                    <iframe  src="https://www.youtube.com/embed/VJWl14mX3E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!-- Modal EC1-10 -->
+    <div class="modal fade" id="EC1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_comercio.png" alt="Comercio" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Comercio</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">8</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Años</strong><br>Datos periodo 2014-2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    ISUP
+                                </strong><br>Evolución a precio Constante, a precio Corriente, por Superficie y Número de supermercados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_construccion.png" alt="Construcción" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Construcción</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Edificación Habitacional</strong><br>Evolución mensual de la superficie autorizada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color:#2873b0; border-radius:5px;">2</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Destinos edificación No Habitacional
+                                </strong><br>Servicios e Industria , Comercio y Establecimientos Financieros (ICEF)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">N°</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Viviendas</strong><br>Autorizadas para construcción
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_electricidad.png" alt="Electricidad" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Electricidad</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Energía
+                                </strong><br>Eléctrica, Hidráulica, Térmica, Solar, Eólica
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">6</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Sectores de distribución
+                                </strong><br>Residencial, industrial, comercio, minería, agrícola y público
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones de Generación
+                                </strong><br>Datos registrados para las regiones de Valparaíso, Biobío,  La Araucanía, Los Lagos, Los Ríos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones de Distribución
+                                </strong><br>Datos registrados para las regiones de Maule, La Araucanía, Los Ríos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_manufactura.png" alt="Manufacturas" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Manufacturas</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>IPMan</strong><br>Evolución del Índice de Producción Manufacturera
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">18</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Divisiones
+                                </strong><br>Tabaco, bebidas, productos derivados de  madera, petróleo, sustancias químicas, metales,
+                                caucho, maquinarias, muebles, entre otros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>Regiones</strong><br>Datos registrados para las regiones de Valparaíso, Biobío,  La Araucanía, Los Lagos,
+                                Los Ríos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_mineria.png" alt="Minería" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Minería</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-bar-chart-line"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>IPMin</strong><br>Evolución y Previsión periodo 2014 al 2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">7</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Minerales
+                                </strong><br>Cobre, Oro, Plata, Hierro, Carbón, Molibdeno, Cloruro de Sodio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_pesca.png" alt="Pesca" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Pesca</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-bar-chart-line"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Cosecha acuícola
+                                </strong><br>Evolución y Previsión de toneladas periodo 2014 al 2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">9</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Productos del mar
+                                </strong><br>Entre peces, moluscos y algas son Cosechados en Chile
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Desembarque Industrial y Artesanal
+                                </strong><br>Evolución y Previsión de toneladas periodo 2014 al 2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">31</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Productos desembarco Artesanal
+                                </strong><br>Diferentes tipos de peces, moluscos crustáceos y otros
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_silvoagropecuario.png" alt="Silvoagropecuario" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Silvoagropecuario</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">3</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipo de uvas según producto
+                                </strong><br>De mesa, Vinífera y Pisquera
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Leche Recepcionada
+                                </strong><br>Evolución y Previsión según láctea Menor o Mayor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Regiones de Cosecha de madera
+                                </strong><br>Detalle por troza Aserrable y Pulpable
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_transporte.png" alt="Transporte" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Transporte</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de Vehículos
+                                </strong><br>Registro de Taxis, Buses, Minibuses, Escolar y Trolebuses
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución de Vehículos
+                                </strong><br>Pasadas por Pórticos y Plazas de Peaje
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_transportecargamaritima.png" alt="Transporte de Carga" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Transporte de Carga</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">5</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Movimientos de carga
+                                </strong><br>Embarcada, Desembarcada, Cabotaje, Re-estibas y Tránsito
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch">2</p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Tipos de contenedores
+                                </strong><br>De 40 pies y de 20 pies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EC10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:black; color:white;">
+                <div class="modal-header justify-content-center" style="border-bottom:none !important">
+                    <button type="button" class="btn-close" style="background-color:#ccc;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header" style="border-bottom:none !important">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid " style="width:80%; margin-left:20%" src="~/Images/simbolossolos_botones/simbolo_coleccion_economia_grande.png" alt="Colección Economía" />
+                        </div>
+                        <div class="col-8" style="border-left: solid 2px #272727;">
+                            <img class="img-fluid" style="width:100%;" src="~/Images/Economia/imagenes_recuadrosweb_economia_turismo.png" alt="Turismo" />
+                        </div>
+                        <div class="offset-1 col-10 offset-1 justify-content-center mt-1">
+                            <h5 class="modal-title text-center " style="border-bottom: solid 0.5px #272727;" id="exampleModalLabel">Turismo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-2 mx-md-5" style="border-bottom: solid 0.5px #272727;">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-bar-chart-line"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Rendimiento del ingreso
+                                </strong><br>Por habitación disponible
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row  mx-2 mx-md-5 mt-2">
+                        <div class="col-2 text-center">
+                            <p style="background-color: #2873b0; border-radius: 5px; width: 4ch"><i class="bi bi-graph-up"></i></p>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <strong>
+                                    Evolución de precios
+                                </strong><br>De las habitaciones
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

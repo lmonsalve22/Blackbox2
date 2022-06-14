@@ -1,0 +1,82 @@
+﻿@model Login.Models.USER_DETAIL
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>USER_DETAIL</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.user)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.user)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fecha)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fecha)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.suscripcion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.suscripcion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.organizacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.organizacion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.user_type)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.user_type)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.aux1)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.aux1)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.aux2)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.aux2)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
